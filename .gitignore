@@ -6,9 +6,13 @@ saves/**
 ct_dumps/**
 crash-reports/**
 XaeroWaypoints/**
+XaeroWorldMap/**
 screenshots/**
 downloads/**
 .curseclient
+debug/**
+music_sheets/**
+schematics/**
 
 # ignore file types
 *.log
