@@ -1,0 +1,9 @@
+Folder PATH listing for volume New SSD
+Volume serial number is BAB7-5634
+C:.
+    StructuredModLoader-1.0.0.jar
+    
+No subfolders exist 
+
+Thu 03/24/2022 
+03:06 PM
