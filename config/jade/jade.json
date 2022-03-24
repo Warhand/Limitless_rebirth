@@ -5,24 +5,24 @@
     "displayEntities": true,
     "displayMode": "TOGGLE",
     "hideFromDebug": true,
-    "iconMode": "TOP",
+    "iconMode": "CENTERED",
     "enableTextToSpeech": false,
     "maxHealthForRender": 40,
     "maxHeartsPerLine": 10,
-    "fluidMode": "NONE",
+    "fluidMode": "SOURCE_ONLY",
     "reachDistance": 0.0,
     "debug": false
   },
   "overlay": {
-    "overlayPosX": 0.5,
-    "overlayPosY": 1.0,
-    "overlayScale": 1.0,
-    "overlayAnchorX": 0.5,
+    "overlayPosX": 0.010869565,
+    "overlayPosY": 0.9782609,
+    "overlayScale": 1.0021739,
+    "overlayAnchorX": 0.0,
     "overlayAnchorY": 0.0,
     "overlaySquare": false,
     "flipMainHand": false,
     "color": {
-      "alpha": 0.7,
+      "alpha": 1.0,
       "themes": {
         "jade:waila": {
           "id": "jade:waila",

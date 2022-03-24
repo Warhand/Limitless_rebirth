@@ -32,7 +32,7 @@
 		separation = 18
 		whitelist = ["#plains"]
 		blacklist = []
-		modWhitelist = ["#minecraft"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".small_desert_graveyard]
@@ -43,7 +43,7 @@
 		separation = 28
 		whitelist = ["#desert"]
 		blacklist = []
-		modWhitelist = ["#minecraft"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".small_grave]
@@ -54,7 +54,7 @@
 		separation = 8
 		whitelist = ["#taiga", "#forest", "#plains"]
 		blacklist = []
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".small_desert_grave]
@@ -65,7 +65,7 @@
 		separation = 16
 		whitelist = ["#desert"]
 		blacklist = []
-		modWhitelist = ["#minecraft"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".small_savanna_grave]
@@ -87,7 +87,7 @@
 		separation = 8
 		whitelist = ["#mountain", "#extreme_hills"]
 		blacklist = []
-		modWhitelist = ["#minecraft"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".mushroom_grave]
@@ -98,7 +98,7 @@
 		separation = 18
 		whitelist = ["#mushroom", "#jungle", "#swamp"]
 		blacklist = []
-		modWhitelist = ["#minecraft"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".memorial_tree]
@@ -109,7 +109,7 @@
 		separation = 12
 		whitelist = ["#forest"]
 		blacklist = ["minecraft:forest", "minecraft:flower_forest", "minecraft:dark_forest", "minecraft:windswept_forest"]
-		modWhitelist = ["#minecraft"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith"]
 		canSpawnGraveyardMobs = false
 
 	["The Graveyard - Structures Config".medium_graveyard]
@@ -120,7 +120,7 @@
 		separation = 16
 		whitelist = ["#forest"]
 		blacklist = ["minecraft:dark_forest", "minecraft:birch_forest", "minecraft:old_growth_birch_forest", "graveyard_biomes:haunted_lakes", "graveyard_biomes:haunted_forest"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes"]
 		canSpawnGraveyardMobs = true
 
 	["The Graveyard - Structures Config".large_graveyard]
@@ -131,7 +131,7 @@
 		separation = 10
 		whitelist = ["#forest", "#taiga"]
 		blacklist = ["minecraft:forest", "minecraft:flower_forest", "minecraft:birch_forest", "minecraft:old_growth_birch_forest", "minecraft:windswept_forest", "graveyard_biomes:eroded_haunted_forest", "graveyard_biomes:haunted_lakes"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes"]
 		canSpawnGraveyardMobs = true
 
 	["The Graveyard - Structures Config".haunted_house]
@@ -142,7 +142,7 @@
 		separation = 20
 		whitelist = ["#forest", "#swamp"]
 		blacklist = ["minecraft:forest", "minecraft:flower_forest", "minecraft:birch_forest", "minecraft:old_growth_birch_forest", "minecraft:windswept_forest", "graveyard_biomes:haunted_forest"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes"]
 		canSpawnGraveyardMobs = false
 
 ["The Graveyard - Mob Spawning Config"]
@@ -159,7 +159,7 @@
 		canBeWithered = false
 		whitelist = ["#jungle", "#extreme_hills", "#underground", "#mesa", "#mountain", "#icy", "#savanna", "#beach", "#plains", "#swamp", "#forest", "#taiga", "#desert"]
 		blacklist = ["minecraft:flower_forest", "minecraft:lush_caves"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes", "minecraft:soul_sand_valley", "minecraft:nether_wastes", "biomesoplenty:visceral_heap"]
 
 	["The Graveyard - Mob Spawning Config".revenant]
 		enabled = true
@@ -173,7 +173,7 @@
 		canBeWithered = false
 		whitelist = ["#jungle", "#extreme_hills", "#underground", "#mesa", "#mountain", "#icy", "#savanna", "#beach", "#plains", "#swamp", "#forest", "#taiga", "#desert"]
 		blacklist = ["minecraft:flower_forest", "minecraft:lush_caves"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes", "minecraft:soul_sand_valley", "minecraft:nether_wastes"]
 
 	["The Graveyard - Mob Spawning Config".reaper]
 		enabled = true
@@ -187,7 +187,7 @@
 		canBeWithered = false
 		whitelist = ["graveyard_biomes:eroded_haunted_forest"]
 		blacklist = ["minecraft:flower_forest", "minecraft:lush_caves"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes", "minecraft:soul_sand_valley"]
 
 	["The Graveyard - Mob Spawning Config".nightmare]
 		enabled = true
@@ -201,7 +201,7 @@
 		canBeWithered = false
 		whitelist = ["#jungle", "#extreme_hills", "#underground", "#mesa", "#mountain", "#icy", "#savanna", "#beach", "#plains", "#swamp", "#forest", "#taiga", "#desert"]
 		blacklist = ["minecraft:flower_forest", "minecraft:lush_caves"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes", "minecraft:nether_wastes", "minecraft:warped_forest"]
 
 	["The Graveyard - Mob Spawning Config".skeleton_creeper]
 		enabled = true
@@ -213,9 +213,9 @@
 		maxGroupSizeSkeletonCreeper = 4
 		canBurnInSunlight = true
 		canBeWithered = false
-		whitelist = ["#jungle", "#extreme_hills", "#underground", "#mesa", "#mountain", "#icy", "#savanna", "#beach", "#plains", "#swamp", "#forest", "#taiga", "#desert"]
+		whitelist = ["#jungle", "#extreme_hills", "#underground", "#mesa", "#mountain", "#icy", "#savanna", "#beach", "#plains", "#swamp", "#forest", "#taiga", "#desert", "minecraft:soul_sand_valley"]
 		blacklist = ["minecraft:flower_forest", "minecraft:lush_caves"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes"]
 
 	["The Graveyard - Mob Spawning Config".acolyte]
 		enabled = false
@@ -229,7 +229,7 @@
 		canBeWithered = false
 		whitelist = ["#jungle", "#extreme_hills", "#underground", "#mesa", "#mountain", "#icy", "#savanna", "#beach", "#plains", "#swamp", "#forest", "#taiga", "#desert"]
 		blacklist = ["minecraft:flower_forest", "minecraft:lush_caves"]
-		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+		modWhitelist = ["#minecraft", "#bop", "#terralith", "#graveyard_biomes"]
 
 ["The Graveyard - Horde Config"]
 

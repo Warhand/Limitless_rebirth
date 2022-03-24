@@ -71,7 +71,15 @@
 			#Set false to disable enchantment
 			enabled = true
 
-		[cyclic.enchantment.steady]
+		[cyclic.enchantment.traveler]
+			#Set false to disable enchantment
+			enabled = true
+
+		[cyclic.enchantment.venom]
+			#Set false to disable enchantment
+			enabled = true
+
+		[cyclic.enchantment.experience_boost]
 			#Set false to disable enchantment
 			enabled = true
 
@@ -88,15 +96,7 @@
 			#Range: 0 ~ 99999
 			cooldown = 20
 
-		[cyclic.enchantment.traveler]
-			#Set false to disable enchantment
-			enabled = true
-
-		[cyclic.enchantment.venom]
-			#Set false to disable enchantment
-			enabled = true
-
-		[cyclic.enchantment.experience_boost]
+		[cyclic.enchantment.steady]
 			#Set false to disable enchantment
 			enabled = true
 
@@ -141,7 +141,7 @@
 		[cyclic.items.prospector]
 			#Ore Prospector radius around player to search for ores
 			#Range: 1 ~ 256
-			range = 32
+			range = 8
 
 		[cyclic.items.spawner_seeker]
 			#Range in all directions to search for spawner
@@ -244,12 +244,12 @@
 		[cyclic.blocks.generator_fuel]
 			#RF energy per tick generated while burning furnace fuel in this machine.  Burn time in ticks is the same as furnace values, so 1 coal = 1600 ticks
 			#Range: 1 ~ 6400
-			rf_per_tick = 80
+			rf_per_tick = 20
 
 		[cyclic.blocks.generator_food]
 			#RF energy per tick generated while burning food in this machine
 			#Range: 1 ~ 6400
-			rf_per_tick = 60
+			rf_per_tick = 20
 			#This [factor * (item.food + item.saturation) = ticks] results in the number of ticks food will burn at. IE Bread has (5 + 0.6) with factor 100, will burn for 560 ticks.
 			#Range: 1 ~ 6400
 			ticks_per_food = 100
@@ -283,12 +283,12 @@
 		[cyclic.blocks.user]
 			#Power per use user
 			#Range: 0 ~ 64000
-			energy_cost = 0
+			energy_cost = 50
 
 		[cyclic.blocks.anvil]
 			#Power per repair anvil
 			#Range: 0 ~ 64000
-			energy_cost = 250
+			energy_cost = 64000
 
 		[cyclic.blocks.dropper]
 			#Power per use dropper
@@ -298,7 +298,7 @@
 		[cyclic.blocks.forester]
 			#Power per use forester
 			#Range: 0 ~ 64000
-			energy_cost = 50
+			energy_cost = 200
 
 		[cyclic.blocks.harvester]
 			#Power per use harvester
@@ -356,7 +356,7 @@
 		[cyclic.blocks.anvil_magma]
 			#Cost of magma fluid per action
 			#Range: 1 ~ 64000
-			fluid_cost = 100
+			fluid_cost = 250
 
 		[cyclic.blocks.disenchanter]
 			#Cost of (or payment for if negative) per enchanted book generated
@@ -365,14 +365,6 @@
 			#Power per use disenchanter
 			#Range: 0 ~ 64000
 			energy_cost = 2500
-
-		[cyclic.blocks.terra_preta]
-			#Growth interval in ticks (100 would be every 5 seconds). Also affects terra glass
-			#Range: 1 ~ 64000
-			growth_interval = 100
-			#Chance that the crop will grow after the interval
-			#Range: 0.0 ~ 1.0
-			growth_chance = 0.5
 
 		[cyclic.blocks.anvil_void]
 			#Payment per void action, if not zero
@@ -434,4 +426,12 @@
 			#Ticks used for each uncraft
 			#Range: 1 ~ 9999
 			ticks = 60
+
+		[cyclic.blocks.terra_preta]
+			#Growth interval in ticks (100 would be every 5 seconds). Also affects terra glass
+			#Range: 1 ~ 64000
+			growth_interval = 100
+			#Chance that the crop will grow after the interval
+			#Range: 0.0 ~ 1.0
+			growth_chance = 0.5
 

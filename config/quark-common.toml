@@ -1,6 +1,6 @@
 
 [general]
-	"Enable 'q' Button" = true
+	"Enable 'q' Button" = false
 	"'q' Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
@@ -45,7 +45,7 @@
 	"Obsidian Plate" = true
 	"Metal Buttons" = true
 	"Jukebox Automation" = true
-	"Iron Rod" = true
+	"Iron Rod" = false
 	Gravisand = true
 	"Feeding Trough" = true
 	"Ender Watcher" = true
@@ -199,16 +199,13 @@
 		"Light Level" = 15
 
 [management]
-	"Quick Armor Swapping" = true
 	"Item Sharing" = true
 	"Inventory Sorting" = true
-	"Hotbar Changer" = true
+	"Hotbar Changer" = false
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = true
 	"Chests In Boats" = true
-
-	[management.quick_armor_swapping]
-		"Swap Off Hand" = true
+	"Quick Armor Swapping" = true
 
 	[management.item_sharing]
 		"Render Items In Chat" = true
@@ -227,6 +224,9 @@
 
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
+
+	[management.quick_armor_swapping]
+		"Swap Off Hand" = true
 
 [tools]
 	Trowel = true
@@ -252,7 +252,7 @@
 
 	[tools.seed_pouch]
 		"Max Items" = 640
-		"Show All Variants In Creative" = true
+		"Show All Variants In Creative" = false
 		"Shift Range" = 3
 
 	[tools.pickarang]
@@ -472,13 +472,13 @@
 	"New Stone Types" = true
 	"Nether Obsidian Spikes" = true
 	"Monster Box" = true
-	"Glimmering Weald" = true
 	"Fairy Rings" = true
 	Corundum = true
 	"Chorus Vegetation" = true
 	"Blossom Trees" = true
 	"Big Stone Clusters" = true
 	"Big Dungeon" = true
+	"Glimmering Weald" = true
 	"Azalea Wood" = true
 
 	[world.spiral_spires]
@@ -1098,7 +1098,7 @@
 				"Is Blacklist" = true
 
 			[world.big_dungeon.biome_config.biomes]
-				Biomes = []
+				Biomes = ["undergarden:ancient_sea", "undergarden:barren_abyss", "undergarden:dead_sea", "undergarden:dense_forest", "undergarden:forgotten_field", "undergarden:frostfields", "undergarden:gronglegrowth", "undergarden:icy_sea", "undergarden:mushroom_bog", "undergarden:smogstem_forest", "undergarden:smog_spires", "undergarden:wigglewood_forest", "dimdungeons:biome_dungeon", "blue_skies:calming_skies", "blue_skies:brightlands", "blue_skies:slushlands", "blue_skies:frostbitten_forest", "blue_skies:peeking_ocean", "blue_skies:midday_shore", "blue_skies:unorthodox_valley", "blue_skies:shaded_woodlands", "blue_skies:crystal_dunes", "blue_skies:sunset_maple_forest", "blue_skies:rising_creek", "blue_skies:snow_covered_pines", "blue_skies:deep_peeking_ocean", "blue_skies:brisk_meadow", "blue_skies:polar_highland", "blue_skies:frostbitten_forest_clearing", "blue_skies:brumble_forest", "blue_skies:moonlit_reservoir", "blue_skies:crystal_roughs", "blue_skies:searing_grassland", "blue_skies:crescent_orchard", "blue_skies:crescent_orchard_lake", "blue_skies:crystal_dunes_spikes", "beyond_earth:moon", "beyond_earth:mars", "beyond_earth:mars_ice_spikes", "beyond_earth:venus", "beyond_earth:infernal_venus_barrens", "beyond_earth:mercury", "beyond_earth:glacio", "beyond_earth:glacio_ice_spikes", "beyond_earth:orbit"]
 				"Is Blacklist" = true
 
 [mobs]
@@ -1348,13 +1348,13 @@
 [client]
 	"Variant Animal Textures" = true
 	"Usage Ticker" = true
-	"Soul Candles" = true
-	"Microcrafting Helper" = true
+	"Microcrafting Helper" = false
 	"Improved Tooltips" = true
 	"Greener Grass" = true
 	"Chest Searching" = true
 	"Back Button Keybind" = true
 	"Auto Walk Keybind" = true
+	"Soul Candles" = true
 
 	[client.variant_animal_textures]
 		"Enable Cow" = true
@@ -1363,7 +1363,7 @@
 		"Enable Shiny Rabbit" = true
 		"Enable Shiny Llama" = true
 		"Enable Shiny Dolphin" = true
-		"Enable L G B T Bees" = true
+		"Enable L G B T Bees" = false
 		"Every Bee Is L G B T" = false
 		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
 		"Shiny Animal Chance" = 2048
@@ -1444,10 +1444,10 @@
 [oddities]
 	"Totem Of Holding" = true
 	Pipes = true
-	"Matrix Enchanting" = true
+	"Matrix Enchanting" = false
 	Magnets = true
 	Crate = true
-	Backpack = true
+	Backpack = false
 
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.

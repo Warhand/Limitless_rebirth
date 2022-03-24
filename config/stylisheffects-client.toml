@@ -58,7 +58,7 @@
 		allow_fallback = false
 		#Offset on x-axis.
 		#Range: > 0
-		offset_x = 3
+		offset_x = 160
 		#Maximum amount of status effects rendered in a single row.
 		#Range: 1 ~ 255
 		max_columns = 5

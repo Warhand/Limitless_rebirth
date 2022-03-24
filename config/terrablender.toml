@@ -4,7 +4,7 @@
 	#Whether to replace the default Nether with our own.
 	replace_default_nether = true
 	#Whether to replace the default built-in world types with our own.
-	replace_default_worldtypes = true
+	replace_default_worldtypes = false
 
 #Generation settings
 [generation_settings]

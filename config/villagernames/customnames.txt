@@ -1,3 +1,7 @@
 Rick,
 Bob,
-Eve
+Eve,
+Amilia,
+Krista,
+Blocky,
+Jared
