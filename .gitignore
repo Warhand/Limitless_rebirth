@@ -1,0 +1,23 @@
+#Ignore directories
+mods/**
+logs/**
+profileImage/**
+saves/**
+ct_dumps/**
+crash-reports/**
+XaeroWaypoints/**
+screenshots/**
+downloads/**
+.curseclient
+
+# ignore file types
+*.log
+*.jar
+config/tellme/**
+
+#ignore specific files
+WailaErrorOutput.txt
+usercache.json
+usernamecache.json
+realms_persistence.json
+minecraftinstance.json
