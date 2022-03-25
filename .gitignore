@@ -13,6 +13,8 @@ downloads/**
 debug/**
 music_sheets/**
 schematics/**
+local/ftbchunks/data/**
+simplebackups/**
 
 # ignore file types
 *.log
