@@ -90,6 +90,7 @@ C:.
     FramedBlocks-4.3.1.jar
     framework-0.2.3-1.18.1.jar
     ftb-chunks-forge-1801.3.4-build.127.jar
+    ftb-essentials-1801.1.6-build.37.jar
     ftb-library-forge-1801.3.5-build.109.jar
     ftb-quests-forge-1801.3.7-build.97.jar
     ftb-teams-forge-1801.2.5-build.48.jar
@@ -134,6 +135,7 @@ C:.
     no_null_processors_forge-2.0.2+1.18.1.jar
     OpenLoader-Forge-1.18.1-11.0.4.jar
     PackingTape-1.18-0.12.2.jar
+    panorama-1.2.0.jar
     Paraglider-1.18-1.5.0.0.jar
     Patchouli-1.18.1-65.jar
     PickUpNotifier-v3.1.0-1.18.1-Forge.jar
@@ -204,4 +206,4 @@ C:.
 No subfolders exist 
 
 Fri 03/25/2022 
-03:39 PM
+07:19 PM
