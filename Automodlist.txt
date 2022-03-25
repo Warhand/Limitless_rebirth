@@ -4,9 +4,11 @@ C:.
     1.18.1-betteramethyst-1.0.jar
     3dskinlayers-forge-1.4.2-mc1.18.2.jar
     AdditionalEnchantedMiner-1.18.1-18.7.jar
+    AI-Improvements-1.18-0.4.0.jar
     AkashicTome-1.5-19.jar
     alexsmobs-1.17.4.jar
     alloyed-1.18.1-v1.2a.jar
+    alternate-current-mc1.18-1.1.0.jar
     Amplified Nether 1.0.1 ~ Forge.jar
     Apotheosis-1.18.1-5.3.3.jar
     appleskin-forge-mc1.18-2.4.0.jar
@@ -20,6 +22,7 @@ C:.
     AttributeFix-Forge-1.18.1-13.0.5.jar
     AutoRegLib-1.7-53.jar
     balm-2.4.3+0.jar
+    betterbiomeblend-1.18.1-1.3.2-forge.jar
     BetterBundles-1.18.1-1.0.6.jar
     BetterDungeons-Forge-1.18.1-1.0.1.jar
     BetterMineshafts-Forge-1.18.1-1.0.jar
@@ -63,12 +66,16 @@ C:.
     drawerfps-1.18.1-2.2.jar
     DungeonCrawl-1.18.1-2.3.7.jar
     durabilitytooltip-1.1.0-mc1.18.jar
+    dynview-1.18.1-2.6.jar
+    effortlessbuilding-1.18-2.34.jar
     EnchantmentDescriptions-Forge-1.18.1-9.0.13.jar
     enderbundle-1.09.jar
     entityculling-forge-mc1.18-1.5.0.jar
     expandability-5.0.0-forge.jar
+    expandedstorage-7.3.10+1.18.1.jar
     ExtendedCrafting-1.18.1-4.0.0.jar
     fancymenu_forge_2.6.4_MC_1.18-1.18.1.jar
+    farsight-1.18-1.6.jar
     farsightedmobs-forge-1.1-1.18.jar
     FastFurnace-1.18.1-6.0.2.jar
     FastLeafDecay-27.2.jar
@@ -111,6 +118,8 @@ C:.
     JEITweaker-1.18.1-3.0.0.4.jar
     justenoughkeys-0.5.3-forge.jar
     konkrete_forge_1.3.3_MC_1.18-1.18.1.jar
+    krypton-1.0.0.jar
+    Ksyxis-Forge1.17-1.1.jar
     lazydfu-1.0-1.18+.jar
     LegendaryTooltips-1.18.1-1.2.4.jar
     littlelogistics-mc1.18.1-v1.1.1a.jar
@@ -119,6 +128,7 @@ C:.
     Mantle-1.18.1-1.8.37.jar
     modnametooltip-1.18.1-1.18.0.jar
     netherportalfix-forge-1.18-9.0.0.jar
+    ninjaphenix-container-library-1.3.0+1.18-forge.jar
     no_null_processors_forge-2.0.2+1.18.1.jar
     OpenLoader-Forge-1.18.1-11.0.4.jar
     PackingTape-1.18-0.12.2.jar
@@ -152,6 +162,7 @@ C:.
     SoMSecondSemester1.18.1-3.0.10.jar
     sophisticatedbackpacks-1.18.1-3.15.15.550.jar
     spark-1.8.6-forge.jar
+    starlight-1.0.1+forge.fef9eb9.jar
     StorageDrawers-1.18.1-10.1.1.jar
     structure_gel-1.18.1-2.1.3.jar
     StylishEffects-v3.0.2-1.18.1-Forge.jar
@@ -160,6 +171,7 @@ C:.
     supplementaries-1.18.1-1.2.4.jar
     TaxFreeLevels-1.3.1-forge-1.18.1.jar
     TConstruct-1.18.1-3.4.2.60.jar
+    tellme-forge-1.18.1-0.10.0.jar
     TerraBlender-forge-1.18.1-1.1.0.77.jar
     The_Graveyard_1.6_(FORGE)_for_1.18.1.jar
     The_Undergarden-1.18.1-0.6.3.jar
@@ -190,4 +202,4 @@ C:.
 No subfolders exist 
 
 Fri 03/25/2022 
-01:14 AM
+03:39 PM
