@@ -55,7 +55,7 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = '';
+S:customwindowtitle = 'Minecraft: Limitless rebirth 0.1.2';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'false';
 

@@ -352,6 +352,50 @@
     "f_135805_": "scrape"
   },
   {
+    "f_135804_": "biomesoplenty",
+    "f_135805_": "dripping_blood"
+  },
+  {
+    "f_135804_": "biomesoplenty",
+    "f_135805_": "falling_blood"
+  },
+  {
+    "f_135804_": "biomesoplenty",
+    "f_135805_": "landing_blood"
+  },
+  {
+    "f_135804_": "biomesoplenty",
+    "f_135805_": "pus"
+  },
+  {
+    "f_135804_": "biomesoplenty",
+    "f_135805_": "glowworm"
+  },
+  {
+    "f_135804_": "botania",
+    "f_135805_": "wisp"
+  },
+  {
+    "f_135804_": "botania",
+    "f_135805_": "sparkle"
+  },
+  {
+    "f_135804_": "cgm",
+    "f_135805_": "bullet_hole"
+  },
+  {
+    "f_135804_": "cgm",
+    "f_135805_": "blood"
+  },
+  {
+    "f_135804_": "cgm",
+    "f_135805_": "trail"
+  },
+  {
+    "f_135804_": "graveyard",
+    "f_135805_": "graveyard_fog_particle"
+  },
+  {
     "f_135804_": "cyclopscore",
     "f_135805_": "blur"
   },
@@ -496,8 +540,40 @@
     "f_135805_": "bear_freddy"
   },
   {
+    "f_135804_": "domesticationinnovation",
+    "f_135805_": "deflection_shield"
+  },
+  {
+    "f_135804_": "domesticationinnovation",
+    "f_135805_": "magnet"
+  },
+  {
+    "f_135804_": "domesticationinnovation",
+    "f_135805_": "zzz"
+  },
+  {
+    "f_135804_": "domesticationinnovation",
+    "f_135805_": "giant_pop"
+  },
+  {
+    "f_135804_": "domesticationinnovation",
+    "f_135805_": "simple_bubble"
+  },
+  {
+    "f_135804_": "domesticationinnovation",
+    "f_135805_": "vampire"
+  },
+  {
     "f_135804_": "sophisticatedcore",
     "f_135805_": "jukebox_note"
+  },
+  {
+    "f_135804_": "relics",
+    "f_135805_": "circle_tint"
+  },
+  {
+    "f_135804_": "relics",
+    "f_135805_": "spark_tint"
   },
   {
     "f_135804_": "beyond_earth",
@@ -520,40 +596,20 @@
     "f_135805_": "small_smoke"
   },
   {
-    "f_135804_": "biomesoplenty",
-    "f_135805_": "dripping_blood"
+    "f_135804_": "ars_nouveau",
+    "f_135805_": "glow"
   },
   {
-    "f_135804_": "biomesoplenty",
-    "f_135805_": "falling_blood"
+    "f_135804_": "ars_nouveau",
+    "f_135805_": "line"
   },
   {
-    "f_135804_": "biomesoplenty",
-    "f_135805_": "landing_blood"
-  },
-  {
-    "f_135804_": "biomesoplenty",
-    "f_135805_": "pus"
-  },
-  {
-    "f_135804_": "biomesoplenty",
-    "f_135805_": "glowworm"
-  },
-  {
-    "f_135804_": "botania",
-    "f_135805_": "wisp"
-  },
-  {
-    "f_135804_": "botania",
+    "f_135804_": "ars_nouveau",
     "f_135805_": "sparkle"
   },
   {
-    "f_135804_": "relics",
-    "f_135805_": "circle_tint"
-  },
-  {
-    "f_135804_": "relics",
-    "f_135805_": "spark_tint"
+    "f_135804_": "ars_nouveau",
+    "f_135805_": "vortex"
   },
   {
     "f_135804_": "findme",
@@ -580,36 +636,68 @@
     "f_135805_": "shimmer"
   },
   {
-    "f_135804_": "cgm",
-    "f_135805_": "bullet_hole"
+    "f_135804_": "create",
+    "f_135805_": "rotation_indicator"
   },
   {
-    "f_135804_": "cgm",
-    "f_135805_": "blood"
+    "f_135804_": "create",
+    "f_135805_": "air_flow"
   },
   {
-    "f_135804_": "cgm",
-    "f_135805_": "trail"
+    "f_135804_": "create",
+    "f_135805_": "air"
   },
   {
-    "f_135804_": "graveyard",
-    "f_135805_": "graveyard_fog_particle"
+    "f_135804_": "create",
+    "f_135805_": "heater_particle"
   },
   {
-    "f_135804_": "ars_nouveau",
-    "f_135805_": "glow"
+    "f_135804_": "create",
+    "f_135805_": "cube"
   },
   {
-    "f_135804_": "ars_nouveau",
-    "f_135805_": "line"
+    "f_135804_": "create",
+    "f_135805_": "fluid_particle"
   },
   {
-    "f_135804_": "ars_nouveau",
-    "f_135805_": "sparkle"
+    "f_135804_": "create",
+    "f_135805_": "basin_fluid"
   },
   {
-    "f_135804_": "ars_nouveau",
-    "f_135805_": "vortex"
+    "f_135804_": "create",
+    "f_135805_": "fluid_drip"
+  },
+  {
+    "f_135804_": "create",
+    "f_135805_": "soul"
+  },
+  {
+    "f_135804_": "create",
+    "f_135805_": "soul_base"
+  },
+  {
+    "f_135804_": "create",
+    "f_135805_": "soul_perimeter"
+  },
+  {
+    "f_135804_": "create",
+    "f_135805_": "soul_expanding_perimeter"
+  },
+  {
+    "f_135804_": "immersiveengineering",
+    "f_135805_": "fluid_splash"
+  },
+  {
+    "f_135804_": "immersiveengineering",
+    "f_135805_": "fractal"
+  },
+  {
+    "f_135804_": "immersiveengineering",
+    "f_135805_": "ie_bubble"
+  },
+  {
+    "f_135804_": "immersiveengineering",
+    "f_135805_": "sparks"
   },
   {
     "f_135804_": "supplementaries",
@@ -712,22 +800,6 @@
     "f_135805_": "axe_attack"
   },
   {
-    "f_135804_": "immersiveengineering",
-    "f_135805_": "fluid_splash"
-  },
-  {
-    "f_135804_": "immersiveengineering",
-    "f_135805_": "fractal"
-  },
-  {
-    "f_135804_": "immersiveengineering",
-    "f_135805_": "ie_bubble"
-  },
-  {
-    "f_135804_": "immersiveengineering",
-    "f_135805_": "sparks"
-  },
-  {
     "f_135804_": "ae2",
     "f_135805_": "crafting_fx"
   },
@@ -750,54 +822,6 @@
   {
     "f_135804_": "ae2",
     "f_135805_": "vibrant_fx"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "rotation_indicator"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "air_flow"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "air"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "heater_particle"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "cube"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "fluid_particle"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "basin_fluid"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "fluid_drip"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "soul"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "soul_base"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "soul_perimeter"
-  },
-  {
-    "f_135804_": "create",
-    "f_135805_": "soul_expanding_perimeter"
   },
   {
     "f_135804_": "malum",
@@ -826,29 +850,5 @@
   {
     "f_135804_": "malum",
     "f_135805_": "scythe_sweep_attack_particle"
-  },
-  {
-    "f_135804_": "domesticationinnovation",
-    "f_135805_": "deflection_shield"
-  },
-  {
-    "f_135804_": "domesticationinnovation",
-    "f_135805_": "magnet"
-  },
-  {
-    "f_135804_": "domesticationinnovation",
-    "f_135805_": "zzz"
-  },
-  {
-    "f_135804_": "domesticationinnovation",
-    "f_135805_": "giant_pop"
-  },
-  {
-    "f_135804_": "domesticationinnovation",
-    "f_135805_": "simple_bubble"
-  },
-  {
-    "f_135804_": "domesticationinnovation",
-    "f_135805_": "vampire"
   }
 ]
