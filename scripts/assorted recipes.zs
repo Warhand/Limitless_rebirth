@@ -629,8 +629,8 @@ smithing.addRecipe("better_bundles_netherite", <item:betterbundles:netherite_bun
 	}});
 	
 //removing brass from the create steampowered bronze tag
-<tag:items:steampowered:bronzeplate>.remove(<item:create:brass_sheet>);
-<tag:items:steampowered:bronze>.remove(<item:create:brass_ingot>);
+//<tag:items:steampowered:bronzeplate>.remove(<item:create:brass_sheet>);
+//<tag:items:steampowered:bronze>.remove(<item:create:brass_ingot>);
 
 //adding cooked fish tag
 val cooked_fish as IItemStack[] = [
@@ -893,17 +893,17 @@ for block, crushed in block_crushed_map_many {
 //nether wart block uncrafting
 craftingTable.removeByName("cyclic:crafting/nether_wart_reverse");
 
-//Reach upgrade level 1 recipe
-craftingTable.remove(<item:effortlessbuilding:reach_upgrade1>);
-craftingTable.addShaped("effortlessbuilding_reach_upgrade1", <item:effortlessbuilding:reach_upgrade1>, [[IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()], [<item:minecraft:honey_bottle>, <item:minecraft:magma_cream>, <item:minecraft:honey_bottle>], [IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()]]);
-
-//reach upgrade level 2 recipe
-craftingTable.remove(<item:effortlessbuilding:reach_upgrade2>);
-craftingTable.addShaped("effortlessbuilding_reach_upgrade2", <item:effortlessbuilding:reach_upgrade2>, [[IIngredientEmpty.getInstance(), <item:minecraft:emerald>, IIngredientEmpty.getInstance()], [<item:minecraft:emerald>, <item:effortlessbuilding:reach_upgrade1>, <item:minecraft:emerald>], [IIngredientEmpty.getInstance(), <item:minecraft:emerald>, IIngredientEmpty.getInstance()]]);
-
-//reach upgrade level 2 recipe
-craftingTable.remove(<item:effortlessbuilding:reach_upgrade3>);
-craftingTable.addShaped("effortlessbuilding_reach_upgrade3", <item:effortlessbuilding:reach_upgrade3>, [[IIngredientEmpty.getInstance(), <item:minecraft:chorus_flower>, IIngredientEmpty.getInstance()], [<item:minecraft:chorus_flower>, <item:effortlessbuilding:reach_upgrade2>, <item:minecraft:chorus_flower>], [IIngredientEmpty.getInstance(), <item:minecraft:chorus_flower>, IIngredientEmpty.getInstance()]]);
+////Reach upgrade level 1 recipe
+//craftingTable.remove(<item:effortlessbuilding:reach_upgrade1>);
+//craftingTable.addShaped("effortlessbuilding_reach_upgrade1", <item:effortlessbuilding:reach_upgrade1>, [[IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()], [<item:minecraft:honey_bottle>, <item:minecraft:magma_cream>, <item:minecraft:honey_bottle>], [IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()]]);
+//
+////reach upgrade level 2 recipe
+//craftingTable.remove(<item:effortlessbuilding:reach_upgrade2>);
+//craftingTable.addShaped("effortlessbuilding_reach_upgrade2", <item:effortlessbuilding:reach_upgrade2>, [[IIngredientEmpty.getInstance(), <item:minecraft:emerald>, IIngredientEmpty.getInstance()], [<item:minecraft:emerald>, <item:effortlessbuilding:reach_upgrade1>, <item:minecraft:emerald>], [IIngredientEmpty.getInstance(), <item:minecraft:emerald>, IIngredientEmpty.getInstance()]]);
+//
+////reach upgrade level 2 recipe
+//craftingTable.remove(<item:effortlessbuilding:reach_upgrade3>);
+//craftingTable.addShaped("effortlessbuilding_reach_upgrade3", <item:effortlessbuilding:reach_upgrade3>, [[IIngredientEmpty.getInstance(), <item:minecraft:chorus_flower>, IIngredientEmpty.getInstance()], [<item:minecraft:chorus_flower>, <item:effortlessbuilding:reach_upgrade2>, <item:minecraft:chorus_flower>], [IIngredientEmpty.getInstance(), <item:minecraft:chorus_flower>, IIngredientEmpty.getInstance()]]);
 
 //ender carrot fix
 <item:cyclic:carrot_ender>.removeTooltip("Stackable hidden shields");
