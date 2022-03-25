@@ -16,6 +16,7 @@ C:.
     Aquaculture-1.18.1-2.3.3.jar
     architectury-3.7.33.jar
     armorpointspp-forge-1.18-2.1.4.jar
+    ArmorSetBonuses_1.18_V5.jar
     ars_creo-1.18.1-1.0.0-BETA1.jar
     ars_nouveau-1.18.1-2.3.0.jar
     artifacts-1.18.1-4.0.3.jar
@@ -123,6 +124,7 @@ C:.
     lazydfu-1.0-1.18+.jar
     LegendaryTooltips-1.18.1-1.2.4.jar
     littlelogistics-mc1.18.1-v1.1.1a.jar
+    lootbeams-1.18.1-release-jan1522.jar
     lootr-1.18-0.1.15.50.jar
     malum-1.18.1-1.2.2.jar
     Mantle-1.18.1-1.8.37.jar
