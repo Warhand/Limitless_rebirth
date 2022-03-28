@@ -93,7 +93,7 @@ craftingTable.addShaped("pipez_fluid_pipe", <item:pipez:fluid_pipe> * 8, [[<tag:
 
 //pipez energy pipe
 craftingTable.remove(<item:pipez:energy_pipe>);
-craftingTable.addShaped("pipez_energy_pipe", <item:pipez:energy_pipe> * 8, [[<tag:items:forge:ingots/iron>, <item:create:rose_quartz>, <tag:items:forge:ingots/iron>], [<item:create:rose_quartz>, <item:minecraft:redstone_block>, <item:create:rose_quartz>], [<tag:items:forge:ingots/iron>, <item:create:rose_quartz>, <tag:items:forge:ingots/iron>]]);
+craftingTable.addShaped("pipez_energy_pipe", <item:pipez:energy_pipe> * 8, [[<tag:items:forge:ingots/iron>, <item:extendedcrafting:redstone_ingot>, <tag:items:forge:ingots/iron>], [<item:extendedcrafting:redstone_ingot>, <item:minecraft:redstone_block>, <item:extendedcrafting:redstone_ingot>], [<tag:items:forge:ingots/iron>, <item:extendedcrafting:redstone_ingot>, <tag:items:forge:ingots/iron>]]);
 
 //pipez universal pipe
 craftingTable.remove(<item:pipez:universal_pipe>);
@@ -953,3 +953,17 @@ val rawblock_block_map as IItemStack[IIngredient] = {
 for rawblock, block in rawblock_block_map {
 	blastFurnace.addRecipe("blasting_" + block.registryName.path, block, rawblock, 9.0, 200);
 }
+
+//Energium dust, tags added to recipe
+
+craftingTable.addShaped("indreb_energium_dust", <item:indreb:energium_dust> * 9, [[<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>], [<tag:items:forge:dusts/diamond>, <item:minecraft:redstone>, <tag:items:forge:dusts/diamond>], [<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>]]);
+
+//circuit recipes
+craftingTable.addShaped("indreb_electronic_circuit", <item:indreb:electronic_circuit>, [[<item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>], [<item:extendedcrafting:redstone_nugget>, <tag:items:forge:plates/iron>, <item:extendedcrafting:redstone_nugget>], [<item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>]]);
+
+craftingTable.addShaped("indreb_advanced_circuit", <item:indreb:advanced_circuit>, [[<item:extendedcrafting:redstone_nugget>, <item:minecraft:glowstone_dust>, <item:extendedcrafting:redstone_nugget>], [<tag:items:forge:dusts/diamond>, <item:indreb:electronic_circuit>, <tag:items:forge:dusts/diamond>], [<item:extendedcrafting:redstone_nugget>, <item:minecraft:glowstone_dust>, <item:extendedcrafting:redstone_nugget>]]);
+
+//red alloy ingot recipe
+craftingTable.remove(<item:extendedcrafting:redstone_ingot>);
+
+craftingTable.addShaped("extendedcrafting_redstone_ingot", <item:extendedcrafting:redstone_ingot>, [[<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>], [<tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/redstone>], [<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>]]);

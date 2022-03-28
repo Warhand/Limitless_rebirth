@@ -525,6 +525,26 @@ for log, planks in log_planks_map {
   "power_cost": 16
 });
 
+<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_advanced_alloy",
+{"ingredients": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 1
+    },
+    {
+      "tag": "forge:dusts/redstone",
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "extendedcrafting:redstone_ingot",
+    "count": 2
+  },
+  "experience": 0.5,
+  "duration": 560,
+  "power_cost": 16
+});
+
 //skystone dust to iridium shard
 <recipetype:indreb:compressing>.addJsonRecipe("custom_indreb_iridium_shard",
 {"ingredient": {

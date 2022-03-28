@@ -56,15 +56,15 @@ craftingTable.addShaped("item_user", <item:cyclic:user>, [[<tag:items:forge:plat
 
 //cyclic wireless item transfer
 craftingTable.remove(<item:cyclic:wireless_item>);
-craftingTable.addShaped("cyclic_wireless_item", <item:cyclic:wireless_item> * 2, [[<item:minecraft:amethyst_shard>, <item:minecraft:smooth_stone>, <item:minecraft:amethyst_shard>], [<item:minecraft:smooth_stone>, <item:ae2:singularity>, <item:minecraft:smooth_stone>], [<item:minecraft:amethyst_shard>, <item:minecraft:smooth_stone>, <item:minecraft:amethyst_shard>]]);
+craftingTable.addShaped("cyclic_wireless_item", <item:cyclic:wireless_item> * 2, [[<tag:items:forge:gems/amethyst>, <item:minecraft:smooth_stone>, <tag:items:forge:gems/amethyst>], [<item:minecraft:smooth_stone>, <item:extendedcrafting:ender_star>, <item:minecraft:smooth_stone>], [<tag:items:forge:gems/amethyst>, <item:minecraft:smooth_stone>, <tag:items:forge:gems/amethyst>]]);
 
 //cyclic wireless fluid transfer
 craftingTable.remove(<item:cyclic:wireless_fluid>);
-craftingTable.addShaped("cyclic_wireless_fluid", <item:cyclic:wireless_fluid> * 2, [[<item:minecraft:lapis_lazuli>, <item:minecraft:smooth_stone>, <item:minecraft:lapis_lazuli>], [<item:minecraft:smooth_stone>, <item:ae2:singularity>, <item:minecraft:smooth_stone>], [<item:minecraft:lapis_lazuli>, <item:minecraft:smooth_stone>, <item:minecraft:lapis_lazuli>]]);
+craftingTable.addShaped("cyclic_wireless_fluid", <item:cyclic:wireless_fluid> * 2, [[<item:minecraft:lapis_lazuli>, <item:minecraft:smooth_stone>, <item:minecraft:lapis_lazuli>], [<item:minecraft:smooth_stone>, <item:extendedcrafting:ender_star>, <item:minecraft:smooth_stone>], [<item:minecraft:lapis_lazuli>, <item:minecraft:smooth_stone>, <item:minecraft:lapis_lazuli>]]);
 
 //cyclic wireless energy transfer
 craftingTable.remove(<item:cyclic:wireless_energy>);
-craftingTable.addShaped("cyclic_wireless_energy", <item:cyclic:wireless_energy> * 2, [[<tag:items:forge:dusts/redstone>, <item:minecraft:smooth_stone>, <tag:items:forge:dusts/redstone>], [<item:minecraft:smooth_stone>, <item:ae2:singularity>, <item:minecraft:smooth_stone>], [<tag:items:forge:dusts/redstone>, <item:minecraft:smooth_stone>, <tag:items:forge:dusts/redstone>]]);
+craftingTable.addShaped("cyclic_wireless_energy", <item:cyclic:wireless_energy> * 2, [[<tag:items:forge:dusts/redstone>, <item:minecraft:smooth_stone>, <tag:items:forge:dusts/redstone>], [<item:minecraft:smooth_stone>, <item:extendedcrafting:ender_star>, <item:minecraft:smooth_stone>], [<tag:items:forge:dusts/redstone>, <item:minecraft:smooth_stone>, <tag:items:forge:dusts/redstone>]]);
 
 //cyclic gps card
 craftingTable.remove(<item:cyclic:location_data>);
