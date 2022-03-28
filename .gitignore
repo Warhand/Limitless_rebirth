@@ -15,6 +15,7 @@ music_sheets/**
 schematics/**
 local/ftbchunks/data/**
 simplebackups/**
+config/jei/world/**
 
 # ignore file types
 *.log
