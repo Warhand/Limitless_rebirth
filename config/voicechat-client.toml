@@ -31,13 +31,13 @@ microphone = ""
 #Empty for default device
 speaker = ""
 #If the microphone is muted (only when using voice activation)
-muted = false
+muted = true
 #If the voice chat is disabled (sound and microphone off)
-disabled = false
+disabled = true
 #If the voice chat should use semi 3D stereo sound
 stereo = true
 #If the voice chat icons should be hidden
-hide_icons = false
+hide_icons = true
 #If the group HUD should be visible
 show_group_hud = true
 #If the own icon should be shown when in a group
