@@ -613,34 +613,6 @@ craftingTable.addShaped("custom_propeller", <item:create:propeller>, [[<item:min
     }
 ]});
 
-
-//bronze ingot
-<recipetype:create:mixing>.remove(<item:alloyed:bronze_ingot>);
-<recipetype:create:mixing>.addJsonRecipe("bronze_single", {
-"ingredients": [
-    {
-      "item": "minecraft:copper_ingot"
-    },
-    {
-      "item": "minecraft:copper_ingot"
-    },
-    {
-      "item": "minecraft:copper_ingot"
-    },
-    {
-      "tag": "forge:ingots/tin"
-    }
-  ],
-  "results": [
-    {
-      "item": "alloyed:bronze_ingot",
-      "count": 3
-    }
-  ],
-  "heatRequirement": "heated"
-}
-);
-
 //extended crafting alternate crusher recipe
 mods.extendedcrafting.TableCrafting.addShaped("a303d5b0-2056-454d-9da1-c930208fe653", 0, <item:create:crushing_wheel> * 2, [
 	[<item:minecraft:air>, <item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:minecraft:air>], 
