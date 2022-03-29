@@ -396,6 +396,14 @@
     "f_135805_": "graveyard_fog_particle"
   },
   {
+    "f_135804_": "champions",
+    "f_135805_": "rank"
+  },
+  {
+    "f_135804_": "tetra",
+    "f_135805_": "sparkle"
+  },
+  {
     "f_135804_": "cyclopscore",
     "f_135805_": "blur"
   },
