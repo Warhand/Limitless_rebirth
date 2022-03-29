@@ -133,8 +133,8 @@ mods.extendedcrafting.TableCrafting.addShaped("efd1f5c2-02b4-4be0-b9a7-1a621507e
 //create recipes end
 
 //ultimate ingots
-mods.extendedcrafting.CombinationCrafting.addRecipe("2626dbb9-e950-4ed2-8064-a32a95b2de7b", <item:extendedcrafting:the_ultimate_ingot> * 4, 100000, [
-	<item:extendedcrafting:ultimate_singularity>, <item:minecraft:nether_star>, <item:extendedcrafting:ultimate_catalyst>, <item:minecraft:nether_star>, <item:minecraft:nether_star>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:minecraft:nether_star>, <item:extendedcrafting:ultimate_catalyst>, <item:extendedcrafting:ultimate_catalyst>, <item:minecraft:nether_star>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:minecraft:nether_star>, <item:minecraft:nether_star>, <item:extendedcrafting:ultimate_catalyst>, <item:minecraft:nether_star>
+mods.extendedcrafting.CombinationCrafting.addRecipe("6634a8cd-9711-43d6-9b30-4f8b68b814e0", <item:extendedcrafting:the_ultimate_ingot> * 4, 100000, [
+	<item:extendedcrafting:ultimate_singularity>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:ultimate_catalyst>, <item:extendedcrafting:ultimate_catalyst>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:ultimate_catalyst>, <item:extendedcrafting:ultimate_catalyst>, <item:extendedcrafting:crystaltine_ingot>
 ]);
 
 //botania recipes

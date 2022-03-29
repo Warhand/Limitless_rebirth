@@ -1,3 +1,5 @@
+#priority 100
+
 import crafttweaker.api.loot.condition.LootConditions;
 import crafttweaker.api.loot.modifier.CommonLootModifiers;
 import crafttweaker.api.loot.condition.LootTableIdLootCondition;
@@ -9,6 +11,9 @@ import crafttweaker.api.ingredient.type.IIngredientAny;
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
 import crafttweaker.api.resource.ResourceLocation;
 import mods.jei.JEI;
+
+//removing all relics runic altar recipes
+<recipetype:relics:runic_altar>.removeAll();
 
 val trash as IItemStack[] = [
 	<item:cyclic:apple_honey>,
@@ -176,7 +181,22 @@ val trash as IItemStack[] = [
 	<item:createdeco:brass_coinstack>,
 	<item:createdeco:iron_coinstack>,
 	<item:createdeco:gold_coinstack>,
-	<item:createdeco:netherite_coinstack>
+	<item:createdeco:netherite_coinstack>,
+	<item:extendedcrafting:ender_ingot>,
+	<item:relics:runic_altar>,
+	<item:relics:runic_anvil>,
+	<item:cyclic:beacon>,
+	<item:immersiveengineering:mold_gear>,
+	<item:tconstruct:gear_cast>,
+	<item:tconstruct:gear_sand_cast>,
+	<item:tconstruct:gear_red_sand_cast>,
+	<item:immersiveengineering:windmill>,
+	<item:immersiveengineering:watermill>,
+	<item:cyclic:soundproofing>,
+	<item:cyclic:spikes_iron>,
+	<item:cyclic:spikes_curse>,
+	<item:cyclic:spikes_fire>,
+	<item:cyclic:spikes_diamond>
 ];
 
 for item in trash{
@@ -224,7 +244,19 @@ val jei_removal as IItemStack[] = [
 	<item:createdeco:brass_coinstack>,
 	<item:createdeco:iron_coinstack>,
 	<item:createdeco:gold_coinstack>,
-	<item:createdeco:netherite_coinstack>
+	<item:createdeco:netherite_coinstack>,
+	<item:cyclic:generator_item>,
+	<item:relics:runic_altar>,
+	<item:relics:runic_anvil>,
+	<item:immersiveengineering:mold_gear>,
+	<item:tconstruct:gear_cast>,
+	<item:tconstruct:gear_sand_cast>,
+	<item:tconstruct:gear_red_sand_cast>,
+	<item:indreb:iron_plate>,
+	<item:cyclic:spikes_iron>,
+	<item:cyclic:spikes_curse>,
+	<item:cyclic:spikes_fire>,
+	<item:cyclic:spikes_diamond>
 ];
 
 for item in jei_removal{

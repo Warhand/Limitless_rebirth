@@ -430,8 +430,6 @@ val log_planks_map as IItemStack[IIngredient] = {
 	<tag:items:integrateddynamics:menril_logs>.asIIngredient(): <item:integrateddynamics:menril_planks>,
 	<tag:items:malum:soulwood_logs>.asIIngredient(): <item:malum:soulwood_planks>,
 	<tag:items:malum:runewood_logs>.asIIngredient(): <item:malum:runewood_planks>,
-	<tag:items:quark:azalea_logs>.asIIngredient(): <item:quark:azalea_planks>,
-	<tag:items:quark:blossom_logs>.asIIngredient(): <item:quark:blossom_planks>,
 	<tag:items:valhelsia_structures:lapidified_jungle_logs>.asIIngredient(): <item:valhelsia_structures:lapidified_jungle_planks>
 };
 
@@ -455,95 +453,6 @@ for log, planks in log_planks_map {
   "power_cost": 8
 });
 }
-
-//alloy smelting recipes
-
-<recipetype:indreb:alloy_smelting>.removeByName("indreb:alloy_smelting/bronze_ingot");
-<recipetype:indreb:alloy_smelting>.removeByName("indreb:alloy_smelting/steel_ingot");
-
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_bronze", 
-	{"ingredients": [
-    {
-      "item": "minecraft:copper_ingot",
-      "count": 3
-    },
-    {
-      "item": "indreb:tin_ingot",
-      "count": 1
-    }
-  ],
-  "result": {
-    "item": "alloyed:bronze_ingot",
-    "count": 4
-  },
-  "experience": 0.5,
-  "duration": 560,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_steel",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 1
-    },
-    {
-      "tag": "forge:dusts/coal",
-      "count": 3
-    }
-  ],
-  "result": {
-    "item": "alloyed:steel_ingot"
-  },
-  "experience": 0.5,
-  "duration": 560,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_advanced_alloy",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 3
-    },
-    {
-      "tag": "forge:ingots/bronze",
-      "count": 3
-    },
-    {
-      "tag": "forge:ingots/tin",
-      "count": 3
-    }
-  ],
-  "result": {
-    "item": "indreb:mixed_metal_ingot",
-    "count": 2
-  },
-  "experience": 0.5,
-  "duration": 560,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_advanced_alloy",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 1
-    },
-    {
-      "tag": "forge:dusts/redstone",
-      "count": 2
-    }
-  ],
-  "result": {
-    "item": "extendedcrafting:redstone_ingot",
-    "count": 2
-  },
-  "experience": 0.5,
-  "duration": 560,
-  "power_cost": 16
-});
 
 //skystone dust to iridium shard
 <recipetype:indreb:compressing>.addJsonRecipe("custom_indreb_iridium_shard",

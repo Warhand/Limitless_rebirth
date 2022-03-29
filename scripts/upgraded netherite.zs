@@ -142,6 +142,3 @@ smithing.remove(<item:upgradednetherite_items:enchanted_netherite_apple>);
 		"item": "upgradednetherite_items:enchanted_netherite_apple",
 		"count": 1
 }});
-
-//removing all relics runic altar recipes
-<recipetype:relics:runic_altar>.removeAll();

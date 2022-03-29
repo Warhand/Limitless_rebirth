@@ -139,8 +139,7 @@ craftingTable.addShaped("tile_transporter_empty", <item:cyclic:tile_transporter_
 
 //cyclic advanced handheld crafting table
 craftingTable.remove(<item:cyclic:crafting_bag>);
-craftingTable.addShaped("advanced_crafting_stick1", <item:cyclic:crafting_bag>, [[IIngredientEmpty.getInstance(), <item:blue_skies:lunar_crafting_table>], [<item:blue_skies:lunar_stick>, IIngredientEmpty.getInstance()]]);
-craftingTable.addShaped("advanced_crafting_stick2", <item:cyclic:crafting_bag>, [[IIngredientEmpty.getInstance(), <item:blue_skies:lunar_planks>, <item:blue_skies:lunar_planks>], [IIngredientEmpty.getInstance(), <item:blue_skies:lunar_planks>, <item:blue_skies:lunar_planks>], [<item:blue_skies:lunar_stick>, IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance()]]);
+craftingTable.addShaped("advanced_crafting_stick2", <item:cyclic:crafting_bag>, [[IIngredientEmpty.getInstance(), <item:extendedcrafting:black_iron_slate>, IIngredientEmpty.getInstance()], [<item:extendedcrafting:black_iron_slate>, <item:cyclic:crafting_stick>, <item:extendedcrafting:black_iron_slate>], [IIngredientEmpty.getInstance(), <item:extendedcrafting:black_iron_slate>, IIngredientEmpty.getInstance()]]);
 
 //cyclic handheld crafting table
 craftingTable.addShaped("crafting_stick", <item:cyclic:crafting_stick>, [[IIngredientEmpty.getInstance(), <tag:items:minecraft:planks>, <tag:items:minecraft:planks>], [IIngredientEmpty.getInstance(), <tag:items:minecraft:planks>, <tag:items:minecraft:planks>], [<tag:items:forge:rods/wooden>, IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance()]]);
@@ -207,7 +206,7 @@ craftingTable.addShaped("cyclic_magic_net", <item:cyclic:magic_net>, [[IIngredie
 
 //cyclic disenchanter
 craftingTable.remove(<item:cyclic:disenchanter>);
-craftingTable.addShaped("cyclic_disenchanter", <item:cyclic:disenchanter>, [[IIngredientEmpty.getInstance(), <item:apotheosis:scrap_tome>, IIngredientEmpty.getInstance()], [<item:blue_skies:diopside_gem>, <item:minecraft:obsidian>, <item:blue_skies:diopside_gem>], [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
+craftingTable.addShaped("cyclic_disenchanter", <item:cyclic:disenchanter>, [[IIngredientEmpty.getInstance(), <item:apotheosis:scrap_tome>, IIngredientEmpty.getInstance()], [<item:tconstruct:earth_slime_crystal_block>, <item:minecraft:obsidian>, <item:tconstruct:earth_slime_crystal_block>], [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
 
 //removing cyclic solidifier and melter recipes
 craftingTable.remove(<item:cyclic:solidifier>);
@@ -217,4 +216,10 @@ craftingTable.remove(<item:cyclic:melter>);
 
 //cyclic uncrafter
 craftingTable.remove(<item:cyclic:uncrafter>);
-craftingTable.addShaped("cyclic_uncrafter", <item:cyclic:uncrafter>, [[<tag:items:forge:storage_blocks/diamond>, <tag:items:forge:obsidian>, <tag:items:forge:storage_blocks/diamond>], [<tag:items:forge:ingots/utherium>, <tag:items:forge:ingots/regalium>, <tag:items:forge:ingots/utherium>], [<item:minecraft:calcite>, <item:minecraft:calcite>, <item:minecraft:calcite>]]);
+craftingTable.addShaped("cyclic_uncrafter", <item:cyclic:uncrafter>, [[<tag:items:forge:storage_blocks/diamond>, <tag:items:forge:obsidian>, <tag:items:forge:storage_blocks/diamond>], [<item:minecraft:smooth_stone>, <tag:items:forge:nether_stars>, <item:minecraft:smooth_stone>], [<item:minecraft:smooth_stone>, <tag:items:forge:ingots/netherite>, <item:minecraft:smooth_stone>]]);
+
+//Cyclic soundproofing
+craftingTable.addShaped("cyclic_soundproofing", <item:cyclic:soundproofing> * 4, [[<tag:items:minecraft:occludes_vibration_signals>, <item:minecraft:white_terracotta>, <tag:items:minecraft:occludes_vibration_signals>], [<item:minecraft:white_terracotta>, <item:indreb:rubber>, <item:minecraft:white_terracotta>], [<tag:items:minecraft:occludes_vibration_signals>, <item:minecraft:white_terracotta>, <tag:items:minecraft:occludes_vibration_signals>]]);
+
+//cyclic pharros beacon
+craftingTable.addShaped("cyclic_beacon", <item:cyclic:beacon>, [[<item:ae2:quartz_glass>, <item:ae2:quartz_glass>, <item:ae2:quartz_glass>], [<item:ae2:quartz_glass>, <item:extendedcrafting:ender_star>, <item:ae2:quartz_glass>], [<item:extendedcrafting:ultimate_catalyst>, <tag:items:forge:storage_blocks/emerald>, <item:extendedcrafting:ultimate_catalyst>]]);

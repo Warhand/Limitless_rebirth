@@ -33,7 +33,7 @@ craftingTable.addShaped("waystones_warp_stone", <item:waystones:warp_stone>, [[<
 
 //waystones warp dust
 craftingTable.remove(<item:waystones:warp_dust>);
-craftingTable.addShapeless("waystones_warp_dust", <item:waystones:warp_dust> * 4, [<item:minecraft:ender_eye>, <item:minecraft:chorus_flower>, <item:minecraft:redstone>]);
+craftingTable.addShapeless("waystones_warp_dust", <item:waystones:warp_dust> * 2, [<tag:items:forge:dusts/ender>, <item:minecraft:chorus_fruit>, <item:minecraft:blaze_powder>]);
 
 //waystone warp plate 
 craftingTable.remove(<item:waystones:warp_plate>);
@@ -78,10 +78,6 @@ craftingTable.addShaped("quark_oddities_crate", <item:quark:crate>, [[<tag:items
 //integrated dynamics logic cable
 craftingTable.remove(<item:integrateddynamics:cable>);
 craftingTable.addShapedMirrored("integrateddynamics_crafting_cable", <constant:minecraft:mirroraxis:all>, <item:integrateddynamics:cable> * 4, [[<item:integrateddynamics:crystalized_menril_chunk>, <item:minecraft:end_rod>, <item:integrateddynamics:crystalized_menril_chunk>], [<item:integrateddynamics:crystalized_menril_chunk>, <item:immersiveengineering:rs_engineering>, <item:integrateddynamics:crystalized_menril_chunk>], [<item:integrateddynamics:crystalized_menril_chunk>, <item:minecraft:end_rod>, <item:integrateddynamics:crystalized_menril_chunk>]]);
-
-//quark copper pipe
-craftingTable.remove(<item:quark:pipe>);
-craftingTable.addShaped("quark_oddities_crafting_pipe", <item:quark:pipe> * 8, [[<tag:items:forge:ingots/copper>], [<item:quark:framed_glass>], [<tag:items:forge:ingots/copper>]]);
 
 //pipez item pipe
 craftingTable.remove(<item:pipez:item_pipe>);
@@ -213,279 +209,6 @@ craftingTable.addShapeless("ars_nouveau_worn_notebook", <item:ars_nouveau:worn_n
 //adding spirit orb recipe
 craftingTable.addShaped("spirit_orb", <item:paraglider:spirit_orb>, [[IIngredientEmpty.getInstance(), <item:botania:life_essence>, IIngredientEmpty.getInstance()], [<item:botania:life_essence>, <item:minecraft:nether_star>, <item:botania:life_essence>], [IIngredientEmpty.getInstance(), <item:botania:life_essence>, IIngredientEmpty.getInstance()]]);
 
-//replacing squeezer recipes
-
-val squeeze_trash as IItemStack[] = [
-	<item:minecraft:raw_copper>,
-	<item:minecraft:diamond>,
-	<item:minecraft:coal>,
-	<item:minecraft:raw_gold>,
-	<item:minecraft:lapis_lazuli>,
-	<item:minecraft:raw_iron>,
-	<item:minecraft:netherite_scrap>,
-	<item:minecraft:emerald>,
-	<item:minecraft:quartz>,
-	<item:create:raw_zinc>,
-	<item:minecraft:redstone>
-];
-
-for item in squeeze_trash{
-	<recipetype:integrateddynamics:mechanical_squeezer>.remove(item);
-	<recipetype:integrateddynamics:squeezer>.remove(item);
-}
-
-<tag:items:forge:ores/gold>.remove(<item:minecraft:nether_gold_ore>);
-
-val raw_ore_squeezing as IItemStack[MCTag<ItemDefinition>] = {
-    <tag:items:forge:raw_ores/iron>: <item:create:crushed_iron_ore>,
-    <tag:items:forge:raw_ores/gold>: <item:create:crushed_gold_ore>,
-    <tag:items:forge:raw_ores/silver>: <item:create:crushed_silver_ore>,
-    <tag:items:forge:raw_ores/aluminum>: <item:create:crushed_aluminum_ore>,
-    <tag:items:forge:raw_ores/uranium>: <item:create:crushed_uranium_ore>,
-    <tag:items:forge:raw_ores/copper>: <item:create:crushed_copper_ore>,
-    <tag:items:forge:raw_ores/nickel>: <item:create:crushed_nickel_ore>,
-    <tag:items:forge:raw_ores/lead>: <item:create:crushed_lead_ore>,
-    <tag:items:forge:raw_materials/zinc>: <item:create:crushed_zinc_ore>,
-	<tag:items:forge:ores/diamond>: <item:minecraft:diamond>,
-	<tag:items:forge:ores/emerald>: <item:minecraft:emerald>,
-	<tag:items:forge:ores/netherite_scrap>: <item:minecraft:netherite_scrap>,
-	<tag:items:rosie:malum/soul>: <item:malum:soulstone_cluster>,
-	<tag:items:forge:ores/iron>: <item:minecraft:raw_iron>,
-	<tag:items:forge:ores/gold>: <item:minecraft:raw_gold>,
-	<tag:items:forge:ores/coal>: <item:minecraft:coal>,
-	<tag:items:forge:ores/tin>: <item:indreb:raw_tin>,
-	<tag:items:forge:ores/lead>: <item:immersiveengineering:raw_lead>,
-	<tag:items:forge:ores/silver>: <item:immersiveengineering:raw_silver>,
-	<tag:items:forge:ores/uranium>: <item:immersiveengineering:raw_uranium>,
-	<tag:items:forge:ores/nickel>: <item:immersiveengineering:raw_nickel>,
-	<tag:items:blue_skies:ores/ventium>: <item:blue_skies:raw_ventium>,
-	<tag:items:blue_skies:ores/pyrope>: <item:blue_skies:pyrope_gem>,
-	<tag:items:blue_skies:ores/diopside>: <item:blue_skies:diopside_gem>,
-	<tag:items:blue_skies:ores/falsite>: <item:blue_skies:raw_falsite>,
-	<tag:items:blue_skies:ores/horizonite>: <item:blue_skies:raw_horizonite>,
-	<tag:items:forge:ores/zinc>: <item:create:raw_zinc>,
-	<tag:items:forge:ores/cloggrum>: <item:undergarden:raw_cloggrum>,
-	<tag:items:forge:ores/utherium>: <item:undergarden:utherium_crystal>,
-	<tag:items:forge:ores/regalium>: <item:undergarden:regalium_crystal>,
-	<tag:items:forge:ores/froststeel>: <item:undergarden:raw_froststeel>,
-	<tag:items:forge:raw_ores/tin>: <item:create:crushed_tin_ore>
-};
-
-for raw, crushed in raw_ore_squeezing{
-    <recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_" + crushed.registryName.path, {
-  "item": raw,
-  "result": {
-    "items": [
-        crushed,
-      {
-        "item": crushed.registryName,
-        "chance": 0.25 as float
-      }
-    ]
-  }
-});
-}
-
-for raw, crushed in raw_ore_squeezing{
-    <recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_squeeze_mechanical_" + crushed.registryName.path, {
-  "item": raw,
-  "result": {
-    "items": [
-        crushed,
-      {
-        "item": crushed.registryName,
-        "chance": 0.75 as float
-      }
-    ]
-  },
-  "duration": 20
-});
-}
-
-val multi_output_squeezing as IItemStack[MCTag<ItemDefinition>] = {
-	<tag:items:forge:ores/quartz>: <item:minecraft:quartz>,
-	<tag:items:rosie:malum/blazing>: <item:malum:blazing_quartz>,
-	<tag:items:forge:ores/certus_quartz>: <item:ae2:certus_quartz_crystal>,
-	<tag:items:blue_skies:ores/moonstone>: <item:blue_skies:moonstone_shard>,
-	<tag:items:forge:ores/copper>: <item:minecraft:raw_copper>
-};
-
-for raw, crushed in multi_output_squeezing{
-    <recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_multi_" + crushed.registryName.path, {
-  "item": raw,
-  "result": {
-    "items": [
-        {
-        "item": {
-          "item": crushed.registryName,
-          "count": 2
-        }
-      },
-      {
-          "item": crushed.registryName,
-		  "chance": 0.25
-        }
-    ]
-  }
-});
-}
-
-for raw, crushed in multi_output_squeezing{
-    <recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_squeeze_multi_mechanical_" + crushed.registryName.path, {
-  "item": raw,
-  "result": {
-    "items": [
-        {
-        "item": {
-          "item": crushed.registryName,
-          "count": 2
-        }
-      },
-      {
-          "item": crushed.registryName,
-		  "chance": 0.75
-      }
-    ]
-  },
-  "duration": 20
-});
-}
-
-val many_output_squeezing as IItemStack[MCTag<ItemDefinition>] = {
-	<tag:items:rosie:nethergold>: <item:minecraft:gold_nugget>,
-	<tag:items:forge:ores/lapis>: <item:minecraft:lapis_lazuli>,
-	<tag:items:forge:ores/redstone>: <item:minecraft:redstone>,
-	
-};
-
-for raw, crushed in many_output_squeezing{
-    <recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_many_" + crushed.registryName.path, {
-  "item": raw,
-  "result": {
-    "items": [
-        {
-        "item": {
-          "item": crushed.registryName,
-          "count": 7
-        }
-      },
-      {
-        "item": {
-          "item": crushed.registryName,
-		  "count": 2
-        },
-		"chance": 0.5
-      }
-    ]
-  }
-});
-}
-
-for raw, crushed in many_output_squeezing{
-    <recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_squeeze_many_mechanical" + crushed.registryName.path, {
-  "item": raw,
-  "result": {
-    "items": [
-       {
-        "item": {
-          "item": crushed.registryName,
-          "count": 9
-        }
-      },
-      {
-        "item": {
-          "item": crushed.registryName,
-		  "count": 3
-        },
-		"chance": 0.75
-      }
-    ]
-  },
-    "duration": 20
-});
-}
-
-<recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_nether_wart", {
-  "item": "minecraft:nether_wart_block",
-  "result": {
-    "items": [
-       {
-        "item": {
-          "item": "minecraft:nether_wart",
-          "count": 5
-        }
-      },
-      {
-        "item": {
-          "item": "minecraft:nether_wart",
-		  "count": 2
-        },
-		"chance": 0.75
-      }
-    ]
-  },
-    "duration": 20
-});
-
-<recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_squeeze_nether_wart_mechanical", {
-  "item": "minecraft:nether_wart_block",
-  "result": {
-    "items": [
-       {
-        "item": {
-          "item": "minecraft:nether_wart",
-          "count": 6
-        }
-      },
-      {
-        "item": {
-          "item": "minecraft:nether_wart",
-		  "count": 3
-        },
-		"chance": 0.75
-      }
-    ]
-  },
-    "duration": 10
-});
-
-<recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_diamond_dust", {
-  "item": "minecraft:diamond",
-  "result": {
-    "items": [
-       {
-        "item": {
-          "item": "indreb:diamond_dust",
-          "count": 1
-        }
-      }
-    ]
-  },
-    "duration": 40
-});
-
-<recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_squeeze_diamond_dust_mechanical", {
-  "item": "minecraft:diamond",
-  "result": {
-    "items": [
-       {
-        "item": {
-          "item": "indreb:diamond_dust",
-          "count": 1
-        }
-      },
-      {
-        "item": {
-          "item": "indreb:diamond_dust",
-		  "count": 1
-        },
-		"chance": 0.10
-      }
-    ]
-  },
-    "duration": 30
-});
-
 //Create storage interface
 craftingTable.remove(<item:create:portable_storage_interface>);
 craftingTable.addShapeless("portable_storage_interface", <item:create:portable_storage_interface>, [<item:create:andesite_casing>, <item:create:smart_chute>]);
@@ -535,14 +258,14 @@ craftingTable.addShaped("bundle", <item:minecraft:bundle>, [[<tag:items:forge:st
 
 //quarryplus marker plus recipe
 craftingTable.remove(<item:quarryplus:marker>);
-craftingTable.addShapedMirrored("marker_plus", MirrorAxis.HORIZONTAL, <item:quarryplus:marker>, [[<tag:items:forge:dyes/yellow>, <tag:items:forge:storage_blocks/redstone>, <tag:items:forge:dyes/black>], [<tag:items:forge:dyes/black>, <tag:items:forge:rods/iron>, <tag:items:forge:dyes/yellow>], [<tag:items:forge:dyes/yellow>, <tag:items:forge:rods/iron>, <tag:items:forge:dyes/black>]]);
+craftingTable.addShaped("marker_plus", <item:quarryplus:marker>, [[<item:minecraft:gold_ingot>], [<item:minecraft:redstone_torch>]]);
 
 //quarryplus chunk marker recipe
 craftingTable.remove(<item:quarryplus:marker16>);
 craftingTable.addShaped("marker_chunk", <item:quarryplus:marker16>, [[IIngredientEmpty.getInstance(), <item:quarryplus:marker>, IIngredientEmpty.getInstance()], [<item:quarryplus:marker>, <tag:items:forge:rods/blaze>, <item:quarryplus:marker>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/blaze>, IIngredientEmpty.getInstance()]]);
 
 //quarryplus recipe
-craftingTable.addShaped("quarry", <item:quarryplus:quarry>, [[<item:immersiveengineering:heavy_engineering>, <item:quarryplus:marker>, <item:immersiveengineering:heavy_engineering>], [<item:immersiveengineering:heavy_engineering>, <item:quarryplus:mining_well>, <item:immersiveengineering:heavy_engineering>], [<item:create:electron_tube>, <item:immersiveengineering:drillhead_steel>, <item:create:electron_tube>]]);
+craftingTable.addShaped("quarry", <item:quarryplus:quarry>, [[<tag:items:forge:plates/steel>, <item:quarryplus:marker>, <tag:items:forge:plates/steel>], [<item:minecraft:diamond>, <item:quarryplus:mining_well>, <item:minecraft:diamond>], [<tag:items:forge:plates/steel>, <item:minecraft:diamond_pickaxe>, <tag:items:forge:plates/steel>]]);
 
 //quarryplus statuschecker recipe
 craftingTable.addShaped("quarry_statuschecker", <item:quarryplus:status_checker>, [[<item:quarryplus:marker>, IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance()], [<tag:items:forge:ingots/iron>, <tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/iron>], [<tag:items:forge:ingots/iron>, <tag:items:minecraft:buttons>, <tag:items:forge:ingots/iron>]]);
@@ -569,7 +292,7 @@ craftingTable.addShaped("quarry_y_setter", <item:quarryplus:y_setter>, [[<item:q
 });
 
 //quarryplus mining well recipe
-craftingTable.addShaped("mining_well", <item:quarryplus:mining_well>, [[<tag:items:forge:ingots/iron>, <item:create:shaft>, <tag:items:forge:ingots/iron>], [<tag:items:forge:dusts/redstone>, <item:create:shaft>, <tag:items:forge:dusts/redstone>], [<tag:items:forge:ingots/iron>, <item:immersiveengineering:drillhead_iron>, <tag:items:forge:ingots/iron>]]);
+craftingTable.addShaped("mining_well", <item:quarryplus:mining_well>, [[<tag:items:forge:plates/iron>, <tag:items:forge:rods/copper>, <tag:items:forge:plates/iron>], [<tag:items:forge:dusts/redstone>, <tag:items:forge:rods/copper>, <tag:items:forge:dusts/redstone>], [<tag:items:forge:plates/iron>, <item:minecraft:iron_pickaxe>, <tag:items:forge:plates/iron>]]);
 
 //quarryplus replacing module recipe
 craftingTable.remove(<item:quarryplus:replacer_module>);
@@ -893,17 +616,17 @@ for block, crushed in block_crushed_map_many {
 //nether wart block uncrafting
 craftingTable.removeByName("cyclic:crafting/nether_wart_reverse");
 
-////Reach upgrade level 1 recipe
-//craftingTable.remove(<item:effortlessbuilding:reach_upgrade1>);
-//craftingTable.addShaped("effortlessbuilding_reach_upgrade1", <item:effortlessbuilding:reach_upgrade1>, [[IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()], [<item:minecraft:honey_bottle>, <item:minecraft:magma_cream>, <item:minecraft:honey_bottle>], [IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()]]);
-//
-////reach upgrade level 2 recipe
-//craftingTable.remove(<item:effortlessbuilding:reach_upgrade2>);
-//craftingTable.addShaped("effortlessbuilding_reach_upgrade2", <item:effortlessbuilding:reach_upgrade2>, [[IIngredientEmpty.getInstance(), <item:minecraft:emerald>, IIngredientEmpty.getInstance()], [<item:minecraft:emerald>, <item:effortlessbuilding:reach_upgrade1>, <item:minecraft:emerald>], [IIngredientEmpty.getInstance(), <item:minecraft:emerald>, IIngredientEmpty.getInstance()]]);
-//
-////reach upgrade level 2 recipe
-//craftingTable.remove(<item:effortlessbuilding:reach_upgrade3>);
-//craftingTable.addShaped("effortlessbuilding_reach_upgrade3", <item:effortlessbuilding:reach_upgrade3>, [[IIngredientEmpty.getInstance(), <item:minecraft:chorus_flower>, IIngredientEmpty.getInstance()], [<item:minecraft:chorus_flower>, <item:effortlessbuilding:reach_upgrade2>, <item:minecraft:chorus_flower>], [IIngredientEmpty.getInstance(), <item:minecraft:chorus_flower>, IIngredientEmpty.getInstance()]]);
+//Reach upgrade level 1 recipe
+craftingTable.remove(<item:effortlessbuilding:reach_upgrade1>);
+craftingTable.addShaped("effortlessbuilding_reach_upgrade1", <item:effortlessbuilding:reach_upgrade1>, [[IIngredientEmpty.getInstance(), <item:tconstruct:earth_slime_crystal>, IIngredientEmpty.getInstance()], [<item:tconstruct:earth_slime_crystal>, <item:minecraft:slime_ball>, <item:tconstruct:earth_slime_crystal>], [IIngredientEmpty.getInstance(), <item:tconstruct:earth_slime_crystal>, IIngredientEmpty.getInstance()]]);
+
+//reach upgrade level 2 recipe
+craftingTable.remove(<item:effortlessbuilding:reach_upgrade2>);
+craftingTable.addShaped("effortlessbuilding_reach_upgrade2", <item:effortlessbuilding:reach_upgrade2>, [[IIngredientEmpty.getInstance(), <item:tconstruct:ichor_slime_crystal>, IIngredientEmpty.getInstance()], [<item:tconstruct:ichor_slime_crystal>, <item:tconstruct:ichor_slime_ball>, <item:tconstruct:ichor_slime_crystal>], [IIngredientEmpty.getInstance(), <item:tconstruct:ichor_slime_crystal>, IIngredientEmpty.getInstance()]]);
+
+//reach upgrade level 2 recipe
+craftingTable.remove(<item:effortlessbuilding:reach_upgrade3>);
+craftingTable.addShaped("effortlessbuilding_reach_upgrade3", <item:effortlessbuilding:reach_upgrade3>, [[IIngredientEmpty.getInstance(), <item:tconstruct:ender_slime_crystal>, IIngredientEmpty.getInstance()], [<item:tconstruct:ender_slime_crystal>, <item:tconstruct:ender_slime_ball>, <item:tconstruct:ender_slime_crystal>], [IIngredientEmpty.getInstance(), <item:tconstruct:ender_slime_crystal>, IIngredientEmpty.getInstance()]]);
 
 //ender carrot fix
 <item:cyclic:carrot_ender>.removeTooltip("Stackable hidden shields");
@@ -967,3 +690,18 @@ craftingTable.addShaped("indreb_advanced_circuit", <item:indreb:advanced_circuit
 craftingTable.remove(<item:extendedcrafting:redstone_ingot>);
 
 craftingTable.addShaped("extendedcrafting_redstone_ingot", <item:extendedcrafting:redstone_ingot>, [[<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>], [<tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/redstone>], [<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>]]);
+
+//Tinkers slime crystal tooltips
+<item:tconstruct:earth_slime_crystal>.addTooltip("Found in geodes in the Overworld.");
+<item:tconstruct:sky_slime_crystal>.addTooltip("Found in geodes in the Overworld.");
+<item:tconstruct:ichor_slime_crystal>.addTooltip("Found in geodes in the Nether.");
+<item:tconstruct:ender_slime_crystal>.addTooltip("Found in geodes in the End.");
+
+//Biomes o plenty brimstone fumarole recipe
+craftingTable.addShaped("custom_brimstone_fumarole", <item:biomesoplenty:brimstone_fumarole>, [[<item:biomesoplenty:brimstone>, <item:minecraft:campfire>, <item:biomesoplenty:brimstone>], [<item:biomesoplenty:brimstone>, <item:minecraft:magma_block>, <item:biomesoplenty:brimstone>]]);
+
+//IE waterwheel
+craftingTable.addShaped("immersiveengineering_watermill", <item:immersiveengineering:watermill>, [[IIngredientEmpty.getInstance(), <item:immersiveengineering:waterwheel_segment>, IIngredientEmpty.getInstance()], [<item:immersiveengineering:waterwheel_segment>, <tag:items:forge:rods/steel>, <item:immersiveengineering:waterwheel_segment>], [IIngredientEmpty.getInstance(), <item:immersiveengineering:waterwheel_segment>, IIngredientEmpty.getInstance()]]);
+
+//IE windmill
+craftingTable.addShaped("immersiveengineering_windmill", <item:immersiveengineering:windmill>, [[<item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>], [<item:immersiveengineering:windmill_blade>, <tag:items:forge:rods/iron>, <item:immersiveengineering:windmill_blade>], [<item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>]]);

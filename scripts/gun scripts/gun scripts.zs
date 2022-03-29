@@ -99,7 +99,8 @@ craftingTable.addShaped("gunpart_hammer", <item:immersiveengineering:gunpart_ham
 		"item": "minecraft:netherite_ingot"
 	},
 	{
-		"item": "immersiveengineering:speedloader"
+		"item": "minecraft:comparator",
+		"count": 4
 	}
   ],
   "result": {
@@ -115,7 +116,8 @@ craftingTable.addShaped("gunpart_hammer", <item:immersiveengineering:gunpart_ham
 		"item": "minecraft:netherite_ingot"
 	},
 	{
-		"item": "create:precision_mechanism"
+		"item": "minecraft:repeater",
+		"count": 4
 	}
   ],
   "result": {
@@ -233,4 +235,4 @@ craftingTable.addShaped("gunpart_hammer", <item:immersiveengineering:gunpart_ham
 //replacing CGM workbench recipes
 craftingTable.remove(<item:cgm:workbench>);
 
-craftingTable.addShaped("cgm_workbench", <item:cgm:workbench>, [[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>], [<tag:items:forge:ingots/iron>, <tag:items:forge:storage_blocks/iron>, <tag:items:forge:ingots/iron>], [<tag:items:forge:ingots/iron>, <item:minecraft:air>, <tag:items:forge:ingots/iron>]]);
+craftingTable.addShaped("cgm_workbench", <item:cgm:workbench>, [[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>], [<tag:items:forge:rods/iron>, <tag:items:forge:storage_blocks/iron>, <tag:items:forge:rods/iron>], [<tag:items:forge:rods/iron>, <item:minecraft:air>, <tag:items:forge:rods/iron>]]);
