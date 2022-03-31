@@ -37,7 +37,7 @@ C:.
     Botania-1.18.1-429.jar
     buildinggadgets-3.12.0-build.4+mc1.18.1.jar
     caelus-forge-1.18.1-3.0.0.2.jar
-    champions-forge-1.18.2-2.1.2.1.jar
+    champions-forge-1.18.2-2.1.2.2.jar
     ChunkAnimator-1.18-1.3.3.jar
     Chunky-1.2.164.jar
     citadel-1.10.10-1.18.jar
@@ -45,6 +45,7 @@ C:.
     collective-1.18.1-4.7.jar
     CommonCapabilities-1.18.1-2.8.2.jar
     Compat-O-Plenty-1.18.1-1.4.2.jar
+    configured-1.5.3-1.18.1.jar
     constructionwand-1.18.1-2.7.jar
     CosmeticArmorReworked-1.18.1-v1a.jar
     craftingtweaks-forge-1.18.1-14.0.2.jar
@@ -75,6 +76,7 @@ C:.
     entityculling-forge-mc1.18-1.5.0.jar
     expandability-5.0.0-forge.jar
     expandedstorage-7.3.10+1.18.1.jar
+    experienceobelisk_v1.3.0-1.18.1.jar
     ExtendedCrafting-1.18.1-4.0.0.jar
     fancymenu_forge_2.6.4_MC_1.18-1.18.1.jar
     farsight-1.18-1.6.jar
@@ -99,6 +101,7 @@ C:.
     geckolib-1.18-forge-3.0.11.jar
     goblintraders-1.7.0-1.18.1.jar
     goldenhopper-1.2.6-1.18.1.jar
+    grimoire_of_tetra-1.1.1.jar
     gun-mod-1.1.3-1.18.1.jar
     Highlighter-1.18.1-1.1.2.jar
     Iceberg-1.18.1-1.0.40.jar
@@ -146,6 +149,7 @@ C:.
     pipez-1.18.1-1.0.1.jar
     Placebo-1.18.1-6.1.1.jar
     plonk-1.18.1-10.0.1.jar
+    portabletanks-1.1.4-mc1.18.jar
     PrettyPipes-1.11.0.jar
     ProgressiveBosses-3.5.4-mc1.18.1.jar
     PuzzlesLib-v3.2.1-1.18.1-Forge.jar
@@ -181,6 +185,7 @@ C:.
     tellme-forge-1.18.1-0.10.0.jar
     TerraBlender-forge-1.18.1-1.1.0.77.jar
     tetra-1.18.1-4.8.1.jar
+    tetrapak-1.18.1-0.4.2.jar
     The_Graveyard_1.6_(FORGE)_for_1.18.1.jar
     The_Undergarden-1.18.1-0.6.3.jar
     ToastControl-1.18.1-6.0.1.jar
@@ -210,5 +215,5 @@ C:.
     
 No subfolders exist 
 
-Tue 03/29/2022 
-03:15 PM
+Thu 03/31/2022 
+03:28 AM
