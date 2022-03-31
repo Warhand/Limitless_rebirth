@@ -1,7 +1,7 @@
 {
-  "fogEnabled": false,
-  "fogDensity": 6.0,
-  "fogColor": "#FFFFFF",
+  "fogEnabled": true,
+  "fogDensity": 1000.0,
+  "fogColor": "#270d0d",
   "particlesEnabled": false,
   "particleType": "minecraft:ash",
   "particleAmount": 15,
