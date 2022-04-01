@@ -9,7 +9,7 @@ customization-meta {
 }
 
 customization {
-  name = overworld
+  name = undergarden
   action = setbackgroundpanorama
 }
 

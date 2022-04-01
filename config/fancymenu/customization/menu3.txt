@@ -9,7 +9,7 @@ customization-meta {
 }
 
 customization {
-  name = overworld
+  name = end
   action = setbackgroundpanorama
 }
 

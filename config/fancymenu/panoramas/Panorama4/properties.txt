@@ -1,7 +1,7 @@
 type = panorama
 
 panorama-meta {
-  name = overworld
+  name = undergarden
   speed = 1.0
   fov = 85.0
   angle = 25.0
