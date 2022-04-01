@@ -4,8 +4,13 @@ customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
   renderorder = foreground
-  randommode = false
+  randommode = true
   randomonlyfirsttime = false
+}
+
+customization {
+  name = name_of_your_panorama
+  action = setbackgroundpanorama
 }
 
 customization {
