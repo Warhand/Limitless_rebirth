@@ -9,7 +9,7 @@ customization-meta {
 }
 
 customization {
-  name = undergarden
+  name = everdawn
   action = setbackgroundpanorama
 }
 
