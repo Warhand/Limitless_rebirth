@@ -1,7 +1,13 @@
 # Limitless_rebirth
 The Github repository for the Minecraft Modpack, Limitless Rebirth
 
-# Modpack Roadmap
+## Official sites
+
+Discord server: https://discord.gg/7Dq3yRSgzQ
+
+Curseforge page: https://www.curseforge.com/minecraft/modpacks/limitless-rebirth
+
+## Modpack Roadmap
 A list of the things I want to finish implementing or add before I consider the pack truly complete
 - [X] Create initial modlist
 - [ ] Make at least 10 custom rooms for each room type in dimensional dungeons (In progress)
@@ -98,7 +104,7 @@ A list of the things I want to finish implementing or add before I consider the 
   - [X] Apotheosis tome recipes adjusted
 - [ ] Seperate Assorted recipes.zs into multiple sub-files, sorted by what mods recipes they change
 
-# Mods I'm waiting to get a 1.18.2 release before I can update the pack to that version
+## Mods I'm waiting to get a 1.18.2 release before I can update the pack to that version
 - Create: Alloyed
 - Alternate current
 - Ars Nouveau
@@ -135,4 +141,3 @@ A list of the things I want to finish implementing or add before I consider the 
 - Joy of painting
 - Blue skies
 - Restored earth
- 
