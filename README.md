@@ -78,10 +78,25 @@ A list of the things I want to finish implementing or add before I consider the 
 - [ ] Customize mod configs and data
   - [ ] Champions
   - [ ] Treasure bags
+  - [ ] Chunk animator
 - [ ] Standardize Processing recipes
   - [ ] Grinding (Almost complete)
   - [ ] Alloying (Almost complete)
   - [ ] Pressing (Almost complete)
+- [ ] Update modpack to 1.18.2
+- [ ] Launch official discord server
+- [ ] Launch official multiplayer server
+- [ ] Create multiplayer server setup pack
+- [ ] Add CT scripts (Largely in progress)
+  - [X] Crayfish gun recipes adjusted
+  - [X] Crayfish ammo recipes adjusted
+  - [ ] Loot table additions
+  - [ ] endgame recipes
+  - [ ] assorted recipes
+  - [X] Botania weapon values adjusted
+  - [X] Cyclic machine recipes adjusted
+  - [X] Apotheosis tome recipes adjusted
+- [ ] Seperate Assorted recipes.zs into multiple sub-files, sorted by what mods recipes they change
 
 # Mods I'm waiting to get a 1.18.2 release before I can update the pack to that version
 - Create: Alloyed
