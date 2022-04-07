@@ -65,7 +65,6 @@ A list of the things I want to finish implementing or add before I consider the 
   - [ ] Pretty pipes
   - [ ] RFTools
   - [ ] Re-chiseled
-  - [ ] Re-chiseled
   - [ ] Relics
   - [ ] Schools of Magic
   - [ ] Simple Kiln
