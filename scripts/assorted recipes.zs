@@ -206,9 +206,6 @@ craftingTable.addShapedMirrored("malum_guidebook", <constant:minecraft:mirroraxi
 craftingTable.remove(<item:ars_nouveau:worn_notebook>);
 craftingTable.addShapeless("ars_nouveau_worn_notebook", <item:ars_nouveau:worn_notebook>, [<tag:items:forge:gems/source>, <item:minecraft:book>]);
 
-//adding spirit orb recipe
-craftingTable.addShaped("spirit_orb", <item:paraglider:spirit_orb>, [[IIngredientEmpty.getInstance(), <item:botania:life_essence>, IIngredientEmpty.getInstance()], [<item:botania:life_essence>, <item:minecraft:nether_star>, <item:botania:life_essence>], [IIngredientEmpty.getInstance(), <item:botania:life_essence>, IIngredientEmpty.getInstance()]]);
-
 //Create storage interface
 craftingTable.remove(<item:create:portable_storage_interface>);
 craftingTable.addShapeless("portable_storage_interface", <item:create:portable_storage_interface>, [<item:create:andesite_casing>, <item:create:smart_chute>]);
@@ -705,3 +702,66 @@ craftingTable.addShaped("immersiveengineering_watermill", <item:immersiveenginee
 
 //IE windmill
 craftingTable.addShaped("immersiveengineering_windmill", <item:immersiveengineering:windmill>, [[<item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>], [<item:immersiveengineering:windmill_blade>, <tag:items:forge:rods/iron>, <item:immersiveengineering:windmill_blade>], [<item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>, <item:immersiveengineering:windmill_blade>]]);
+
+//building gadget recipe
+craftingTable.addShaped("buildinggadgets_gadget_building", <item:buildinggadgets:gadget_building>.withTag({state: {serializer: "buildinggadgets:dummy_serializer" as string, state: {Name: "minecraft:air" as string}, data: {}}}), [[<tag:items:forge:plates/iron>, <tag:items:forge:dusts/redstone>, <tag:items:forge:plates/iron>], [<tag:items:forge:gems/diamond>, <tag:items:forge:dusts/redstone>, <tag:items:forge:gems/diamond>], [<tag:items:forge:plates/iron>, <tag:items:forge:gems/lapis>, <tag:items:forge:plates/iron>]]);
+
+//exchanging gadgbet recipe
+craftingTable.addShaped("buildinggadgets_gadget_exchanging", <item:buildinggadgets:gadget_exchanging>.withTag({state: {serializer: "buildinggadgets:dummy_serializer" as string, state: {Name: "minecraft:air" as string}, data: {}}}), [[<tag:items:forge:plates/iron>, <tag:items:forge:dusts/redstone>, <tag:items:forge:plates/iron>], [<tag:items:forge:gems/diamond>, <tag:items:forge:gems/lapis>, <tag:items:forge:gems/diamond>], [<tag:items:forge:plates/iron>, <tag:items:forge:gems/lapis>, <tag:items:forge:plates/iron>]]);
+
+//copy paste gadget recipe
+craftingTable.addShaped("buildinggadgets_gadget_copy_paste", <item:buildinggadgets:gadget_copy_paste>, [[<tag:items:forge:plates/iron>, <tag:items:forge:dusts/redstone>, <tag:items:forge:plates/iron>], [<tag:items:forge:gems/emerald>, <tag:items:forge:dusts/redstone>, <tag:items:forge:gems/emerald>], [<tag:items:forge:plates/iron>, <tag:items:forge:gems/lapis>, <tag:items:forge:plates/iron>]]);
+
+//destruction gadget recipe
+craftingTable.addShaped("buildinggadgets_gadget_destruction", <item:buildinggadgets:gadget_destruction>, [[<tag:items:forge:plates/steel>, <tag:items:forge:dusts/redstone>, <tag:items:forge:plates/steel>], [<tag:items:forge:ender_pearls>, <tag:items:forge:dusts/redstone>, <tag:items:forge:ender_pearls>], [<tag:items:forge:plates/steel>, <tag:items:forge:gems/lapis>, <tag:items:forge:plates/steel>]]);
+
+//immersive engineering wire connectors
+
+craftingTable.addShaped("immersiveengineering_crafting_connector_lv", <item:immersiveengineering:connector_lv> * 4, [[IIngredientEmpty.getInstance(), <tag:items:forge:rods/copper>, IIngredientEmpty.getInstance()], [<item:minecraft:terracotta>, <tag:items:forge:rods/copper>, <item:minecraft:terracotta>], [<item:minecraft:terracotta>, <tag:items:forge:rods/copper>, <item:minecraft:terracotta>]]);
+
+craftingTable.addShaped("immersiveengineering_crafting_connector_lv_relay", <item:immersiveengineering:connector_lv_relay> * 8, [[IIngredientEmpty.getInstance(), <tag:items:forge:rods/copper>, IIngredientEmpty.getInstance()], [<item:minecraft:terracotta>, <tag:items:forge:rods/copper>, <item:minecraft:terracotta>]]);
+
+craftingTable.addShaped("immersiveengineering_crafting_connector_mv", <item:immersiveengineering:connector_mv> * 4, [[IIngredientEmpty.getInstance(), <tag:items:forge:rods/electrum>, IIngredientEmpty.getInstance()], [<item:minecraft:terracotta>, <tag:items:forge:rods/electrum>, <item:minecraft:terracotta>], [<item:minecraft:terracotta>, <tag:items:forge:rods/electrum>, <item:minecraft:terracotta>]]);
+
+craftingTable.addShaped("immersiveengineering_crafting_connector_mv_relay", <item:immersiveengineering:connector_mv_relay> * 8, [[IIngredientEmpty.getInstance(), <tag:items:forge:rods/electrum>, IIngredientEmpty.getInstance()], [<item:minecraft:terracotta>, <tag:items:forge:rods/electrum>, <item:minecraft:terracotta>]]);
+
+craftingTable.addShaped("immersiveengineering_crafting_connector_hv", <item:immersiveengineering:connector_hv> * 4, [[IIngredientEmpty.getInstance(), <tag:items:forge:rods/aluminum>, IIngredientEmpty.getInstance()], [<item:minecraft:terracotta>, <tag:items:forge:rods/aluminum>, <item:minecraft:terracotta>], [<item:minecraft:terracotta>, <tag:items:forge:rods/aluminum>, <item:minecraft:terracotta>]]);
+
+craftingTable.addShaped("immersiveengineering_crafting_connector_hv_relay", <item:immersiveengineering:connector_hv_relay> * 8, [[IIngredientEmpty.getInstance(), <tag:items:forge:rods/aluminum>, IIngredientEmpty.getInstance()], [<item:immersiveengineering:insulating_glass>, <tag:items:forge:rods/aluminum>, <item:immersiveengineering:insulating_glass>], [<item:immersiveengineering:insulating_glass>, <tag:items:forge:rods/aluminum>, <item:immersiveengineering:insulating_glass>]]);
+
+//furnace burner recipe
+craftingTable.addShaped("furnace_burner_recipe", <item:createaddition:furnace_burner>, [[<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>], [<item:create:andesite_alloy>, IIngredientEmpty.getInstance(), <item:create:andesite_alloy>], [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>]]);
+
+//extended crafting crafting core
+mods.extendedcrafting.TableCrafting.addShaped("6f70060a-99fa-4e8b-9542-8504804183c1", 0, <item:extendedcrafting:crafting_core>, [
+	[<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:elite_catalyst>, <item:extendedcrafting:elite_catalyst>, <item:extendedcrafting:elite_catalyst>, <item:extendedcrafting:black_iron_ingot>], 
+	[<item:extendedcrafting:elite_component>, <item:extendedcrafting:frame>, <item:extendedcrafting:ender_ingot>, <item:extendedcrafting:frame>, <item:extendedcrafting:elite_component>], 
+	[<item:extendedcrafting:elite_component>, <item:extendedcrafting:ender_ingot>, <item:extendedcrafting:luminessence>, <item:extendedcrafting:ender_ingot>, <item:extendedcrafting:elite_component>], 
+	[<item:extendedcrafting:elite_component>, <item:extendedcrafting:frame>, <item:extendedcrafting:ender_ingot>, <item:extendedcrafting:frame>, <item:extendedcrafting:elite_component>], 
+	[<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:black_iron_ingot>]
+]);
+
+//Pretty pipes upgrade modules, adding plates to recipes
+
+craftingTable.addShaped("prettypipes_medium_extraction_module", <item:prettypipes:medium_extraction_module>, [[IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, IIngredientEmpty.getInstance()], [<tag:items:forge:plates/iron>, <item:prettypipes:low_extraction_module>, <tag:items:forge:plates/iron>], [IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, IIngredientEmpty.getInstance()]]);
+
+craftingTable.addShaped("prettypipes_medium_crafting_module", <item:prettypipes:medium_crafting_module>, [[<tag:items:forge:plates/gold>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/gold>], [<tag:items:forge:plates/iron>, <item:prettypipes:low_crafting_module>, <tag:items:forge:plates/iron>], [<tag:items:forge:plates/gold>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/gold>]]);
+
+craftingTable.addShaped("prettypipes_medium_filter_module", <item:prettypipes:medium_filter_module>, [[IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, IIngredientEmpty.getInstance()], [<item:minecraft:iron_ingot>, <item:prettypipes:low_filter_module>, <item:minecraft:iron_ingot>], [IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, IIngredientEmpty.getInstance()]]);
+
+craftingTable.addShaped("prettypipes_medium_speed_module", <item:prettypipes:medium_speed_module>, [[<tag:items:forge:plates/iron>, <item:minecraft:sugar>, <tag:items:forge:plates/iron>], [<item:minecraft:sugar>, <item:prettypipes:low_speed_module>, <item:minecraft:sugar>], [<tag:items:forge:plates/iron>, <item:minecraft:sugar>, <tag:items:forge:plates/iron>]]);
+
+craftingTable.addShaped("prettypipes_medium_retrieval_module", <item:prettypipes:medium_retrieval_module>, [[<item:minecraft:redstone_block>, <item:minecraft:redstone_block>, <item:minecraft:redstone_block>], [<tag:items:forge:plates/gold>, <item:prettypipes:low_retrieval_module>, <tag:items:forge:plates/gold>], [IIngredientEmpty.getInstance(), <tag:items:forge:plates/gold>, IIngredientEmpty.getInstance()]]);
+
+craftingTable.addShaped("prettypipes_high_extraction_module", <item:prettypipes:high_extraction_module>, [[<tag:items:forge:plates/gold>, <item:minecraft:diamond>, <tag:items:forge:plates/gold>], [<tag:items:forge:plates/gold>, <item:prettypipes:medium_extraction_module>, <tag:items:forge:plates/gold>], [<tag:items:forge:plates/gold>, <tag:items:forge:plates/gold>, <tag:items:forge:plates/gold>]]);
+
+craftingTable.addShaped("prettypipes_high_filter_module", <item:prettypipes:high_filter_module>, [[<tag:items:forge:plates/gold>, <item:minecraft:iron_bars>, <tag:items:forge:plates/gold>], [<item:minecraft:iron_bars>, <item:prettypipes:medium_filter_module>, <item:minecraft:iron_bars>], [<tag:items:forge:plates/gold>, <item:minecraft:iron_bars>, <tag:items:forge:plates/gold>]]);
+
+craftingTable.addShaped("prettypipes_high_speed_module", <item:prettypipes:high_speed_module>, [[<tag:items:forge:plates/gold>, <item:minecraft:sugar>, <tag:items:forge:plates/gold>], [<item:minecraft:sugar>, <item:prettypipes:medium_speed_module>, <item:minecraft:sugar>], [<tag:items:forge:plates/gold>, <item:minecraft:sugar>, <tag:items:forge:plates/gold>]]);
+
+craftingTable.addShaped("prettypipes_high_retrieval_module", <item:prettypipes:high_retrieval_module>, [[<item:minecraft:redstone_block>, <item:minecraft:diamond>, <item:minecraft:redstone_block>], [<tag:items:forge:plates/gold>, <item:prettypipes:medium_retrieval_module>, <tag:items:forge:plates/gold>], [<item:minecraft:redstone_block>, <tag:items:forge:plates/gold>, <item:minecraft:redstone_block>]]);
+
+craftingTable.addShaped("prettypipes_high_crafting_module", <item:prettypipes:high_crafting_module>, [[<tag:items:forge:plates/gold>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/gold>], [<tag:items:forge:plates/gold>, <item:prettypipes:medium_crafting_module>, <tag:items:forge:plates/gold>], [<tag:items:forge:plates/gold>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/gold>]]);
+
+//Cyclic terra petra recipe
+craftingTable.addShaped("cyclic_terra_preta", <item:cyclic:terra_preta> * 4, [[<item:cyclic:biomass>, <item:cyclic:soil>, <item:cyclic:biomass>], [<item:cyclic:soil>, <item:alexsmobs:bone_serpent_tooth>, <item:cyclic:soil>], [<item:cyclic:biomass>, <item:cyclic:soil>, <item:cyclic:biomass>]]);
