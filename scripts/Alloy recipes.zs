@@ -113,6 +113,60 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
   "power_cost": 16
 });
 
+<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_andesite_alloy1",
+{"ingredients": [
+    {
+      "item": "minecraft:andesite"
+    },
+    {
+      "tag": "forge:nuggets/zinc"
+    }
+  ],
+  "result": {
+    "item": "create:andesite_alloy"
+  },
+  "experience": 0.5,
+  "duration": 300,
+  "power_cost": 16
+});
+
+<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_andesite_alloy2",
+{"ingredients": [
+    {
+      "item": "minecraft:andesite"
+    },
+    {
+      "tag": "forge:nuggets/iron"
+    }
+  ],
+  "result": {
+    "item": "create:andesite_alloy"
+  },
+  "experience": 0.5,
+  "duration": 300,
+  "power_cost": 16
+});
+
+<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_black_iron",
+{"ingredients": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 1
+    },
+    {
+      "tag": "forge:dyes/black",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "extendedcrafting:black_iron_ingot",
+    "count": 1
+  },
+  "experience": 0.5,
+  "duration": 400,
+  "power_cost": 16
+});
+
 //Create alloy recipes
 <recipetype:create:mixing>.remove(<item:alloyed:bronze_ingot>);
 <recipetype:create:mixing>.addJsonRecipe("create_mixing_bronze", {
@@ -161,6 +215,27 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 }
 );
 
+<recipetype:create:mixing>.addJsonRecipe("create_mixing_black_iron", {
+"ingredients": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 1
+    },
+    {
+      "tag": "forge:dyes/black",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "extendedcrafting:black_iron_ingot",
+      "count": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}
+);
+
 <recipetype:create:mixing>.addJsonRecipe("create_mixing_ender_ingot", {
 "ingredients": [
     {
@@ -194,5 +269,29 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 "result":{"item":"extendedcrafting:ender_ingot"},
 "input0":{"tag":"forge:ingots/steel"},
 "input1":{"tag":"forge:dusts/ender"}
+}
+);
+
+<recipetype:immersiveengineering:alloy>.addJsonRecipe("ie_alloy_black_iron", {
+"time":200,
+"result":{"item":"extendedcrafting:black_iron_ingot"},
+"input0":{"tag":"forge:ingots/iron"},
+"input1":{"tag":"forge:dyes/black"}
+}
+);
+
+<recipetype:immersiveengineering:alloy>.addJsonRecipe("ie_alloy_andesite_alloy1", {
+"time":200,
+"result":{"item":"create:andesite_alloy"},
+"input0":{"item":"minecraft:andesite"},
+"input1":{"tag":"forge:nuggets/zinc"}
+}
+);
+
+<recipetype:immersiveengineering:alloy>.addJsonRecipe("ie_alloy_andesite_alloy2", {
+"time":200,
+"result":{"item":"create:andesite_alloy"},
+"input0":{"item":"minecraft:andesite"},
+"input1":{"tag":"forge:nuggets/iron"}
 }
 );
