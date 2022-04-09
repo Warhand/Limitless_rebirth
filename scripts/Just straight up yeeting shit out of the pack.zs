@@ -196,7 +196,35 @@ val trash as IItemStack[] = [
 	<item:cyclic:spikes_iron>,
 	<item:cyclic:spikes_curse>,
 	<item:cyclic:spikes_fire>,
-	<item:cyclic:spikes_diamond>
+	<item:cyclic:spikes_diamond>,
+	<item:cyclic:experience_pylon>,
+	<item:buildinggadgets:gadget_building>,
+	<item:buildinggadgets:gadget_exchanging>,
+	<item:buildinggadgets:gadget_copy_paste>,
+	<item:buildinggadgets:gadget_destruction>,
+	<item:immersiveengineering:connector_lv>,
+	<item:immersiveengineering:connector_lv_relay>,
+	<item:immersiveengineering:connector_mv>,
+	<item:immersiveengineering:connector_mv_relay>,
+	<item:immersiveengineering:connector_hv>,
+	<item:immersiveengineering:connector_hv_relay>,
+	<item:createaddition:furnace_burner>,
+	<item:immersiveposts:stick_gold>,
+	<item:immersiveposts:stick_copper>,
+	<item:extendedcrafting:crafting_core>,
+	<item:prettypipes:medium_extraction_module>,
+	<item:prettypipes:medium_crafting_module>,
+	<item:prettypipes:medium_filter_module>,
+	<item:prettypipes:medium_speed_module>,
+	<item:prettypipes:medium_retrieval_module>,
+	<item:prettypipes:high_extraction_module>,
+	<item:prettypipes:high_filter_module>,
+	<item:prettypipes:high_speed_module>,
+	<item:prettypipes:high_retrieval_module>,
+	<item:prettypipes:high_crafting_module>,
+	<item:cyclic:elevation_wand>,
+	<item:cyclic:spell_water>,
+	<item:cyclic:terra_preta>
 ];
 
 for item in trash{
@@ -256,7 +284,9 @@ val jei_removal as IItemStack[] = [
 	<item:cyclic:spikes_iron>,
 	<item:cyclic:spikes_curse>,
 	<item:cyclic:spikes_fire>,
-	<item:cyclic:spikes_diamond>
+	<item:cyclic:spikes_diamond>,
+	<item:cyclic:experience_pylon>,
+	<item:cyclic:crusher>
 ];
 
 for item in jei_removal{
