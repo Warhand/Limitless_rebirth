@@ -220,7 +220,8 @@ public var loot_removal = [
 <item:quark:diamond_heart>,
 <item:paraglider:spirit_orb>,
 <item:aquaculture:treasure_chest>,
-<item:minecraft:spectral_arrow>
+<item:minecraft:spectral_arrow>,
+<item:cyclic:elevation_wand>
 ]as IIngredient[];
 
 
@@ -238,38 +239,39 @@ public var all_chests = [
 //ocean
 
 val ocean_loot as float[IItemStack] = {
-	<item:artifacts:umbrella>               : 0.03,
-	<item:artifacts:novelty_drinking_hat>   : 0.03,
-	<item:artifacts:snorkel>                : 0.03,
-	<item:artifacts:charm_of_sinking>       : 0.03,
-	<item:artifacts:antidote_vessel>        : 0.03,
-	<item:artifacts:helium_flamingo>        : 0.03,
-	<item:artifacts:golden_hook>            : 0.03,
-	<item:artifacts:aqua_dashers>           : 0.03,
-	<item:cyclic:charm_stealthpotion>       : 0.03,
-	<item:cyclic:charm_water>               : 0.03,
-	<item:cyclic:charm_venom>               : 0.03,
-	<item:relics:old_boot>                  : 0.03,
-	<item:minecraft:potion>                 : 0.03,
-	<item:paraglider:spirit_orb>            : 0.03,
-	<item:schoolsofmagic:letter_ccw>        : 0.03,
-	<item:relics:reflection_necklace>       : 0.03,
-	<item:relics:drowned_belt>              : 0.03,
-	<item:relics:jellyfish_necklace>        : 0.03,
-	<item:relics:hunter_belt>               : 0.03,
-	<item:relics:arrow_quiver>              : 0.03,
-	<item:relics:spider_necklace>           : 0.03,
-	<item:cyclic:charm_speed>               : 0.03,
-	<item:cyclic:charm_starvation>          : 0.03,
-	<item:cyclic:charm_magicdefense>        : 0.03,
-	<item:relics:leather_belt>              : 0.03,
-	<item:relics:amphibian_boot>            : 0.03,
-	<item:artifacts:running_shoes>          : 0.03,
-	<item:artifacts:whoopee_cushion>        : 0.03,
-	<item:aquaculture:lockbox>              : 0.03,
-	<item:aquaculture:treasure_chest>       : 0.03,
-	<item:aquaculture:box>                  : 0.03,
-	<item:artifacts:flippers>               : 0.03
+	<item:artifacts:umbrella>               :0.04,
+	<item:artifacts:novelty_drinking_hat>   :0.04,
+	<item:artifacts:snorkel>                :0.04,
+	<item:artifacts:charm_of_sinking>       :0.04,
+	<item:artifacts:antidote_vessel>        :0.04,
+	<item:artifacts:helium_flamingo>        :0.04,
+	<item:artifacts:golden_hook>            :0.04,
+	<item:artifacts:aqua_dashers>           :0.04,
+	<item:cyclic:charm_stealthpotion>       :0.04,
+	<item:cyclic:charm_water>               :0.04,
+	<item:cyclic:charm_venom>               :0.04,
+	<item:relics:old_boot>                  :0.04,
+	<item:minecraft:potion>                 :0.04,
+	<item:paraglider:spirit_orb>            :0.04,
+	<item:schoolsofmagic:letter_ccw>        :0.04,
+	<item:relics:reflection_necklace>       :0.04,
+	<item:relics:drowned_belt>              :0.04,
+	<item:relics:jellyfish_necklace>        :0.04,
+	<item:relics:hunter_belt>               :0.04,
+	<item:relics:arrow_quiver>              :0.04,
+	<item:relics:spider_necklace>           :0.04,
+	<item:cyclic:charm_speed>               :0.04,
+	<item:cyclic:charm_starvation>          :0.04,
+	<item:cyclic:charm_magicdefense>        :0.04,
+	<item:relics:leather_belt>              :0.04,
+	<item:relics:amphibian_boot>            :0.04,
+	<item:artifacts:running_shoes>          :0.04,
+	<item:artifacts:whoopee_cushion>        :0.04,
+	<item:aquaculture:lockbox>              :0.04,
+	<item:aquaculture:treasure_chest>       :0.04,
+	<item:aquaculture:box>                  :0.04,
+	<item:cyclic:spell_water>               :0.04,
+	<item:artifacts:flippers>               :0.04
 };
 
 loot.modifiers.register("loot_name_in_oceans",
@@ -430,6 +432,7 @@ val overworld_loot as float[IItemStack] = {
 	<item:cyclic:crystal_shovel>                           :0.03,
 	<item:cyclic:crystal_axe>                              :0.03,
 	<item:cyclic:crystal_hoe>                              :0.03,
+	<item:cyclic:spell_water>							   :0.03,
 	<item:paraglider:spirit_orb>                           :0.1
 };
 
@@ -945,7 +948,8 @@ val end_loot as float[IItemStack] = {
 	<item:cyclic:charm_xp_speed>                                          :0.02,
 	<item:cyclic:charm_wing>                                              :0.02,
 	<item:cyclic:charm_ultimate>                                          :0.02,
-	<item:cyclic:ender_bag>                                               :0.02
+	<item:cyclic:ender_bag>                                               :0.02,
+	<item:cyclic:elevation_wand>                                          :0.02
 };
 
 loot.modifiers.register("loot_name_in_ender",
@@ -1095,7 +1099,8 @@ val treasure_loot as float[IItemStack] = {
 	<item:cyclic:charm_water>                                              :0.005,
 	<item:cyclic:charm_invisible>                                          :0.005,
 	<item:cyclic:charm_crit>                                               :0.005,
-	<item:cyclic:charm_stealthpotion>                                      :0.005
+	<item:cyclic:charm_stealthpotion>                                      :0.005,
+	<item:cyclic:elevation_wand>										   :0.005
 };
 
 loot.modifiers.register("loot_name_in_treasure",
