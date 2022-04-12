@@ -760,7 +760,7 @@ val frozen_loot as float[IItemStack] = {
 	<item:cyclic:crystal_pickaxe>                          :0.03,
 	<item:schoolsofmagic:letter_ccw>                       :0.03,
 	<item:relics:drowned_belt>                             :0.03,
-	<item:relics:jellyfish_necklace>                       :0.03,
+	<item:relics:jellyfish_necklace>                       :0.03
 };
 
 loot.modifiers.register("loot_name_in_frozen",
@@ -790,7 +790,6 @@ loot.modifiers.register("loot_name_in_frozen",
 //nether
 
 val nether_loot as float[IItemStack] = {
-	<item:relics:enders_hand>                                              :0.02,
 	<item:cyclic:crystal_pickaxe>                                          :0.02,
 	<item:cyclic:crystal_axe>                                              :0.02,
 	<item:cyclic:crystal_sword>                                            :0.02,
