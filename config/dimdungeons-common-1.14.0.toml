@@ -20,10 +20,10 @@
 
 #Enemy Sets for Dungeons
 [enemySets]
-	basicEnemySet1 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
-	basicEnemySet2 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
-	advancedEnemySet1 = ["minecraft:pillager", "minecraft:skeleton", "minecraft:stray", "minecraft:blaze"]
-	advancedEnemySet2 = ["minecraft:wither_skeleton", "minecraft:hoglin", "minecraft:vindicator", "minecraft:witch"]
+	basicEnemySet1 = ["restored_earth:bone_spider", "graveyard:acolyte", "graveyard:ghoul", "graveyard:revenant", "undergarden:rotwalker", "undergarden:nargoyle", "undergarden:rotling", "restored_earth:skeleton_wolf", "alexsmobs:mimicube", "ars_nouveau:wilden_hunter", "ars_nouveau:wilden_stalker", "minecraft:cave_spider", "blue_skies:polargeist", "blue_skies:artificial_golem", "blue_skies:infested_swarmer", "blue_skies:nested_spider", "minecraft:wither_skeleton", "blue_skies:shrumpty", "minecraft:spider", "minecraft:vindicator", "minecraft:zombie", "minecraft:drowned", "minecraft:husk", "quark:wraith"]
+	basicEnemySet2 = ["undergarden:sploogie", "graveyard:reaper", "restored_earth:lobber_zombie", "alexsmobs:soul_vulture", "blue_skies:emberback", "ars_nouveau:wilden_guardian", "alexsmobs:guster", "beyond_earth:alien_zombie", "minecraft:blaze", "minecraft:pillager", "minecraft:illusioner", "minecraft:skeleton", "minecraft:stray", "minecraft:witch"]
+	advancedEnemySet1 = ["restored_earth:bone_spider", "undergarden:forgotten_guardian", "undergarden:rotbeast", "undergarden:rotwalker", "undergarden:nargoyle", "graveyard:acolyte", "graveyard:ghoul", "ars_nouveau:wilden_hunter", "beyond_earth:martian_raptor", "minecraft:cave_spider", "minecraft:piglin", "minecraft:piglin_brute", "minecraft:wither_skeleton", "blue_skies:shrumpty", "beyond_earth:mogler", "minecraft:vindicator", "minecraft:drowned", "minecraft:husk"]
+	advancedEnemySet2 = ["restored_earth:viler_witch", "graveyard:reaper", "quark:forgotten", "alexsmobs:soul_vulture", "blue_skies:emberback", "alexsmobs:straddler", "minecraft:blaze", "minecraft:evoker", "minecraft:pillager", "minecraft:illusioner", "minecraft:stray"]
 	basicEnemyHealthScaling = 1.0
 	advancedEnemyHealthScaling = 2.0
 	#The number of themes to expect in the common config.
