@@ -7,7 +7,7 @@ C:.
     AI-Improvements-1.18-0.4.0.jar
     AkashicTome-1.5-19.jar
     alexsmobs-1.17.4.jar
-    alloyed-1.18.1-v1.2a.jar
+    alloyed-1.18.1-v1.3.jar
     alternate-current-mc1.18-1.1.0.jar
     Amplified Nether 1.0.1 ~ Forge.jar
     Apotheosis-1.18.1-5.3.3.jar
@@ -62,7 +62,7 @@ C:.
     curiouselytra-forge-1.18.1-5.0.1.0.jar
     customizableelytra-1.18-1.6.3.jar
     Cyclic-1.18.1-1.6.15.jar
-    CyclopsCore-1.18.1-1.13.2.jar
+    CyclopsCore-1.18.1-1.13.3.jar
     Decorative Blocks-forge-1.18.1-2.0.4.jar
     dimdungeons-1.14.0-forge-1.18.1.jar
     Ding-1.18-1.3.0.jar
@@ -91,7 +91,7 @@ C:.
     findme-3.0.5-forge.jar
     flywheel-forge-1.18-0.6.1.jar
     FogTweaker-1.18.1-1.5.0.jar
-    FramedBlocks-4.3.1.jar
+    FramedBlocks-4.3.2.jar
     framework-0.2.3-1.18.1.jar
     ftb-chunks-forge-1801.3.4-build.127.jar
     ftb-essentials-1801.1.6-build.37.jar
@@ -144,7 +144,6 @@ C:.
     no_null_processors_forge-2.0.2+1.18.1.jar
     OpenLoader-Forge-1.18.1-11.0.4.jar
     PackingTape-1.18-0.12.2.jar
-    panorama-1.2.0.jar
     Paraglider-1.18-1.5.0.0.jar
     Patchouli-1.18.1-65.jar
     PickUpNotifier-v3.1.0-1.18.1-Forge.jar
@@ -159,7 +158,7 @@ C:.
     Quark-3.0-334.jar
     QuarkOddities-1.18.jar
     questsadditions-1.18-1.2.0.jar
-    rechiseled-1.0.10-mc1.18.jar
+    rechiseled-1.0.10a-mc1.18.jar
     relics-0.3.4.1.jar
     repurposed_structures_forge-4.2.11+1.18.1.jar
     respawningshulkers_1.18.1-1.7.jar
@@ -227,5 +226,5 @@ C:.
     
 No subfolders exist 
 
-Sat 04/02/2022 
-07:01 PM
+Sun 04/17/2022 
+11:43 PM
