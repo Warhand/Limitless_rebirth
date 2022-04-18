@@ -1,0 +1,11 @@
+{    
+	"name": "Mixer",    
+	"icon": "immersiveengineering:mixer",    
+	"category": "patchouli:heavy_machinery",    
+	"pages": [        
+		{            
+			"type": "patchouli:text",            
+			"text": "This is a test entry, but it should show up!"        
+		}    
+	]
+}

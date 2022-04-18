@@ -1,0 +1,11 @@
+{    
+	"name": "Automated Workbench",    
+	"icon": "immersiveengineering:auto_workbench",    
+	"category": "patchouli:heavy_machinery",    
+	"pages": [        
+		{            
+			"type": "patchouli:text",            
+			"text": "This is a test entry, but it should show up!"        
+		}    
+	]
+}

@@ -1,0 +1,11 @@
+{    
+	"name": "Heavy plated shield",    
+	"icon": "immersiveengineering:razor_wire",    
+	"category": "patchouli:tools",    
+	"pages": [        
+		{            
+			"type": "patchouli:text",            
+			"text": "placeholder"        
+		}
+	]
+}

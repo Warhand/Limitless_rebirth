@@ -1,0 +1,11 @@
+{    
+	"name": "Railgun",    
+	"icon": "immersiveengineering:razor_wire",    
+	"category": "patchouli:tools",    
+	"pages": [        
+		{            
+			"type": "patchouli:text",            
+			"text": "placeholder"        
+		}
+	]
+}
