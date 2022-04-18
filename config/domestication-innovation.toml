@@ -39,6 +39,9 @@
 	#percent chance of end city loot table containing Void Cloud book:
 	#Range: 0.0 ~ 1.0
 	void_cloud_loot_chance = 0.13
+	#percent chance of mineshaft loot table containing Ore Scenting book:
+	#Range: 0.0 ~ 1.0
+	ore_scenting_loot_chance = 0.1
 
 [enchantments]
 	#true if health boost enchant is enabled, false if disabled
@@ -81,4 +84,14 @@
 	undead_curse_enabled = true
 	#true if infamy curse enchant is enabled, false if disabled
 	infamy_curse_enabled = true
+	#true if shadow hands enchant is enabled, false if disabled
+	shadow_hands_enabled = true
+	#true if disc jockey enchant is enabled, false if disabled
+	disc_jockey_enabled = true
+	#true if defusal enchant is enabled, false if disabled
+	defusal_enabled = true
+	#true if warping bite enchant is enabled, false if disabled
+	warping_bite_enabled = true
+	#true if ore scenting enchant is enabled, false if disabled
+	ore_scenting_enabled = true
 
