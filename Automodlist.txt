@@ -14,7 +14,7 @@ C:.
     appleskin-forge-mc1.18-2.4.0.jar
     appliedenergistics2-10.0.1.jar
     Aquaculture-1.18.1-2.3.3.jar
-    architectury-3.8.47.jar
+    architectury-3.8.51.jar
     armorpointspp-forge-1.18-2.1.4.jar
     ArmorSetBonuses_1.18_V5.jar
     ars_creo-1.18.1-1.0.0-BETA1.jar
@@ -39,7 +39,7 @@ C:.
     buildinggadgets-3.12.0-build.4+mc1.18.1.jar
     caelus-forge-1.18.1-3.0.0.2.jar
     cgm-1.2.1-1.18.1.jar
-    champions-forge-1.18.2-2.1.4.0.jar
+    champions-forge-1.18.2-2.1.5.1.jar
     ChunkAnimator-1.18-1.3.3.jar
     Chunky-1.2.164.jar
     citadel-1.10.10-1.18.jar
@@ -53,7 +53,7 @@ C:.
     craftingtweaks-forge-1.18.1-14.0.2.jar
     CraftTweaker-forge-1.18.1-9.0.81.jar
     create-mc1.18.1_v0.4f.jar
-    createaddition-1.18.1-20220331a.jar
+    createaddition-1.18.1-20220420a.jar
     createdeco-1.2.5-1.18.jar
     creeperoverhaul-1.18.1-0.3.0-forge.jar
     Croptopia-1.18-FORGE-1.8.3.jar
@@ -67,7 +67,7 @@ C:.
     Decorative Blocks-forge-1.18.1-2.0.4.jar
     dimdungeons-1.14.0-forge-1.18.1.jar
     Ding-1.18-1.3.0.jar
-    domesticationinnovation-1.2.0-1.18.1.jar
+    domesticationinnovation-1.3.0-1.18.1.jar
     drawerfps-1.18.2-2.3.jar
     DungeonCrawl-1.18.1-2.3.7.jar
     durabilitytooltip-1.1.0-mc1.18.jar
@@ -80,7 +80,7 @@ C:.
     expandedstorage-7.3.10+1.18.1.jar
     experienceobelisk_v1.3.0-1.18.1.jar
     ExtendedCrafting-1.18.1-4.0.0.jar
-    fancymenu_forge_2.6.4-1_MC_1.18-1.18.1.jar
+    fancymenu_forge_2.6.5_MC_1.18-1.18.1.jar
     farsight-1.18.2-1.8.jar
     farsightedmobs-forge-1.1-1.18.jar
     FastFurnace-1.18.1-6.0.2.jar
@@ -103,7 +103,7 @@ C:.
     geckolib-1.18-forge-3.0.11.jar
     goblintraders-1.7.0-1.18.1.jar
     goldenhopper-1.2.6-1.18.1.jar
-    grimoire_of_tetra-1.1.1.jar
+    grimoire_of_tetra-1.2.jar
     Highlighter-1.18.1-1.1.2.jar
     Iceberg-1.18.1-1.0.40.jar
     ImmersiveEngineering-1.18.1-7.1.0-145.jar
@@ -120,7 +120,7 @@ C:.
     item-filters-forge-1801.2.6-build.16.jar
     ItemBorders-1.18.1-1.1.5.jar
     Jade-1.18.1-4.4.1.jar
-    JadeAddons-1.18.1-1.0.0.jar
+    JadeAddons-1.18.1-1.0.1.jar
     JAMD-1.6.0-build.23+mc1.18.1.jar
     jei-1.18.1-9.4.1.101.jar
     JEITweaker-1.18.1-3.0.0.5.jar
@@ -153,7 +153,6 @@ C:.
     plonk-1.18.1-10.0.1.jar
     portabletanks-1.1.4-mc1.18.jar
     PrettyPipes-1.11.0.jar
-    ProgressiveBosses-3.5.4-mc1.18.1.jar
     PuzzlesLib-v3.2.1-1.18.1-Forge.jar
     Quark-3.0-334.jar
     QuarkOddities-1.18.jar
@@ -170,7 +169,7 @@ C:.
     rftoolsstorage-1.18-3.0.6.jar
     rftoolsutility-1.18-4.0.10.jar
     scaffoldingpower-1.18-1.3.0.jar
-    ScalableCatsForce-2.13.8-build-2-with-library.jar
+    ScalableCatsForce-2.13.8-build-4-with-library.jar
     selene-1.18-1.13.2.jar
     silent-lib-1.18.1-6.1.0.jar
     simple-rpc-1.18-2.7.2.jar
@@ -226,5 +225,5 @@ C:.
     
 No subfolders exist 
 
-Mon 04/18/2022 
-12:52 AM
+Thu 04/21/2022 
+05:49 AM
