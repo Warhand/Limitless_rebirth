@@ -1,7 +1,6 @@
 {    
 	"name": "Redstone Acid",    
 	"icon": "immersiveengineering:redstone_acid_bucket",
-	"sortnum": 7,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            

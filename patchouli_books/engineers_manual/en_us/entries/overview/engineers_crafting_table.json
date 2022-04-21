@@ -1,7 +1,6 @@
 {    
 	"name": "Engineer's worktable",    
 	"icon": "immersiveengineering:craftingtable",
-	"sortnum": 5,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            

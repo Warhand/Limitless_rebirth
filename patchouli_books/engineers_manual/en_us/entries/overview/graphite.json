@@ -1,7 +1,6 @@
 {    
 	"name": "Graphite",    
 	"icon": "immersiveengineering:ingot_hop_graphite",
-	"sortnum": 13,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            

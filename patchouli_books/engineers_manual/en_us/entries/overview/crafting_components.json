@@ -1,7 +1,6 @@
 {    
 	"name": "Crafting components",    
 	"icon": "immersiveengineering:component_iron",
-	"sortnum": 4,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            
@@ -24,7 +23,7 @@
 			"input0": "minecraft:iron_ingot#2",
 			"input1": "minecraft:copper_ingot",
 			"output": "immersiveengineering:component_iron",
-			"text": "Using this blueprint in an $(l:patchouli:overview/engineers_crafting_table)Engineer's Workbench$() will allow you to construct the components at a reduced cost."
+			"text": "Using this blueprint in an $(l:patchouli:overview/workbench_and_blueprints)Engineer's Workbench$() will allow you to construct the components at a reduced cost."
 		},
 		{
 			"type": "patchouli:engineers_workbench",

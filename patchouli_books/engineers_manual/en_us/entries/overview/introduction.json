@@ -14,7 +14,7 @@
 		},
 		{            
 			"type": "patchouli:text",            
-			"text": "Energy is transmitted between connectors by the use of wires. Wires can only bridge a limited distance of blocks, so you will need to use more connectors as relays between the wires. $(br)You have the choice between three different types of wire, which differ in transferrates, ?, ?, ? Flux/tick. To switch between different types of wire, you will need to use transformers."        
+			"text": "Energy is transmitted between connectors by the use of wires. Wires can only bridge a limited distance of blocks, so you will need to use more connectors as relays between the wires. $(br)You have the choice between three different types of wire, which differ in transferrates, 2048, 8192, 32768 Flux/tick. To switch between different types of wire, you will need to use transformers."        
 		},
 		{            
 			"type": "patchouli:crafting",

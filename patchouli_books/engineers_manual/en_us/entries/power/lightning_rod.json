@@ -14,12 +14,12 @@
 		},
 		{            
 			"type": "patchouli:multiblock",
-			"name": "Diesel generator",
+			"name": "Lightning Rod",
 			"multiblock": {
 				"pattern": [
-				["CCC ", "CVC ", "CCC "],
-				["TLT ", "LVL ", "TLT "],
-				["SHS ", "HVH0", "SHS "]
+				["CCC_", "CVC_", "CCC_"],
+				["TLT_", "LVL_", "TLT_"],
+				["SHS_", "HVH0", "SHS_"]
 				],
 				"mapping": {
 					"C": "immersiveengineering:coil_lv",

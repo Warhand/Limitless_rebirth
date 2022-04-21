@@ -17,9 +17,9 @@
 			"name": "Diesel generator",
 			"multiblock": {
 				"pattern": [
-				["R H   ", "RHHH  ", "R H   "],
-				["RHHHG ", "RHHHG ", "RHrHG "],
-				["RSSSF ", "RFFFG0", "RSSSF "]
+				["R H  _", "RHHH _", "R H  _"],
+				["RHHHG_", "RHHHG_", "RHrHG_"],
+				["RSSSF_", "RFFFG0", "RSSSF_"]
 				],
 				"mapping": {
 					"H": "immersiveengineering:heavy_engineering",
@@ -30,7 +30,7 @@
 					"r": "immersiveengineering:rs_engineering"
 				}
 			},
-			"text": "The structure is built from the following $(t:13 Heavy Engineering Blocks, 9 Radiator Blocks, 6 Steel Scaffoldings, 5 Fluid Pipes, 4 Generator Blocks, 1 Redstone Engineering block)$(#007500)blocks$(). (Orange wool in place of fluid pipes)"        
+			"text": "The structure is built from the following $(t:13 Heavy Engineering Blocks, 9 Radiator Blocks, 6 Steel Scaffoldings, 5 Fluid Pipes, 4 Generator Blocks, 1 Redstone Engineering block)$(#007500)blocks$(). ($(t:Certain blocks crash if rendered in the patchouli multiblock page, in case you're wondering why I'm using this instead)$(#007500)Orange wool$() in place of fluid pipes)"        
 		},
 		{            
 			"type": "patchouli:text",            

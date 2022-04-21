@@ -2,7 +2,6 @@
 	"name": "Ores",    
 	"icon": "immersiveengineering:ore_aluminum",    
 	"category": "patchouli:overview_and_resources",
-	"sortnum": 0,	
 	"pages": [        
 		{            
 			"type": "patchouli:text",            

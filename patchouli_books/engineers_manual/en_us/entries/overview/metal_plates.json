@@ -2,7 +2,6 @@
 	"name": "Metal Plates",    
 	"icon": "immersiveengineering:plate_iron",    
 	"category": "patchouli:overview_and_resources",
-	"sortnum": 3,
 	"pages": [        
 		{            
 			"type": "patchouli:text",            

@@ -1,7 +1,6 @@
 {    
 	"name": "Mineral Deposits",    
 	"icon": "immersiveengineering:survey_tools",
-	"sortnum": 0,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            

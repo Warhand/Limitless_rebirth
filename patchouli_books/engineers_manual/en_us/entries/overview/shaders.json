@@ -1,7 +1,6 @@
 {    
 	"name": "Shaders",    
 	"icon": "immersiveengineering:shader_bag_uncommon",
-	"sortnum": 14,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            

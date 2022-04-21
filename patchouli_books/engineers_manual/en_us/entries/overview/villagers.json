@@ -1,7 +1,6 @@
 {    
 	"name": "Villagers",    
 	"icon": "limitless_rebirth:textures/villager.png",
-	"sortnum": 8,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [        
 		{            

@@ -1,7 +1,6 @@
 {    
 	"name": "Alloy Kiln",    
 	"icon": "immersiveengineering:alloy_smelter",
-	"sortnum": 9,
 	"category": "patchouli:overview_and_resources",    
 	"pages": [
 		{            
@@ -25,7 +24,11 @@
 					"K": "immersiveengineering:alloybrick"
 				}
 			},
-			"text": "To form the Kiln, arrange 8 of the Kiln Bricks in a 2x2x2 cube, and rightclick one of blocks with an Engineer's Hammer."        
+			"text": "The structure is built from the following $(t:8 Alloy Kiln Bricks)$(#007500)blocks$()."        
+		},
+		{            
+			"type": "patchouli:text",            
+			"text": "To form the multiblock, right-click the top block of one side with an Engineer's hammer."        
 		}
 	]
 }

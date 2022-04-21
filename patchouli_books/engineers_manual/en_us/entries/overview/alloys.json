@@ -2,7 +2,6 @@
 	"name": "Alloys",    
 	"icon": "immersiveengineering:ingot_electrum",    
 	"category": "patchouli:overview_and_resources",
-	"sortnum": 1,
 	"pages": [        
 		{            
 			"type": "patchouli:text",            
