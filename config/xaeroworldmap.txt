@@ -14,7 +14,7 @@ flowers:true
 compression:true
 coordinates:true
 biomeColorsVanillaMode:true
-waypoints:true
+waypoints:false
 renderArrow:true
 displayZoom:true
 worldmapWaypointsScale:1.0

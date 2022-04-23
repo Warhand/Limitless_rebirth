@@ -1,18 +1,60 @@
 {
-  "bookGuiScale": 0,
+  "bookGuiScale": 4,
   "clickedVisualize": false,
   "bookData": {
     "botania:lexicon": {
       "viewedEntries": [
         "botania:functional_flowers/orechid",
         "botania:functional_flowers/agricarnation",
-        "botania:functional_flowers/intro"
+        "botania:functional_flowers/intro",
+        "botania:mana/mana_detector",
+        "botania:mana/pool"
       ],
       "bookmarks": [],
       "history": [
+        "botania:mana/pool",
+        "botania:mana/mana_detector",
         "botania:functional_flowers/intro",
         "botania:functional_flowers/orechid",
         "botania:functional_flowers/agricarnation"
+      ],
+      "completedManualQuests": []
+    },
+    "patchouli:engineers_manual": {
+      "viewedEntries": [
+        "patchouli:construction/tank",
+        "patchouli:construction/silo"
+      ],
+      "bookmarks": [],
+      "history": [
+        "patchouli:construction/silo",
+        "patchouli:construction/tank"
+      ],
+      "completedManualQuests": []
+    },
+    "ars_nouveau:worn_notebook": {
+      "viewedEntries": [
+        "ars_nouveau:glyphs_2/glyph_crush",
+        "ars_nouveau:glyphs_2/glyph_aoe",
+        "ars_nouveau:glyphs_3/glyph_wither",
+        "ars_nouveau:glyphs_3/glyph_lightning",
+        "ars_nouveau:source/source_jar",
+        "ars_nouveau:source/relay",
+        "ars_nouveau:getting_started/starting_automation",
+        "ars_nouveau:automation/spell_turret",
+        "ars_nouveau:getting_started/new_glyphs"
+      ],
+      "bookmarks": [],
+      "history": [
+        "ars_nouveau:automation/spell_turret",
+        "ars_nouveau:getting_started/starting_automation",
+        "ars_nouveau:getting_started/new_glyphs",
+        "ars_nouveau:source/relay",
+        "ars_nouveau:source/source_jar",
+        "ars_nouveau:glyphs_3/glyph_lightning",
+        "ars_nouveau:glyphs_3/glyph_wither",
+        "ars_nouveau:glyphs_2/glyph_aoe",
+        "ars_nouveau:glyphs_2/glyph_crush"
       ],
       "completedManualQuests": []
     }
