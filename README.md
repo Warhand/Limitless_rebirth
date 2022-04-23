@@ -85,11 +85,11 @@ A list of the things I want to finish implementing or add before I consider the 
   - [ ] Treasure bags
   - [ ] Chunk animator
 - [ ] Standardize Processing recipes
-  - [ ] Grinding (Almost complete)
+  - [X] Grinding
   - [ ] Alloying (Almost complete)
   - [ ] Pressing (Almost complete)
 - [ ] Update modpack to 1.18.2
-- [ ] Launch official discord server
+- [X] Launch official discord server
 - [ ] Launch official multiplayer server
 - [ ] Create multiplayer server setup pack
 - [ ] Add CT scripts (Largely in progress)
