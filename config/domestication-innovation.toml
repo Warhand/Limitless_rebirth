@@ -94,4 +94,12 @@
 	warping_bite_enabled = true
 	#true if ore scenting enchant is enabled, false if disabled
 	ore_scenting_enabled = true
+	#true if gluttonous enchant is enabled, false if disabled
+	gluttonous_enabled = true
+	#true if psychic wall enchant is enabled, false if disabled
+	psychic_wall_enabled = true
+	#true if intimidation enchant is enabled, false if disabled
+	intimidation_enabled = true
+	#true if blight curse enchant is enabled, false if disabled
+	blight_curse_enabled = true
 
