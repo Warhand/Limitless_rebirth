@@ -224,7 +224,9 @@ val trash as IItemStack[] = [
 	<item:prettypipes:high_crafting_module>,
 	<item:cyclic:elevation_wand>,
 	<item:cyclic:spell_water>,
-	<item:cyclic:terra_preta>
+	<item:cyclic:terra_preta>,
+	<item:indreb:electronic_circuit>,
+	<item:indreb:advanced_circuit>
 ];
 
 for item in trash{
