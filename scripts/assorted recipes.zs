@@ -9,14 +9,6 @@ import crafttweaker.api.item.ItemDefinition;
 import crafttweaker.api.recipe.MirrorAxis;
 import crafttweaker.api.recipe.SmithingRecipeManager;
 
-//adding tag for ores
-<tag:items:rosie:malum/blazing>.add(<item:malum:blazing_quartz_ore>);
-<tag:items:rosie:malum/soul>.add(<item:malum:soulstone_ore>);
-<tag:items:rosie:malum/soul>.add(<item:malum:deepslate_soulstone_ore>);
-<tag:items:rosie:malum/soulraw>.add(<item:malum:soulstone_cluster>);
-<tag:items:rosie:nethergold>.add(<item:minecraft:nether_gold_ore>);
-<tag:items:forge:raw_ores/tin>.add(<item:indreb:raw_tin>);
-
 //adding immersive engineering bottling recipe for create honeyed apple
 <recipetype:immersiveengineering:bottling_machine>.addJsonRecipe("bottling_honeyed_apple", {"result":{"item":"create:honeyed_apple"},"input":{"item":"minecraft:apple"},"fluid":{"tag":"forge:honey","amount":250}});
 
@@ -142,22 +134,6 @@ craftingTable.addShaped("integrateddynamics_crafting_variable_transformer_output
 //integrated dynamics battery
 craftingTable.remove(<item:integrateddynamics:energy_battery>);
 craftingTable.addShaped("integrateddynamics_crafting_energy_battery", <item:integrateddynamics:energy_battery>.withTag({energy: 0 as int}), [[<tag:items:integrateddynamics:menril_logs>, <item:integrateddynamics:crystalized_menril_block>, <tag:items:integrateddynamics:menril_logs>], [<tag:items:integrateddynamics:menril_logs>, <item:immersiveengineering:capacitor_mv>, <tag:items:integrateddynamics:menril_logs>], [<tag:items:integrateddynamics:menril_logs>, <item:integrateddynamics:crystalized_menril_block>, <tag:items:integrateddynamics:menril_logs>]]);
-
-//adding blue skies and undergarden mushrooms into HT's treechop
-<tag:blocks:treechop:choppables>.add(<block:blue_skies:snowcap_mushroom_stem>);
-<tag:blocks:treechop:leaves_like>.add(<block:blue_skies:snowcap_mushroom_block>);
-
-<tag:blocks:treechop:choppables>.add(<block:undergarden:indigo_mushroom_stalk>);
-<tag:blocks:treechop:leaves_like>.add(<block:undergarden:indigo_mushroom_cap>);
-
-<tag:blocks:treechop:choppables>.add(<block:undergarden:blood_mushroom_stalk>);
-<tag:blocks:treechop:leaves_like>.add(<block:undergarden:blood_mushroom_cap>);
-<tag:blocks:treechop:leaves_like>.add(<block:undergarden:blood_mushroom_globule>);
-
-<tag:blocks:treechop:choppables>.add(<block:undergarden:veil_mushroom_stalk>);
-<tag:blocks:treechop:leaves_like>.add(<block:undergarden:veil_mushroom_cap>);
-
-<tag:blocks:treechop:leaves_like>.add(<block:undergarden:ink_mushroom_cap>);
 
 //supplementaries blue bomb
 craftingTable.addShapeless("supplementaries_bomb_blue", <item:supplementaries:bomb_blue>, [<item:quark:blue_rune>, <item:supplementaries:bomb>]);
@@ -347,27 +323,6 @@ smithing.addRecipe("better_bundles_netherite", <item:betterbundles:netherite_bun
 		"item": "alexsmobs:shark_tooth_arrow",
 		"count": 12
 	}});
-	
-//removing brass from the create steampowered bronze tag
-//<tag:items:steampowered:bronzeplate>.remove(<item:create:brass_sheet>);
-//<tag:items:steampowered:bronze>.remove(<item:create:brass_ingot>);
-
-//adding cooked fish tag
-val cooked_fish as IItemStack[] = [
-	<item:minecraft:cooked_cod>,
-	<item:minecraft:cooked_salmon>,
-	<item:blue_skies:cooked_grittle_flatfish>,
-	<item:blue_skies:cooked_municipal_monkfish>,
-	<item:blue_skies:cooked_charscale_moki>,
-	<item:blue_skies:cooked_horizofin_tunid>,
-	<item:aquaculture:fish_fillet_cooked>,
-	<item:alexsmobs:cooked_lobster_tail>,
-	<item:undergarden:cooked_gwibling>,
-	<item:quark:cooked_crab_leg>,
-	<item:quark:cooked_frog_leg>,
-	<item:aquaculture:frog_legs_cooked>
-];
-<tag:items:rosie:cooked_fish>.add(cooked_fish);
 
 //coin conversion recipes
 craftingTable.removeByName("createdeco:copper_coin");
@@ -429,10 +384,6 @@ val bronze_equipment as IItemStack[] = [
 	<item:indreb:bronze_axe>,
 	<item:indreb:bronze_shovel>,
 	<item:indreb:bronze_pickaxe>,
-	<item:minecraft:leather_boots>,
-	<item:minecraft:leather_leggings>,
-	<item:minecraft:leather_chestplate>,
-	<item:minecraft:leather_helmet>,
 	<item:indreb:lv_transformer>
 ];
 
@@ -477,139 +428,6 @@ craftingTable.addShapedMirrored("minecraft_andesite", MirrorAxis.HORIZONTAL, <it
 craftingTable.remove(<item:indreb:advanced_machine_casing>);
 craftingTable.addShaped("indreb_block_advanced_machine_casing", <item:indreb:advanced_machine_casing>, [[<tag:items:forge:plates/steel>, <item:indreb:carbon_plate>, <tag:items:forge:plates/steel>], [<item:indreb:advanced_alloy>, <item:indreb:basic_machine_casing>, <item:indreb:advanced_alloy>], [<tag:items:forge:plates/steel>, <item:indreb:carbon_plate>, <tag:items:forge:plates/steel>]]);
 
-//custom ars nouveau crushing recipes
-
-val block_crushed_map as IItemStack[IIngredient] = {
-	<tag:items:rosie:malum/soul>.asIIngredient(): <item:malum:soulstone_cluster>,
-	<tag:items:forge:ores/iron>.asIIngredient(): <item:minecraft:raw_iron>,
-	<tag:items:forge:ores/gold>.asIIngredient(): <item:minecraft:raw_gold>,
-	<tag:items:forge:ores/coal>.asIIngredient(): <item:minecraft:coal>,
-	<tag:items:forge:ores/tin>.asIIngredient(): <item:indreb:raw_tin>,
-	<tag:items:forge:ores/lead>.asIIngredient(): <item:immersiveengineering:raw_lead>,
-	<tag:items:forge:ores/silver>.asIIngredient(): <item:immersiveengineering:raw_silver>,
-	<tag:items:forge:ores/uranium>.asIIngredient(): <item:immersiveengineering:raw_uranium>,
-	<tag:items:forge:ores/nickel>.asIIngredient(): <item:immersiveengineering:raw_nickel>,
-	<tag:items:blue_skies:ores/ventium>.asIIngredient(): <item:blue_skies:raw_ventium>,
-	<tag:items:blue_skies:ores/pyrope>.asIIngredient(): <item:blue_skies:pyrope_gem>,
-	<tag:items:blue_skies:ores/diopside>.asIIngredient(): <item:blue_skies:diopside_gem>,
-	<tag:items:blue_skies:ores/falsite>.asIIngredient(): <item:blue_skies:raw_falsite>,
-	<tag:items:blue_skies:ores/horizonite>.asIIngredient(): <item:blue_skies:raw_horizonite>,
-	<tag:items:forge:ores/zinc>.asIIngredient(): <item:create:raw_zinc>,
-	<tag:items:forge:ores/cloggrum>.asIIngredient(): <item:undergarden:raw_cloggrum>,
-	<tag:items:forge:ores/utherium>.asIIngredient(): <item:undergarden:utherium_crystal>,
-	<tag:items:forge:ores/regalium>.asIIngredient(): <item:undergarden:regalium_crystal>,
-	<tag:items:forge:ores/froststeel>.asIIngredient(): <item:undergarden:raw_froststeel>
-};
-
-for block, crushed in block_crushed_map {
-<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_" + crushed.registryName.path, 
-	{
- "input":block,
-  "output": [
-    {
-      "item": crushed.registryName,
-      "chance": 1.0,
-      "count": 2
-    },
-	{
-      "item": crushed.registryName,
-      "chance": 0.25,
-      "count": 1
-    }
-  ]
-});
-}
-
-val block_crushed_map_rare as IItemStack[IIngredient] = {
-	<tag:items:forge:ores/netherite_scrap>.asIIngredient(): <item:minecraft:netherite_scrap>,
-	<tag:items:forge:ores/diamond>.asIIngredient(): <item:minecraft:diamond>,
-	<tag:items:forge:ores/emerald>.asIIngredient(): <item:minecraft:emerald>,
-	<tag:items:forge:ores/quartz>.asIIngredient(): <item:minecraft:quartz>,
-	
-};
-
-for block, crushed in block_crushed_map_rare {
-<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_" + crushed.registryName.path, 
-	{
- "input":block,
-  "output": [
-    {
-      "item": crushed.registryName,
-      "chance": 1.0,
-      "count": 1
-    },
-	{
-      "item": crushed.registryName,
-      "chance": 0.5,
-      "count": 1
-    }
-  ]
-});
-}
-
-val block_crushed_map_many as IItemStack[IIngredient] = {
-	<tag:items:forge:ores/redstone>.asIIngredient(): <item:minecraft:redstone>,
-	<tag:items:forge:ores/lapis>.asIIngredient(): <item:minecraft:lapis_lazuli>,
-	<tag:items:forge:ores_in_ground/netherrack>.asIIngredient(): <item:minecraft:gold_nugget>
-};
-
-for block, crushed in block_crushed_map_many {
-<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_" + crushed.registryName.path, 
-	{
- "input":block,
-  "output": [
-    {
-      "item": crushed.registryName,
-      "chance": 1.0,
-      "count": 6
-    },
-	{
-      "item": crushed.registryName,
-      "chance": 0.5,
-      "count": 1
-    }
-  ]
-});
-}
-
-<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_wart", 
-	{
- "input":{
-    "item": "minecraft:nether_wart_block"
-  },
-  "output": [
-    {
-      "item": "minecraft:nether_wart",
-      "chance": 1.0,
-      "count": 6
-    },
-	{
-      "item": "minecraft:nether_wart",
-      "chance": 0.5,
-      "count": 1
-    }
-  ]
-});
-
-<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_warped_wart", 
-	{
- "input":{
-    "item": "minecraft:warped_wart_block"
-  },
-  "output": [
-    {
-      "item": "minecraft:nether_wart",
-      "chance": 1.0,
-      "count": 6
-    },
-	{
-      "item": "minecraft:warped_fungus",
-      "chance": 0.5,
-      "count": 1
-    }
-  ]
-});
-
 //nether wart block uncrafting
 craftingTable.removeByName("cyclic:crafting/nether_wart_reverse");
 
@@ -633,11 +451,6 @@ mods.extendedcrafting.EnderCrafting.addShaped("330a6455-0052-4566-a944-c8a7a51f5
 	[<item:extendedcrafting:ender_ingot>, <item:minecraft:golden_carrot>, <item:extendedcrafting:ender_ingot>], 
 	[<item:minecraft:ender_eye>, <item:extendedcrafting:ender_ingot>, <item:minecraft:ender_eye>]
 ]);
-
-//adding indreb diamond dust to forge tags
-<tag:items:forge:dusts/diamond>.add(<item:indreb:diamond_dust>);
-<tag:items:forge:dusts>.add(<item:indreb:diamond_dust>);
-<tag:items:supplementaries:hourglass_dusts>.add(<item:indreb:diamond_dust>);
 
 //furnace tin
 furnace.addRecipe("tin_cook", <item:indreb:tin_ingot>, <item:create:crushed_tin_ore>, 0.5, 200);
