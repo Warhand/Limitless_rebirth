@@ -745,7 +745,7 @@
 		"Teleport Duplication Chance" = 0.01
 
 	[world.blossom_trees]
-		"Drop Leaf Particles" = true
+		"Drop Leaf Particles" = false
 
 		[world.blossom_trees.blue]
 			Rarity = 200
