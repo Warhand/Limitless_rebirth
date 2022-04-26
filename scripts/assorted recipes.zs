@@ -57,7 +57,7 @@ craftingTable.addShaped("prettypipes_item_terminal", <item:prettypipes:item_term
 
 //pretty pipes crafting terminal
 craftingTable.remove(<item:prettypipes:crafting_terminal>);
-craftingTable.addShaped("prettypipes_crafting_terminal", <item:prettypipes:crafting_terminal>, [[<item:minecraft:diamond>, <item:cyclic:workbench>, <item:minecraft:diamond>], [<item:minecraft:comparator>, <item:prettypipes:item_terminal>, <item:minecraft:comparator>], [<item:minecraft:diamond>, <item:immersiveengineering:rs_engineering>, <item:minecraft:diamond>]]);
+craftingTable.addShaped("prettypipes_crafting_terminal", <item:prettypipes:crafting_terminal>, [[<item:minecraft:diamond>, <item:prettypipes:high_crafting_module>, <item:minecraft:diamond>], [<item:minecraft:comparator>, <item:prettypipes:item_terminal>, <item:minecraft:comparator>], [<item:minecraft:diamond>, <item:immersiveengineering:rs_engineering>, <item:minecraft:diamond>]]);
 
 //pretty pipes pressurizer
 craftingTable.remove(<item:prettypipes:pressurizer>);
@@ -173,10 +173,6 @@ craftingTable.remove(<item:minecraft:enchanted_golden_apple>);
 		"item": "minecraft:enchanted_golden_apple",
 		"count": 1
 }});
-
-//replacing Malum guidebook recipe
-craftingTable.remove(<item:malum:encyclopedia_arcana>);
-craftingTable.addShapedMirrored("malum_guidebook", <constant:minecraft:mirroraxis:all>, <item:malum:encyclopedia_arcana>, [[IIngredientEmpty.getInstance(), <item:malum:earthen_spirit>, IIngredientEmpty.getInstance()], [<item:malum:aqueous_spirit>, <item:minecraft:book>, <item:malum:aerial_spirit>], [IIngredientEmpty.getInstance(), <item:malum:infernal_spirit>, IIngredientEmpty.getInstance()]]);
 
 //replacing ARS guidebook recipe
 craftingTable.remove(<item:ars_nouveau:worn_notebook>);
@@ -491,11 +487,6 @@ for rawblock, block in rawblock_block_map {
 
 craftingTable.addShaped("indreb_energium_dust", <item:indreb:energium_dust> * 9, [[<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>], [<tag:items:forge:dusts/diamond>, <item:minecraft:redstone>, <tag:items:forge:dusts/diamond>], [<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>]]);
 
-//circuit recipes
-craftingTable.addShaped("indreb_electronic_circuit", <item:indreb:electronic_circuit>, [[<item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>], [<item:extendedcrafting:redstone_nugget>, <tag:items:forge:plates/iron>, <item:extendedcrafting:redstone_nugget>], [<item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>, <item:indreb:copper_cable_insulated>]]);
-
-craftingTable.addShaped("indreb_advanced_circuit", <item:indreb:advanced_circuit>, [[<item:extendedcrafting:redstone_nugget>, <item:minecraft:glowstone_dust>, <item:extendedcrafting:redstone_nugget>], [<tag:items:forge:dusts/diamond>, <item:indreb:electronic_circuit>, <tag:items:forge:dusts/diamond>], [<item:extendedcrafting:redstone_nugget>, <item:minecraft:glowstone_dust>, <item:extendedcrafting:redstone_nugget>]]);
-
 //red alloy ingot recipe
 craftingTable.remove(<item:extendedcrafting:redstone_ingot>);
 
@@ -578,3 +569,6 @@ craftingTable.addShaped("prettypipes_high_crafting_module", <item:prettypipes:hi
 
 //Cyclic terra petra recipe
 craftingTable.addShaped("cyclic_terra_preta", <item:cyclic:terra_preta> * 4, [[<item:cyclic:biomass>, <item:cyclic:soil>, <item:cyclic:biomass>], [<item:cyclic:soil>, <item:alexsmobs:bone_serpent_tooth>, <item:cyclic:soil>], [<item:cyclic:biomass>, <item:cyclic:soil>, <item:cyclic:biomass>]]);
+
+//adding tags to indreb machine frame recipe
+craftingTable.addShaped("basic_machine_casing", <item:indreb:basic_machine_casing>, [[<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]]);
