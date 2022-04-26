@@ -225,8 +225,7 @@ val trash as IItemStack[] = [
 	<item:cyclic:elevation_wand>,
 	<item:cyclic:spell_water>,
 	<item:cyclic:terra_preta>,
-	<item:indreb:electronic_circuit>,
-	<item:indreb:advanced_circuit>
+	<item:indreb:basic_machine_casing>
 ];
 
 for item in trash{
@@ -293,4 +292,15 @@ val jei_removal as IItemStack[] = [
 
 for item in jei_removal{
 	JEI.hideIngredient(item);
+}
+
+//utter eradication (removing something from every recipe and JEI at once)
+
+val utter_eradication as IItemStack[] = [
+	<item:beyond_earth:cheese>
+];
+
+for item in utter_eradication{
+	JEI.hideIngredient(item);
+	recipes.remove(item);
 }
