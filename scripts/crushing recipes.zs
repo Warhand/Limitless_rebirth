@@ -7,6 +7,8 @@ import crafttweaker.api.item.ItemDefinition;
 import crafttweaker.api.recipe.MirrorAxis;
 import crafttweaker.api.recipe.SmithingRecipeManager;
 
+//removing base game recipes
+
 val crushers_remove as IItemStack[] = [
 	<item:ae2:certus_quartz_crystal>,
 	<item:beyond_earth:raw_calorite>,
@@ -92,6 +94,10 @@ val crushers_remove as IItemStack[] = [
 	<item:indreb:crushed_gold>
 ];
 
+<recipetype:create:crushing>.removeByName("create:crushing/nether_gold_ore");
+<recipetype:integrateddynamics:squeezer>.remove(<item:minecraft:gold_nugget>);
+<recipetype:integrateddynamics:mechanical_squeezer>.remove(<item:minecraft:gold_nugget>);
+
 for item in crushers_remove{
 	<recipetype:integrateddynamics:mechanical_squeezer>.remove(item);
 	<recipetype:integrateddynamics:squeezer>.remove(item);
@@ -100,6 +106,8 @@ for item in crushers_remove{
 	<recipetype:indreb:crushing>.remove(item);
 	<recipetype:ars_nouveau:crush>.remove(item);
 }
+
+//Ore processing maps
 
 val ore_to_raw_map as IItemStack[IIngredient] = {
 	<tag:items:forge:ores/iron>.asIIngredient(): <item:minecraft:raw_iron>,
@@ -117,7 +125,10 @@ val ore_to_raw_map as IItemStack[IIngredient] = {
 	<tag:items:forge:ores/ostrum>.asIIngredient(): <item:beyond_earth:raw_ostrum>,
 	<tag:items:forge:ores/cobalt>.asIIngredient(): <item:tconstruct:raw_cobalt>,
 	<tag:items:forge:ores/calorite>.asIIngredient(): <item:beyond_earth:raw_calorite>,
-	<tag:items:forge:ores/desh>.asIIngredient(): <item:beyond_earth:raw_desh>
+	<tag:items:forge:ores/desh>.asIIngredient(): <item:beyond_earth:raw_desh>,
+	<tag:items:forge:ores/ventium>.asIIngredient(): <item:blue_skies:raw_ventium>,
+	<tag:items:forge:ores/falsite>.asIIngredient(): <item:blue_skies:raw_falsite>,
+	<tag:items:forge:ores/horizonite>.asIIngredient(): <item:blue_skies:raw_horizonite>
 };
 
 val raw_to_crushed_map as IItemStack[IIngredient] = {
@@ -136,7 +147,10 @@ val raw_to_crushed_map as IItemStack[IIngredient] = {
 	<tag:items:forge:raw_materials/ostrum>.asIIngredient(): <item:jaopca:create_crushed_ores.ostrum>,
 	<tag:items:forge:raw_materials/cobalt>.asIIngredient(): <item:jaopca:create_crushed_ores.cobalt>,
 	<tag:items:forge:raw_materials/calorite>.asIIngredient(): <item:jaopca:create_crushed_ores.calorite>,
-	<tag:items:forge:raw_materials/desh>.asIIngredient(): <item:jaopca:create_crushed_ores.desh>
+	<tag:items:forge:raw_materials/desh>.asIIngredient(): <item:jaopca:create_crushed_ores.desh>,
+	<tag:items:blue_skies:raw_materials/ventium>.asIIngredient(): <item:jaopca:create_crushed_ores.ventium>,
+	<tag:items:blue_skies:raw_materials/falsite>.asIIngredient(): <item:jaopca:create_crushed_ores.falsite>,
+	<tag:items:forge:raw_ores/horizonite>.asIIngredient(): <item:jaopca:create_crushed_ores.horizonite>
 };
 
 val crushed_to_dust_map as IItemStack[IIngredient] = {
@@ -155,7 +169,40 @@ val crushed_to_dust_map as IItemStack[IIngredient] = {
 	<item:jaopca:create_crushed_ores.ostrum>: <item:jaopca:dusts.ostrum>,
 	<item:jaopca:create_crushed_ores.cobalt>: <item:jaopca:dusts.cobalt>,
 	<item:jaopca:create_crushed_ores.calorite>: <item:jaopca:dusts.calorite>,
-	<item:jaopca:create_crushed_ores.desh>: <item:jaopca:dusts.desh>
+	<item:jaopca:create_crushed_ores.desh>: <item:jaopca:dusts.desh>,
+	<item:jaopca:create_crushed_ores.ventium>: <item:jaopca:dusts.ventium>,
+	<item:jaopca:create_crushed_ores.falsite>: <item:jaopca:dusts.falsite>,
+	<item:jaopca:create_crushed_ores.horizonite>: <item:jaopca:dusts.horizonite>
+};
+
+//mineral maps
+
+val ore_to_gem_map as IItemStack[IIngredient] = {
+	<tag:items:forge:ores/diamond>.asIIngredient(): <item:minecraft:diamond>,
+	<tag:items:forge:ores/netherite_scrap>.asIIngredient(): <item:minecraft:netherite_scrap>,
+	<tag:items:forge:ores/emerald>.asIIngredient(): <item:minecraft:emerald>,
+	<tag:items:forge:ores/diopside>.asIIngredient(): <item:blue_skies:diopside_gem>,
+	<tag:items:forge:ores/brilliance>.asIIngredient(): <item:malum:brilliance_cluster>
+};
+
+val ore_to_mineral_map as IItemStack[IIngredient] = {
+	<tag:items:forge:ores/ice_shard>.asIIngredient(): <item:beyond_earth:ice_shard>,
+	<tag:items:forge:ores/cheese>.asIIngredient(): <item:croptopia:cheese>,
+	<tag:items:forge:ores/utherium>.asIIngredient(): <item:undergarden:utherium_crystal>,
+	<tag:items:forge:ores/coal>.asIIngredient(): <item:minecraft:coal>,
+	<tag:items:forge:ores/quartz>.asIIngredient(): <item:minecraft:quartz>,
+	<tag:items:rosie:malum/blazing>.asIIngredient(): <item:malum:blazing_quartz>,
+	<tag:items:forge:ores/pyrope>.asIIngredient(): <item:blue_skies:pyrope_gem>,
+	<tag:items:blue_skies:ores/moonstone>.asIIngredient(): <item:blue_skies:moonstone_shard>,
+	<tag:items:forge:ores/aquite>.asIIngredient(): <item:blue_skies:raw_aquite>,
+	<tag:items:forge:ores/charoite>.asIIngredient(): <item:blue_skies:raw_charoite>,
+	<tag:items:forge:ores/soulstone>.asIIngredient(): <item:malum:soulstone_cluster>
+};
+
+val ore_to_dust_map as IItemStack[IIngredient] = {
+	<tag:items:forge:ores/redstone>.asIIngredient(): <item:minecraft:redstone>,
+	<tag:items:forge:ores/lapis>.asIIngredient(): <item:minecraft:lapis_lazuli>,
+	<tag:items:forge:ores/nethergold>.asIIngredient(): <item:minecraft:gold_nugget>
 };
 
 //basic ID squeezer
@@ -165,16 +212,16 @@ for input, output in ore_to_raw_map{
   "item": input,
   "result": {
     "items": [
-      {
-       "item": {
-          "item": output.registryName,
-          "count": 2
-        },
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 2
+			}
+		},
 		{
         "item": output.registryName,
         "chance": 0.15 as float
        }
-      }
     ]
   }
 });
@@ -210,6 +257,71 @@ for input, output in crushed_to_dust_map{
 });
 }
 
+for input, output in ore_to_gem_map{
+    <recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_" + output.registryName.path, {
+  "item": input,
+  "result": {
+    "items": [
+        output,
+      {
+        "item": output.registryName,
+        "chance": 0.5 as float
+      }
+    ]
+  }
+});
+}
+
+for input, output in ore_to_mineral_map{
+    <recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_" + output.registryName.path, {
+  "item": input,
+  "result": {
+    "items": [
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 2
+			}
+		},
+		{
+        "item": output.registryName,
+        "chance": 0.25 as float
+       }
+    ]
+  }
+});
+}
+
+for input, output in ore_to_dust_map{
+    <recipetype:integrateddynamics:squeezer>.addJsonRecipe("custom_squeeze_" + output.registryName.path, {
+  "item": input,
+  "result": {
+    "items": [
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 4
+			}
+		},
+		{
+        "item": {
+			  "item": output.registryName,
+			  "count": 2
+			},
+			"chance": 0.5 as float
+       },
+	   {
+        "item": {
+			  "item": output.registryName,
+			  "count": 2
+			},
+			"chance": 0.25 as float
+       }
+    ]
+  }
+});
+}
+
 //mechanical squeezer
 
 for input, output in ore_to_raw_map{
@@ -217,12 +329,12 @@ for input, output in ore_to_raw_map{
   "item": input,
   "result": {
     "items": [
-      {
-       "item": {
-          "item": output.registryName,
-          "count": 2
-        }
-      },
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 2
+			}
+		},
 	  {
         "item": output.registryName,
         "chance": 0.75 as float
