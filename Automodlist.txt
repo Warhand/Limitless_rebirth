@@ -39,8 +39,8 @@ C:.
     buildinggadgets-3.12.0-build.4+mc1.18.1.jar
     caelus-forge-1.18.1-3.0.0.2.jar
     cgm-1.2.1-1.18.1.jar
-    champions-forge-1.18.2-2.1.5.1.jar
-    ChunkAnimator-1.18-1.3.3.jar
+    champions-forge-1.18.2-2.1.5.3.jar
+    ChunkAnimator-1.18.2-1.3.4.jar
     Chunky-1.2.164.jar
     citadel-1.10.10-1.18.jar
     Clumps-forge-1.18.1-8.0.0+5.jar
@@ -80,7 +80,7 @@ C:.
     expandedstorage-7.3.10+1.18.1.jar
     experienceobelisk_v1.3.0-1.18.1.jar
     ExtendedCrafting-1.18.1-4.0.0.jar
-    fancymenu_forge_2.6.5_MC_1.18-1.18.1.jar
+    fancymenu_forge_2.6.6_MC_1.18-1.18.1.jar
     farsight-1.18.2-1.8.jar
     farsightedmobs-forge-1.1-1.18.jar
     FastFurnace-1.18.1-6.0.2.jar
@@ -92,7 +92,7 @@ C:.
     findme-3.0.5-forge.jar
     flywheel-forge-1.18-0.6.1.jar
     FogTweaker-1.18.1-1.5.0.jar
-    FramedBlocks-4.3.3.jar
+    FramedBlocks-4.4.0.jar
     framework-0.2.3-1.18.1.jar
     ftb-chunks-forge-1801.3.4-build.127.jar
     ftb-essentials-1801.1.6-build.37.jar
@@ -133,8 +133,8 @@ C:.
     LegendaryTooltips-1.18.1-1.2.4.jar
     littlelogistics-mc1.18.1-v1.1.1a.jar
     lootbeams-1.18.1-release-jan1522.jar
-    lootr-1.18-0.1.15.50.jar
-    malum-1.18.1-1.2.2.jar
+    lootr-1.18-0.1.15.51.jar
+    malum-1.18.1-1.3.3.jar
     Mantle-1.18.1-1.8.37.jar
     mcjtylib-1.18-6.0.10.jar
     modnametooltip-1.18.1-1.18.0.jar
@@ -182,7 +182,7 @@ C:.
     SoL-Carrot-1.18.1-1.12.0.jar
     SoMSecondSemester1.18.1-3.0.10.jar
     sophisticatedbackpacks-1.18.1-3.15.15.550.jar
-    spark-1.8.6-forge.jar
+    spark-1.9.1-forge.jar
     starlight-1.0.1+forge.fef9eb9.jar
     StorageDrawers-1.18.1-10.1.1.jar
     structure_gel-1.18.1-2.1.3.jar
@@ -226,5 +226,5 @@ C:.
     
 No subfolders exist 
 
-Sat 04/23/2022 
-06:25 PM
+Fri 04/29/2022 
+11:55 AM
