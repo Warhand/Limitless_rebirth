@@ -44,7 +44,7 @@ val cooked_fish as IItemStack[] = [
 <tag:items:rosie:malum/blazing>.add(<item:malum:blazing_quartz_ore>);
 <tag:items:rosie:malum/soul>.add(<item:malum:soulstone_ore>);
 <tag:items:rosie:malum/soul>.add(<item:malum:deepslate_soulstone_ore>);
-<tag:items:rosie:malum/soulraw>.add(<item:malum:soulstone_cluster>);
+<tag:items:rosie:malum/soulraw>.add(<item:malum:raw_soulstone>);
 <tag:items:rosie:nethergold>.add(<item:minecraft:nether_gold_ore>);
 <tag:items:forge:raw_ores/tin>.add(<item:indreb:raw_tin>);
 <tag:items:forge:ores/brilliance>.add(<item:malum:brilliant_stone>);
