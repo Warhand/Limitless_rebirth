@@ -182,7 +182,7 @@ val ore_to_gem_map as IItemStack[IIngredient] = {
 	<tag:items:forge:ores/netherite_scrap>.asIIngredient(): <item:minecraft:netherite_scrap>,
 	<tag:items:forge:ores/emerald>.asIIngredient(): <item:minecraft:emerald>,
 	<tag:items:forge:ores/diopside>.asIIngredient(): <item:blue_skies:diopside_gem>,
-	<tag:items:forge:ores/brilliance>.asIIngredient(): <item:malum:brilliance_cluster>
+	<tag:items:forge:ores/brilliance>.asIIngredient(): <item:malum:cluster_of_brilliance>
 };
 
 val ore_to_mineral_map as IItemStack[IIngredient] = {
@@ -196,7 +196,7 @@ val ore_to_mineral_map as IItemStack[IIngredient] = {
 	<tag:items:blue_skies:ores/moonstone>.asIIngredient(): <item:blue_skies:moonstone_shard>,
 	<tag:items:forge:ores/aquite>.asIIngredient(): <item:blue_skies:raw_aquite>,
 	<tag:items:forge:ores/charoite>.asIIngredient(): <item:blue_skies:raw_charoite>,
-	<tag:items:forge:ores/soulstone>.asIIngredient(): <item:malum:soulstone_cluster>
+	<tag:items:forge:ores/soulstone>.asIIngredient(): <item:malum:raw_soulstone>
 };
 
 val ore_to_dust_map as IItemStack[IIngredient] = {
@@ -306,14 +306,14 @@ for input, output in ore_to_dust_map{
 		{
         "item": {
 			  "item": output.registryName,
-			  "count": 2
+			  "count": 1
 			},
 			"chance": 0.5 as float
        },
 	   {
         "item": {
 			  "item": output.registryName,
-			  "count": 2
+			  "count": 1
 			},
 			"chance": 0.25 as float
        }
@@ -377,6 +377,75 @@ for input, output in crushed_to_dust_map{
 });
 }
 
+for input, output in ore_to_gem_map{
+    <recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_mechanical_squeeze_" + output.registryName.path, {
+  "item": input,
+  "result": {
+    "items": [
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 2
+			}
+		}
+    ]
+  },
+  "duration": 20
+});
+}
+
+for input, output in ore_to_mineral_map{
+    <recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_mechanical_squeeze_" + output.registryName.path, {
+  "item": input,
+  "result": {
+    "items": [
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 3
+			}
+		},
+		{
+        "item": output.registryName,
+        "chance": 0.25 as float
+       }
+    ]
+  },
+  "duration": 20
+});
+}
+
+for input, output in ore_to_dust_map{
+    <recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("custom_mechanical_squeeze_" + output.registryName.path, {
+  "item": input,
+  "result": {
+    "items": [
+		{
+			"item": {
+			  "item": output.registryName,
+			  "count": 6
+			}
+		},
+		{
+        "item": {
+			  "item": output.registryName,
+			  "count": 1
+			},
+			"chance": 0.5 as float
+       },
+	   {
+        "item": {
+			  "item": output.registryName,
+			  "count": 1
+			},
+			"chance": 0.25 as float
+       }
+    ]
+  },
+  "duration": 20
+});
+}
+
 //ars crushing spell
 
 for input, output in ore_to_raw_map{
@@ -393,6 +462,63 @@ for input, output in ore_to_raw_map{
       "item": output.registryName,
       "chance": 0.5,
       "count": 1
+    }
+  ]
+});
+}
+
+for input, output in ore_to_gem_map{
+<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_" + output.registryName.path, 
+	{
+ "input":input,
+  "output": [
+    {
+      "item": output.registryName,
+      "chance": 1.0,
+      "count": 2
+    },
+	{
+      "item": output.registryName,
+      "chance": 0.25,
+      "count": 1
+    }
+  ]
+});
+}
+
+for input, output in ore_to_mineral_map{
+<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_" + output.registryName.path, 
+	{
+ "input":input,
+  "output": [
+    {
+      "item": output.registryName,
+      "chance": 1.0,
+      "count": 4
+    },
+	{
+      "item": output.registryName,
+      "chance": 0.5,
+      "count": 1
+    }
+  ]
+});
+}
+
+for input, output in ore_to_dust_map{
+<recipetype:ars_nouveau:crush>.addJsonRecipe("custom_ars_crushed_" + output.registryName.path, 
+	{
+ "input":input,
+  "output": [
+    {
+      "item": output.registryName,
+      "chance": 1.0,
+      "count": 6
+    },
+	{
+      "item": output.registryName,
+      "chance": 0.5,
+      "count": 3
     }
   ]
 });
@@ -463,6 +589,64 @@ for input, output in crushed_to_dust_map{
 });
 }
 
+for input, output in ore_to_gem_map{
+	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+	{
+  "ingredient": 
+    input
+  ,
+  "result": {
+    "item": output.registryName,
+    "count": 2
+  },
+  "experience": 2.0,
+  "duration": 180,
+  "power_cost": 8
+});
+}
+
+for input, output in ore_to_mineral_map{
+	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+	{
+  "ingredient": 
+    input
+  ,
+  "result": {
+    "item": output.registryName,
+    "count": 3
+  },
+  "bonus_result": {
+    "item": output.registryName,
+    "count": 1,
+    "chance": 50.0
+  },
+  "experience": 2.0,
+  "duration": 180,
+  "power_cost": 8
+});
+}
+
+for input, output in ore_to_dust_map{
+	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+	{
+  "ingredient": 
+    input
+  ,
+  "result": {
+    "item": output.registryName,
+    "count": 6
+  },
+  "bonus_result": {
+    "item": output.registryName,
+    "count": 2,
+    "chance": 25.0
+  },
+  "experience": 2.0,
+  "duration": 180,
+  "power_cost": 8
+});
+}
+
 //create crushing wheels
 
 for input, output in ore_to_raw_map{
@@ -522,6 +706,57 @@ for input, output in crushed_to_dust_map{
 });
 }
 
+for input, output in ore_to_gem_map{
+	<recipetype:create:crushing>.addJsonRecipe("custom_create_crushing_" + output.registryName.path, 
+	{
+  "ingredients": [ input ],
+  "results": [
+    { 
+		"item": output.registryName,
+		"count": 2
+	}
+  ],
+  "processingTime": 400
+});
+}
+
+for input, output in ore_to_mineral_map{
+	<recipetype:create:crushing>.addJsonRecipe("custom_create_crushing_" + output.registryName.path, 
+	{
+  "ingredients": [ input ],
+  "results": [
+    { 
+		"item": output.registryName,
+		"count": 3
+	},
+	{
+		"item": output.registryName,
+		"chance": 0.5
+    }
+  ],
+  "processingTime": 400
+});
+}
+
+for input, output in ore_to_dust_map{
+	<recipetype:create:crushing>.addJsonRecipe("custom_create_crushing_" + output.registryName.path, 
+	{
+  "ingredients": [ input ],
+  "results": [
+    { 
+		"item": output.registryName,
+		"count": 6
+	},
+	{
+		"item": output.registryName,
+		"chance": 0.5,
+		"count": 2
+    }
+  ],
+  "processingTime": 400
+});
+}
+
 //Immersive engineering crusher
 
 for input, output in ore_to_raw_map{
@@ -542,5 +777,26 @@ for input, output in crushed_to_dust_map{
 <recipetype:immersiveengineering:crusher>.addJsonRecipe("custom_ie_crushing_" + output.registryName.path, 
 {
 "secondaries":[{"chance":0.75,"output":{"item":output.registryName}}],"result":{"count":1,"base_ingredient":{"item":output.registryName}},"input":input,"energy":6000
+});
+}
+
+for input, output in ore_to_gem_map{
+<recipetype:immersiveengineering:crusher>.addJsonRecipe("custom_ie_crushing_" + output.registryName.path, 
+{
+"secondaries":[],"result":{"count":2,"base_ingredient":{"item":output.registryName}},"input":input,"energy":6000
+});
+}
+
+for input, output in ore_to_mineral_map{
+<recipetype:immersiveengineering:crusher>.addJsonRecipe("custom_ie_crushing_" + output.registryName.path, 
+{
+"secondaries":[{"chance":0.5,"output":{"item":output.registryName}}],"result":{"count":3,"base_ingredient":{"item":output.registryName}},"input":input,"energy":6000
+});
+}
+
+for input, output in ore_to_dust_map{
+<recipetype:immersiveengineering:crusher>.addJsonRecipe("custom_ie_crushing_" + output.registryName.path, 
+{
+"secondaries":[{"chance":0.5,"output":{"count":2,"item":output.registryName}}],"result":{"count":6,"base_ingredient":{"item":output.registryName}},"input":input,"energy":6000
 });
 }
