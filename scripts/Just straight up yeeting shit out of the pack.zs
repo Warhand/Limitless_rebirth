@@ -297,7 +297,8 @@ for item in jei_removal{
 //utter eradication (removing something from every recipe and JEI at once)
 
 val utter_eradication as IItemStack[] = [
-	<item:beyond_earth:cheese>
+	<item:beyond_earth:cheese>,
+	<item:tconstruct:molten_refined_glowstone_bucket>
 ];
 
 for item in utter_eradication{
