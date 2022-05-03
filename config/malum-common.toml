@@ -34,7 +34,7 @@
 		surfaceSoulstoneMaxY = 100
 
 	[worldgen.brilliance]
-		#Size of brilliant stone veins.
+		#Amount of brilliant stone veins.
 		brilliantStoneSize = 2
 		#Maximum height at which brilliant stone can spawn.
 		brilliantStoneMaxY = 40
@@ -44,7 +44,7 @@
 		generateBrilliantStone = true
 
 	[worldgen.blazing_quartz]
-		#Amount of blaze quartz ore veins.
+		#Size of blaze quartz ore veins.
 		blazeQuartzSize = 14
 		#Should blaze quartz ore generate?
 		generateBlazeQuartz = true
