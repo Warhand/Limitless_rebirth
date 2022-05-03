@@ -38,12 +38,27 @@ customization {
 }
 
 customization {
+  identifier = %id=604394%
+  orientation = element
+  orientation_element = 5202392d-261b-489c-a4ea-5e0fba1d0d661648239384105
+  x = 204
+  action = movebutton
+  y = 72
+}
+
+customization {
+  identifier = %id=604394%
+  action = setbuttondescription
+  description = Accessibility settings
+}
+
+customization {
   identifier = %id=376310%
   orientation = element
   orientation_element = vanillabtn:400358
   x = -24
   action = movebutton
-  y = 0
+  y = 24
 }
 
 customization {
@@ -64,11 +79,33 @@ customization {
 }
 
 customization {
-  identifier = %id=44%
-  orientation = bottom-right
-  x = -70
+  identifier = %id=400394%
+  orientation = element
+  orientation_element = 5202392d-261b-489c-a4ea-5e0fba1d0d661648239384105
+  x = 0
   action = movebutton
-  y = -40
+  y = 48
+}
+
+customization {
+  identifier = %id=400394%
+  action = setbuttondescription
+  description = Change game settings
+}
+
+customization {
+  identifier = %id=502394%
+  orientation = element
+  orientation_element = 5202392d-261b-489c-a4ea-5e0fba1d0d661648239384105
+  x = 102
+  action = movebutton
+  y = 48
+}
+
+customization {
+  identifier = %id=502394%
+  action = setbuttondescription
+  description = Leave the game
 }
 
 customization {
@@ -77,7 +114,7 @@ customization {
   orientation_element = vanillabtn:400358
   x = -24
   action = movebutton
-  y = 36
+  y = 48
 }
 
 customization {
@@ -99,7 +136,7 @@ customization {
   width = 20
   actionid = 4f2aca9d-0739-45c2-97f2-6dc2f8e175dc1648238223791
   action = addbutton
-  y = 0
+  y = 24
   value = vazkii.quark.base.client.config.screen.QuarkConfigHomeScreen
   height = 20
 }
@@ -134,7 +171,7 @@ customization {
 
 customization {
   orientation = element
-  shadow = false
+  shadow = true
   orientation_element = 1425772b-cf2f-4502-82d6-ead3d777d5151648239234321
   x = 80
   action = addtext
@@ -186,7 +223,7 @@ customization {
 
 customization {
   orientation = element
-  shadow = false
+  shadow = true
   orientation_element = 1425772b-cf2f-4502-82d6-ead3d777d5151648239234321
   x = 80
   action = addtext
@@ -199,7 +236,7 @@ customization {
 
 customization {
   orientation = element
-  shadow = false
+  shadow = true
   orientation_element = 1425772b-cf2f-4502-82d6-ead3d777d5151648239234321
   x = 80
   action = addtext
@@ -223,6 +260,23 @@ customization {
 }
 
 customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  description = This will send to to a list of recommend resource packs, %n%I highly recommend you check it out for the most optimal experience.
+  label = §bRecommended resource packs
+  loopbackgroundanimations = false
+  orientation_element = vanillabtn:400394
+  x = 0
+  width = 200
+  actionid = 384e2c08-ac3c-402e-8222-f950d9dfa58a1651492636813
+  action = addbutton
+  y = 24
+  value = https://github.com/Warhand/Limitless_rebirth/blob/main/Resource%20pack%20reccomendations.md
+  height = 20
+}
+
+customization {
   identifier = %id=400310%
   action = setbuttondescription
   description = Server listings
@@ -235,26 +289,8 @@ customization {
 }
 
 customization {
-  identifier = %id=604394%
-  action = setbuttondescription
-  description = Accessibility settings
-}
-
-customization {
   identifier = %id=400286%
   action = setbuttondescription
   description = Singleplayer worlds
-}
-
-customization {
-  identifier = %id=400394%
-  action = setbuttondescription
-  description = Change game settings
-}
-
-customization {
-  identifier = %id=502394%
-  action = setbuttondescription
-  description = Leave the game
 }
 
