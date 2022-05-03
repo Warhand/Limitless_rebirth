@@ -144,7 +144,6 @@ key_key.botania_corporea_request:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
 key_key.integrateddynamics.logic_programmer_focus_search:key.keyboard.f:ALT
 key_key.integrateddynamics.logic_programmer_open_rename:key.keyboard.r:ALT
-key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.push_to_talk:key.keyboard.caps.lock
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.m
@@ -155,6 +154,7 @@ key_key.voice_chat_settings:key.keyboard.unknown
 key_key.voice_chat_group:key.keyboard.g
 key_key.voice_chat_toggle_recording:key.keyboard.unknown
 key_key.voice_chat_adjust_volumes:key.keyboard.unknown
+key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_treechop.key.toggle_chopping:scancode.0
 key_treechop.key.toggle_felling:scancode.0
 key_treechop.key.cycle_sneak_behavior:scancode.0
@@ -229,11 +229,12 @@ key_key.waila.show_details:key.keyboard.left.shift
 key_key.plonk.place:key.keyboard.p
 key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
-key_quark.keybind.camera_mode:key.keyboard.keypad.1
-key_quark.keybind.lock_rotation:key.keyboard.unknown
 key_quark.keybind.transfer_insert:key.keyboard.unknown
 key_quark.keybind.transfer_extract:key.keyboard.unknown
 key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.keybind.lock_rotation:key.keyboard.unknown
+key_quark.keybind.camera_mode:key.keyboard.keypad.1
+key_quark.keybind.autorun:key.keyboard.unknown
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -252,9 +253,8 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_quark.keybind.autorun:key.keyboard.unknown
-key_quark.keybind.back:key.mouse.4
 key_quark.keybind.change_hotbar:key.keyboard.unknown
+key_quark.keybind.back:key.mouse.4
 key_gui.xaero_open_map:key.keyboard.m
 key_gui.xaero_open_settings:key.keyboard.right.bracket
 key_gui.xaero_map_zoom_in:key.keyboard.unknown
@@ -268,11 +268,11 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
-key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x
+key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.configured.open_mod_list:key.keyboard.unknown
 key_key.jei.toggleOverlay:key.keyboard.o
 key_key.jei.focusSearch:key.keyboard.f

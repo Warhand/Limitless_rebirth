@@ -69,7 +69,6 @@ modifiers.key.botania_corporea_request:
 modifiers.key.curios.open.desc:
 modifiers.key.integrateddynamics.logic_programmer_focus_search:key.keyboard.left.alt
 modifiers.key.integrateddynamics.logic_programmer_open_rename:key.keyboard.left.alt
-modifiers.cos.key.opencosarmorinventory:
 modifiers.key.push_to_talk:
 modifiers.key.whisper:
 modifiers.key.mute_microphone:
@@ -80,6 +79,7 @@ modifiers.key.voice_chat_settings:
 modifiers.key.voice_chat_group:
 modifiers.key.voice_chat_toggle_recording:
 modifiers.key.voice_chat_adjust_volumes:
+modifiers.cos.key.opencosarmorinventory:
 modifiers.treechop.key.toggle_chopping:
 modifiers.treechop.key.toggle_felling:
 modifiers.treechop.key.cycle_sneak_behavior:
@@ -154,11 +154,12 @@ modifiers.key.waila.show_details:
 modifiers.key.plonk.place:
 modifiers.quark.keybind.sort_player:
 modifiers.quark.keybind.sort_container:
-modifiers.quark.keybind.camera_mode:key.keyboard.right.control
-modifiers.quark.keybind.lock_rotation:
 modifiers.quark.keybind.transfer_insert:
 modifiers.quark.keybind.transfer_extract:
 modifiers.quark.keybind.shift_lock:
+modifiers.quark.keybind.lock_rotation:
+modifiers.quark.keybind.camera_mode:key.keyboard.right.control
+modifiers.quark.keybind.autorun:
 modifiers.quark.emote.no:
 modifiers.quark.emote.yes:
 modifiers.quark.emote.wave:
@@ -177,9 +178,8 @@ modifiers.quark.keybind.patreon_emote.dab:
 modifiers.quark.keybind.patreon_emote.jet:
 modifiers.quark.keybind.patreon_emote.exorcist:
 modifiers.quark.keybind.patreon_emote.zombie:
-modifiers.quark.keybind.autorun:
-modifiers.quark.keybind.back:
 modifiers.quark.keybind.change_hotbar:
+modifiers.quark.keybind.back:
 modifiers.gui.xaero_open_map:
 modifiers.gui.xaero_open_settings:
 modifiers.gui.xaero_map_zoom_in:
@@ -193,11 +193,11 @@ modifiers.keybind.sophisticatedbackpacks.open_backpack:
 modifiers.keybind.sophisticatedbackpacks.inventory_interaction:
 modifiers.keybind.sophisticatedbackpacks.tool_swap:
 modifiers.keybind.sophisticatedbackpacks.sort:
-modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_5:
-modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_4:
-modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_3:
-modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.left.alt
 modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.left.alt
+modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.left.alt
+modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_3:
+modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_4:
+modifiers.keybind.sophisticatedbackpacks.toggle_upgrade_5:
 modifiers.key.configured.open_mod_list:
 modifiers.key.jei.toggleOverlay:key.keyboard.left.control
 modifiers.key.jei.focusSearch:key.keyboard.left.control
