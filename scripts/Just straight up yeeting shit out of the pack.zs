@@ -225,7 +225,10 @@ val trash as IItemStack[] = [
 	<item:cyclic:elevation_wand>,
 	<item:cyclic:spell_water>,
 	<item:cyclic:terra_preta>,
-	<item:indreb:basic_machine_casing>
+	<item:indreb:basic_machine_casing>,
+	<item:storagedrawers:obsidian_storage_upgrade>,
+	<item:storagedrawers:iron_storage_upgrade>,
+	<item:storagedrawers:gold_storage_upgrade>
 ];
 
 for item in trash{
@@ -287,7 +290,11 @@ val jei_removal as IItemStack[] = [
 	<item:cyclic:spikes_fire>,
 	<item:cyclic:spikes_diamond>,
 	<item:cyclic:experience_pylon>,
-	<item:cyclic:crusher>
+	<item:cyclic:crusher>,
+	<item:indreb:crushed_copper>,
+	<item:indreb:crushed_iron>,
+	<item:indreb:crushed_gold>,
+	<item:indreb:crushed_lead>
 ];
 
 for item in jei_removal{
@@ -298,7 +305,9 @@ for item in jei_removal{
 
 val utter_eradication as IItemStack[] = [
 	<item:beyond_earth:cheese>,
-	<item:tconstruct:molten_refined_glowstone_bucket>
+	<item:tconstruct:molten_refined_glowstone_bucket>,
+	<item:storagedrawers:diamond_storage_upgrade>,
+	<item:storagedrawers:emerald_storage_upgrade>
 ];
 
 for item in utter_eradication{
