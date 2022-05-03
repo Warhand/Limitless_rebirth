@@ -307,7 +307,29 @@ val utter_eradication as IItemStack[] = [
 	<item:beyond_earth:cheese>,
 	<item:tconstruct:molten_refined_glowstone_bucket>,
 	<item:storagedrawers:diamond_storage_upgrade>,
-	<item:storagedrawers:emerald_storage_upgrade>
+	<item:storagedrawers:emerald_storage_upgrade>,
+	<item:jaopca:raw_storage_blocks.aluminum>,
+	<item:jaopca:raw_storage_blocks.falsite>,
+	<item:jaopca:raw_storage_blocks.horizonite>,
+	<item:jaopca:raw_storage_blocks.lead>,
+	<item:jaopca:raw_storage_blocks.nickel>,
+	<item:jaopca:raw_storage_blocks.osmium>,
+	<item:jaopca:raw_storage_blocks.silver>,
+	<item:jaopca:raw_storage_blocks.tin>,
+	<item:jaopca:raw_storage_blocks.ventium>,
+	<item:jaopca:create_crushed_ores.aluminum>,
+	<item:jaopca:create_crushed_ores.silver>,
+	<item:jaopca:create_crushed_ores.nickel>,
+	<item:jaopca:dusts.osmium>,
+	<item:jaopca:create_crushed_ores.netherite_scrap>,
+	<item:jaopca:create_crushed_ores.tin>,
+	<item:jaopca:dusts.diopside>,
+	<item:jaopca:dusts.soulstone>,
+	<item:jaopca:storage_blocks.mana_diamond>,
+	<item:jaopca:dusts.netherite_scrap>,
+	<item:jaopca:create_crushed_ores.osmium>,
+	<item:jaopca:create_crushed_ores.uranium>,
+	<item:jaopca:create_crushed_ores.lead>
 ];
 
 for item in utter_eradication{
