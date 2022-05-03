@@ -572,3 +572,10 @@ craftingTable.addShaped("cyclic_terra_preta", <item:cyclic:terra_preta> * 4, [[<
 
 //adding tags to indreb machine frame recipe
 craftingTable.addShaped("basic_machine_casing", <item:indreb:basic_machine_casing>, [[<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]]);
+
+//storage drawers overhauled
+craftingTable.addShaped("storagedrawers_tier_one_storage_upgrade", <item:storagedrawers:obsidian_storage_upgrade>, [[<tag:items:forge:plates/iron>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/iron>], [<tag:items:forge:rods/wooden>, <item:storagedrawers:upgrade_template>, <tag:items:forge:rods/wooden>], [<tag:items:forge:plates/iron>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/iron>]]);
+
+craftingTable.addShaped("storagedrawers_tier_two_storage_upgrade", <item:storagedrawers:iron_storage_upgrade>, [[<tag:items:forge:plates/gold>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/gold>], [<tag:items:forge:rods/wooden>, <item:storagedrawers:obsidian_storage_upgrade>, <tag:items:forge:rods/wooden>], [<tag:items:forge:plates/gold>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/gold>]]);
+
+craftingTable.addShaped("storagedrawers_tier_three_storage_upgrade", <item:storagedrawers:gold_storage_upgrade>, [[<tag:items:forge:gems/diamond>, <tag:items:forge:rods/wooden>, <tag:items:forge:gems/diamond>], [<tag:items:forge:rods/wooden>, <item:storagedrawers:iron_storage_upgrade>, <tag:items:forge:rods/wooden>], [<tag:items:forge:gems/diamond>, <tag:items:forge:rods/wooden>, <tag:items:forge:gems/diamond>]]);
