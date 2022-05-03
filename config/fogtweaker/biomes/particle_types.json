@@ -865,30 +865,34 @@
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "wisp_particle"
+    "f_135805_": "wisp"
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "smoke_particle"
+    "f_135805_": "smoke"
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "sparkle_particle"
+    "f_135805_": "sparkle"
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "twinkle_particle"
+    "f_135805_": "twinkle"
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "spirit_flame_particle"
+    "f_135805_": "star"
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "scythe_cut_attack_particle"
+    "f_135805_": "spirit_flame"
   },
   {
     "f_135804_": "malum",
-    "f_135805_": "scythe_sweep_attack_particle"
+    "f_135805_": "scythe_cut_attack"
+  },
+  {
+    "f_135804_": "malum",
+    "f_135805_": "scythe_sweep_attack"
   }
 ]
