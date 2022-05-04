@@ -23,10 +23,12 @@
     "patchouli:engineers_manual": {
       "viewedEntries": [
         "patchouli:construction/tank",
-        "patchouli:construction/silo"
+        "patchouli:construction/silo",
+        "patchouli:heavy/arc_furnace"
       ],
       "bookmarks": [],
       "history": [
+        "patchouli:heavy/arc_furnace",
         "patchouli:construction/silo",
         "patchouli:construction/tank"
       ],
