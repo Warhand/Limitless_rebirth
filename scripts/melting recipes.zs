@@ -46,3 +46,18 @@ for input, output in dust_to_molten_map{
   "time": 43
 });
 }
+
+for input, output in dust_to_molten_map{
+<recipetype:create:mixing>.addJsonRecipe("custom_mixing_dust_to_" + output.registryName.path, {
+  "ingredients": [
+    input
+  ],
+  "results": [
+    {
+      "fluid": output.registryName,
+      "amount": 180
+    }
+  ],
+  "heatRequirement": "superheated"
+});
+}
