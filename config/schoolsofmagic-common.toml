@@ -60,3 +60,11 @@
 	#Used to display server/client messages in logs for debug purposes, default true, switching to false will hide these messages.
 	show_packet_messages = true
 
+[passiveReload]
+	#When true, spell charges reload at rates determined below
+	passive_reload = true
+
+[sleepReload]
+	#When true, spell charges reload when the one sleeps
+	sleep_reload = false
+
