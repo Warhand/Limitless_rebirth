@@ -104,29 +104,17 @@ A list of the things I want to finish implementing or add before I consider the 
 - [ ] Seperate Assorted recipes.zs into multiple sub-files, sorted by what mods recipes they change
 
 ## Mods I'm waiting to get a 1.18.2 release before I can update the pack to that version
-- Create: Alloyed
 - Alternate current
-- Ars: Creo
+- Ars: Creo 
 - Better bundles
-- Yungs suite
-- Common capabilities
 - Ender Bundle
-- Fog tweaker
-- Crayfish gun mod
-- Grimoire of Tetra
-- Tetrapak
-- Tetra
-- Tinkers construct
-- Immersive posts
-- Industrial Reborn
-- Integrated dynamics suite
-- Jade Addons
+- Fog tweaker (Testing possible replacement)
+- Grimoire of Tetra (Might be removed)
+- Tetrapak (Might be removed)
+- Tetra (Might be removed)
+- Immersive posts (Might be removed)
+- Industrial Reborn (Testing possible replacement)
 - Loot beams
-- Mantle
-- Malum
 - Mutil
-- Nether portal fix
 - No null processors
 - Relics
-- Schools of Magic: Second semester
-- Restored earth
