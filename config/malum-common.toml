@@ -44,7 +44,7 @@
 		generateBrilliantStone = true
 
 	[worldgen.blazing_quartz]
-		#Size of blaze quartz ore veins.
+		#Amount of blaze quartz ore veins.
 		blazeQuartzSize = 14
 		#Should blaze quartz ore generate?
 		generateBlazeQuartz = true
