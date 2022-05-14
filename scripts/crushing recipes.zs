@@ -43,7 +43,7 @@ val crushers_remove as IItemStack[] = [
 	<item:immersiveengineering:raw_nickel>,
 	<item:immersiveengineering:raw_silver>,
 	<item:immersiveengineering:raw_uranium>,
-	<item:indreb:raw_lead>,
+	<item:ftbic:lead_chunk>,
 	<item:indreb:raw_tin>,
 	<item:jaopca:create_crushed_ores.aluminum>,
 	<item:jaopca:create_crushed_ores.calorite>,
@@ -88,7 +88,7 @@ val crushers_remove as IItemStack[] = [
 	<item:undergarden:raw_froststeel>,
 	<item:undergarden:regalium_crystal>,
 	<item:indreb:crushed_tin>,
-	<item:indreb:crushed_lead>,
+	<item:ftbic:lead_dust>,
 	<item:indreb:crushed_copper>,
 	<item:indreb:crushed_iron>,
 	<item:indreb:crushed_gold>
@@ -114,7 +114,7 @@ val ore_to_raw_map as IItemStack[IIngredient] = {
 	<tag:items:forge:ores/copper>.asIIngredient(): <item:minecraft:raw_copper>,
 	<tag:items:forge:ores/gold>.asIIngredient(): <item:minecraft:raw_gold>,
 	<tag:items:forge:ores/zinc>.asIIngredient(): <item:create:raw_zinc>,
-	<tag:items:forge:ores/tin>.asIIngredient(): <item:indreb:raw_tin>,
+	<tag:items:forge:ores/tin>.asIIngredient(): <item:ftbic:tin_chunk>,
 	<tag:items:forge:ores/silver>.asIIngredient(): <item:immersiveengineering:raw_silver>,
 	<tag:items:forge:ores/froststeel>.asIIngredient(): <item:undergarden:raw_froststeel>,
 	<tag:items:forge:ores/lead>.asIIngredient(): <item:immersiveengineering:raw_lead>,
@@ -136,7 +136,7 @@ val raw_to_crushed_map as IItemStack[IIngredient] = {
 	<tag:items:forge:raw_materials/copper>.asIIngredient(): <item:create:crushed_copper_ore>,
 	<tag:items:forge:raw_materials/gold>.asIIngredient(): <item:create:crushed_gold_ore>,
 	<tag:items:forge:raw_materials/zinc>.asIIngredient(): <item:create:crushed_zinc_ore>,
-	<tag:items:forge:raw_ores/tin>.asIIngredient(): <item:create:crushed_tin_ore>,
+	<tag:items:forge:raw_materials/tin>.asIIngredient(): <item:create:crushed_tin_ore>,
 	<tag:items:forge:raw_ores/silver>.asIIngredient(): <item:create:crushed_silver_ore>,
 	<item:undergarden:raw_froststeel>: <item:jaopca:create_crushed_ores.froststeel>,
 	<tag:items:forge:raw_ores/lead>.asIIngredient(): <item:create:crushed_lead_ore>,
@@ -158,7 +158,7 @@ val crushed_to_dust_map as IItemStack[IIngredient] = {
 	<item:create:crushed_copper_ore>: <item:immersiveengineering:dust_copper>,
 	<item:create:crushed_gold_ore>: <item:immersiveengineering:dust_gold>,
 	<item:create:crushed_zinc_ore>: <item:jaopca:dusts.zinc>,
-	<item:create:crushed_tin_ore>: <item:indreb:crushed_tin>,
+	<item:create:crushed_tin_ore>: <item:ftbic:tin_dust>,
 	<item:create:crushed_silver_ore>: <item:immersiveengineering:dust_silver>,
 	<item:jaopca:create_crushed_ores.froststeel>: <item:jaopca:dusts.froststeel>,
 	<item:create:crushed_lead_ore>: <item:immersiveengineering:dust_lead>,
@@ -526,126 +526,126 @@ for input, output in ore_to_dust_map{
 
 //Industrial reborn crusher
 
-for input, output in ore_to_raw_map{
-	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
-	{
-  "ingredient": 
-    input
-  ,
-  "result": {
-    "item": output.registryName,
-    "count": 2
-  },
-  "bonus_result": {
-    "item": output.registryName,
-    "count": 1,
-    "chance": 25.0
-  },
-  "experience": 2.0,
-  "duration": 180,
-  "power_cost": 8
-});
-}
-
-for input, output in raw_to_crushed_map{
-	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
-	{
-  "ingredient": 
-    input
-  ,
-  "result": {
-    "item": output.registryName,
-    "count": 1
-  },
-  "bonus_result": {
-    "item": output.registryName,
-    "count": 1,
-    "chance": 50.0
-  },
-  "experience": 2.0,
-  "duration": 180,
-  "power_cost": 8
-});
-}
-
-for input, output in crushed_to_dust_map{
-	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
-	{
-  "ingredient": 
-    input
-  ,
-  "result": {
-    "item": output.registryName,
-    "count": 1
-  },
-  "bonus_result": {
-    "item": output.registryName,
-    "count": 1,
-    "chance": 25.0
-  },
-  "experience": 2.0,
-  "duration": 180,
-  "power_cost": 8
-});
-}
-
-for input, output in ore_to_gem_map{
-	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
-	{
-  "ingredient": 
-    input
-  ,
-  "result": {
-    "item": output.registryName,
-    "count": 2
-  },
-  "experience": 2.0,
-  "duration": 180,
-  "power_cost": 8
-});
-}
-
-for input, output in ore_to_mineral_map{
-	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
-	{
-  "ingredient": 
-    input
-  ,
-  "result": {
-    "item": output.registryName,
-    "count": 3
-  },
-  "bonus_result": {
-    "item": output.registryName,
-    "count": 1,
-    "chance": 50.0
-  },
-  "experience": 2.0,
-  "duration": 180,
-  "power_cost": 8
-});
-}
-
-for input, output in ore_to_dust_map{
-	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
-	{
-  "ingredient": 
-    input
-  ,
-  "result": {
-    "item": output.registryName,
-    "count": 6
-  },
-  "bonus_result": {
-    "item": output.registryName,
-    "count": 2,
-    "chance": 25.0
-  },
-  "experience": 2.0,
-  "duration": 180,
-  "power_cost": 8
-});
-}
+//for input, output in ore_to_raw_map{
+//	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+//	{
+//  "ingredient": 
+//    input
+//  ,
+//  "result": {
+//    "item": output.registryName,
+//    "count": 2
+//  },
+//  "bonus_result": {
+//    "item": output.registryName,
+//    "count": 1,
+//    "chance": 25.0
+//  },
+//  "experience": 2.0,
+//  "duration": 180,
+//  "power_cost": 8
+//});
+//}
+//
+//for input, output in raw_to_crushed_map{
+//	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+//	{
+//  "ingredient": 
+//    input
+//  ,
+//  "result": {
+//    "item": output.registryName,
+//    "count": 1
+//  },
+//  "bonus_result": {
+//    "item": output.registryName,
+//    "count": 1,
+//    "chance": 50.0
+//  },
+//  "experience": 2.0,
+//  "duration": 180,
+//  "power_cost": 8
+//});
+//}
+//
+//for input, output in crushed_to_dust_map{
+//	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+//	{
+//  "ingredient": 
+//    input
+//  ,
+//  "result": {
+//    "item": output.registryName,
+//    "count": 1
+//  },
+//  "bonus_result": {
+//    "item": output.registryName,
+//    "count": 1,
+//    "chance": 25.0
+//  },
+//  "experience": 2.0,
+//  "duration": 180,
+//  "power_cost": 8
+//});
+//}
+//
+//for input, output in ore_to_gem_map{
+//	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+//	{
+//  "ingredient": 
+//    input
+//  ,
+//  "result": {
+//    "item": output.registryName,
+//    "count": 2
+//  },
+//  "experience": 2.0,
+//  "duration": 180,
+//  "power_cost": 8
+//});
+//}
+//
+//for input, output in ore_to_mineral_map{
+//	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+//	{
+//  "ingredient": 
+//    input
+//  ,
+//  "result": {
+//    "item": output.registryName,
+//    "count": 3
+//  },
+//  "bonus_result": {
+//    "item": output.registryName,
+//    "count": 1,
+//    "chance": 50.0
+//  },
+//  "experience": 2.0,
+//  "duration": 180,
+//  "power_cost": 8
+//});
+//}
+//
+//for input, output in ore_to_dust_map{
+//	<recipetype:indreb:crushing>.addJsonRecipe("custom_indreb_crushing_" + output.registryName.path, 
+//	{
+//  "ingredient": 
+//    input
+//  ,
+//  "result": {
+//    "item": output.registryName,
+//    "count": 6
+//  },
+//  "bonus_result": {
+//    "item": output.registryName,
+//    "count": 2,
+//    "chance": 25.0
+//  },
+//  "experience": 2.0,
+//  "duration": 180,
+//  "power_cost": 8
+//});
+//}
 
 //create crushing wheels
 

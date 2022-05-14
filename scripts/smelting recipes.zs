@@ -65,7 +65,11 @@ val dust_to_molten_map as IFluidStack[IIngredient] = {
 	<tag:items:forge:raw_materials/calorite>.asIIngredient(): <fluid:beyond_earth:molten_calorite>,
 	<tag:items:create:crushed_ores/calorite>.asIIngredient(): <fluid:beyond_earth:molten_calorite>,
 	<tag:items:forge:dusts/calorite>.asIIngredient(): <fluid:beyond_earth:molten_calorite>,
+	<tag:items:forge:raw_materials/desh>.asIIngredient(): <fluid:beyond_earth:molten_desh>,
+	<tag:items:create:crushed_ores/desh>.asIIngredient(): <fluid:beyond_earth:molten_desh>,
 	<tag:items:forge:dusts/desh>.asIIngredient(): <fluid:beyond_earth:molten_desh>,
+	<item:undergarden:raw_froststeel>: <fluid:jaopca:molten.froststeel>,
+	<tag:items:create:crushed_ores/froststeel>.asIIngredient(): <fluid:jaopca:molten.froststeel>,
 	<tag:items:forge:dusts/froststeel>.asIIngredient(): <fluid:jaopca:molten.froststeel>
 };
 

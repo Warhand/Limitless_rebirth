@@ -46,21 +46,20 @@ val cooked_fish as IItemStack[] = [
 <tag:items:rosie:malum/soul>.add(<item:malum:deepslate_soulstone_ore>);
 <tag:items:rosie:malum/soulraw>.add(<item:malum:raw_soulstone>);
 <tag:items:rosie:nethergold>.add(<item:minecraft:nether_gold_ore>);
-<tag:items:forge:raw_ores/tin>.add(<item:indreb:raw_tin>);
 <tag:items:forge:ores/brilliance>.add(<item:malum:brilliant_stone>);
 <tag:items:forge:ores/brilliance>.add(<item:malum:brilliant_deepslate>);
 
 //adding indreb diamond dust to forge tags
-<tag:items:forge:dusts/diamond>.add(<item:indreb:diamond_dust>);
-<tag:items:forge:dusts>.add(<item:indreb:diamond_dust>);
-<tag:items:supplementaries:hourglass_dusts>.add(<item:indreb:diamond_dust>);
+//<tag:items:forge:dusts/diamond>.add(<item:indreb:diamond_dust>);
+//<tag:items:forge:dusts>.add(<item:indreb:diamond_dust>);
+//<tag:items:supplementaries:hourglass_dusts>.add(<item:indreb:diamond_dust>);
 
 //removing stone bricks from the undergardens portal frames
 <tag:blocks:undergarden:portal_frame_blocks>.remove(<block:minecraft:stone_bricks>);
 
 //adding tin ore tag to deepslate tin
-<tag:items:forge:ores>.add(<item:indreb:deepslate_tin_ore>);
-<tag:items:forge:ores/tin>.add(<item:indreb:deepslate_tin_ore>);
+//<tag:items:forge:ores>.add(<item:indreb:deepslate_tin_ore>);
+//<tag:items:forge:ores/tin>.add(<item:indreb:deepslate_tin_ore>);
 
 //removing nether gold from gold tag, adding it to nethergold tag
 <tag:items:forge:ores/nethergold>.add(<item:minecraft:nether_gold_ore>);

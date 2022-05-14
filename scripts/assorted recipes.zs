@@ -202,8 +202,8 @@ blastFurnace.remove(<item:beyond_earth:steel_ingot>);
 //rose quartz uncrafting block
 craftingTable.addShapeless("uncrafting_rose_quartz", <item:biomesoplenty:rose_quartz_block> * 4, [<item:biomesoplenty:rose_quartz_shard>]);
 
-//indreb lead plate removal
-craftingTable.remove(<item:indreb:lead_plate>);
+////indreb lead plate removal
+//craftingTable.remove(<item:indreb:lead_plate>);
 
 //runic hammer durability upgrade
 <item:relics:runic_hammer>. maxDamage = 200;
@@ -211,10 +211,10 @@ craftingTable.remove(<item:indreb:lead_plate>);
 //beyond earth hammer durability upgrade
 <item:beyond_earth:hammer>.maxDamage = 50;
 
-//indreb hammer durability upgrade
-craftingTable.remove(<item:indreb:hammer>);
-<item:indreb:hammer>.maxDamage = 100;
-craftingTable.addShaped("indreb_item_tool_hammer", <item:indreb:hammer>, [[IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>], [<tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/iron>], [IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]]);
+////indreb hammer durability upgrade
+//craftingTable.remove(<item:indreb:hammer>);
+//<item:indreb:hammer>.maxDamage = 100;
+//craftingTable.addShaped("indreb_item_tool_hammer", <item:indreb:hammer>, [[IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>], [<tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/iron>], [IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]]);
 
 //immersive engineering hammer durability upgrade and recipe change
 craftingTable.remove(<item:immersiveengineering:hammer>);
@@ -370,42 +370,42 @@ craftingTable.addShapeless("gold_to_netherite", <item:createdeco:netherite_coin>
 
 //making Indreb bronze equipment use tags for crafting
 
-val bronze_equipment as IItemStack[] = [
-	<item:indreb:bronze_boots>,
-	<item:indreb:bronze_leggings>,
-	<item:indreb:bronze_chestplate>,
-	<item:indreb:bronze_helmet>,
-	<item:indreb:bronze_hoe>,
-	<item:indreb:bronze_sword>,
-	<item:indreb:bronze_axe>,
-	<item:indreb:bronze_shovel>,
-	<item:indreb:bronze_pickaxe>,
-	<item:indreb:lv_transformer>
-];
-
-for item in bronze_equipment{
-	craftingTable.remove(item);
-}
-
-craftingTable.addShaped("indreb_item_tool_bronze_shovel", <item:indreb:bronze_shovel>, [[<tag:items:forge:ingots/bronze>], [<tag:items:forge:rods/wooden>], [<tag:items:forge:rods/wooden>]]);
-
-craftingTable.addShaped("indreb_item_tool_bronze_hoe", <item:indreb:bronze_hoe>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>]]);
-
-craftingTable.addShaped("indreb_item_tool_bronze_axe", <item:indreb:bronze_axe>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, <tag:items:forge:rods/wooden>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>]]);
-
-craftingTable.addShaped("indreb_item_tool_bronze_sword", <item:indreb:bronze_sword>, [[<tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>], [<tag:items:forge:rods/wooden>]]);
-
-craftingTable.addShaped("indreb_item_tool_bronze_pickaxe", <item:indreb:bronze_pickaxe>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>, IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>, IIngredientEmpty.getInstance()]]);
-
-craftingTable.addShaped("indreb_item_bronze_boots", <item:indreb:bronze_boots>, [[<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>]]);
-
-craftingTable.addShaped("indreb_item_bronze_leggings", <item:indreb:bronze_leggings>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>]]);
-
-craftingTable.addShaped("indreb_item_bronze_chestplate", <item:indreb:bronze_chestplate>, [[<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>]]);
-
-craftingTable.addShaped("indreb_item_bronze_helmet", <item:indreb:bronze_helmet>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>]]);
-
-craftingTable.addShaped("indreb_transformer_lv_transformer", <item:indreb:lv_transformer>, [[<tag:items:minecraft:planks>, <item:indreb:copper_cable_insulated>, <tag:items:minecraft:planks>], [<tag:items:forge:plates/bronze>, <item:indreb:coil>, <tag:items:forge:plates/bronze>], [<tag:items:minecraft:planks>, <item:indreb:copper_cable_insulated>, <tag:items:minecraft:planks>]]);
+//val bronze_equipment as IItemStack[] = [
+//	<item:indreb:bronze_boots>,
+//	<item:indreb:bronze_leggings>,
+//	<item:indreb:bronze_chestplate>,
+//	<item:indreb:bronze_helmet>,
+//	<item:indreb:bronze_hoe>,
+//	<item:indreb:bronze_sword>,
+//	<item:indreb:bronze_axe>,
+//	<item:indreb:bronze_shovel>,
+//	<item:indreb:bronze_pickaxe>,
+//	<item:indreb:lv_transformer>
+//];
+//
+//for item in bronze_equipment{
+//	craftingTable.remove(item);
+//}
+//
+//craftingTable.addShaped("indreb_item_tool_bronze_shovel", <item:indreb:bronze_shovel>, [[<tag:items:forge:ingots/bronze>], [<tag:items:forge:rods/wooden>], [<tag:items:forge:rods/wooden>]]);
+//
+//craftingTable.addShaped("indreb_item_tool_bronze_hoe", <item:indreb:bronze_hoe>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>]]);
+//
+//craftingTable.addShaped("indreb_item_tool_bronze_axe", <item:indreb:bronze_axe>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, <tag:items:forge:rods/wooden>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>]]);
+//
+//craftingTable.addShaped("indreb_item_tool_bronze_sword", <item:indreb:bronze_sword>, [[<tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>], [<tag:items:forge:rods/wooden>]]);
+//
+//craftingTable.addShaped("indreb_item_tool_bronze_pickaxe", <item:indreb:bronze_pickaxe>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>, IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <tag:items:forge:rods/wooden>, IIngredientEmpty.getInstance()]]);
+//
+//craftingTable.addShaped("indreb_item_bronze_boots", <item:indreb:bronze_boots>, [[<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>]]);
+//
+//craftingTable.addShaped("indreb_item_bronze_leggings", <item:indreb:bronze_leggings>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>]]);
+//
+//craftingTable.addShaped("indreb_item_bronze_chestplate", <item:indreb:bronze_chestplate>, [[<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>]]);
+//
+//craftingTable.addShaped("indreb_item_bronze_helmet", <item:indreb:bronze_helmet>, [[<tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/bronze>], [<tag:items:forge:ingots/bronze>, IIngredientEmpty.getInstance(), <tag:items:forge:ingots/bronze>]]);
+//
+//craftingTable.addShaped("indreb_transformer_lv_transformer", <item:indreb:lv_transformer>, [[<tag:items:minecraft:planks>, <item:indreb:copper_cable_insulated>, <tag:items:minecraft:planks>], [<tag:items:forge:plates/bronze>, <item:indreb:coil>, <tag:items:forge:plates/bronze>], [<tag:items:minecraft:planks>, <item:indreb:copper_cable_insulated>, <tag:items:minecraft:planks>]]);
 
 //tooltip lucky rabbits foot
 <item:apotheosis:lucky_foot>.addTooltip("A rare drop from rabbits.");
@@ -421,8 +421,8 @@ craftingTable.removeByName("minecraft:andesite");
 craftingTable.addShapedMirrored("minecraft_andesite", MirrorAxis.HORIZONTAL, <item:minecraft:andesite> * 4, [[<item:minecraft:stone>, <item:minecraft:tuff>], [<item:minecraft:tuff>, <item:minecraft:stone>]]);
 
 //advanced machine casing
-craftingTable.remove(<item:indreb:advanced_machine_casing>);
-craftingTable.addShaped("indreb_block_advanced_machine_casing", <item:indreb:advanced_machine_casing>, [[<tag:items:forge:plates/steel>, <item:indreb:carbon_plate>, <tag:items:forge:plates/steel>], [<item:indreb:advanced_alloy>, <item:indreb:basic_machine_casing>, <item:indreb:advanced_alloy>], [<tag:items:forge:plates/steel>, <item:indreb:carbon_plate>, <tag:items:forge:plates/steel>]]);
+//craftingTable.remove(<item:indreb:advanced_machine_casing>);
+//craftingTable.addShaped("indreb_block_advanced_machine_casing", <item:indreb:advanced_machine_casing>, [[<tag:items:forge:plates/steel>, <item:indreb:carbon_plate>, <tag:items:forge:plates/steel>], [<item:indreb:advanced_alloy>, <item:indreb:basic_machine_casing>, <item:indreb:advanced_alloy>], [<tag:items:forge:plates/steel>, <item:indreb:carbon_plate>, <tag:items:forge:plates/steel>]]);
 
 //nether wart block uncrafting
 craftingTable.removeByName("cyclic:crafting/nether_wart_reverse");
@@ -449,8 +449,8 @@ mods.extendedcrafting.EnderCrafting.addShaped("330a6455-0052-4566-a944-c8a7a51f5
 ]);
 
 //furnace tin
-furnace.addRecipe("tin_cook", <item:indreb:tin_ingot>, <item:create:crushed_tin_ore>, 0.5, 200);
-blastFurnace.addRecipe("tin_blast", <item:indreb:tin_ingot>, <item:create:crushed_tin_ore>, 0.5, 100);
+//furnace.addRecipe("tin_cook", <item:indreb:tin_ingot>, <item:create:crushed_tin_ore>, 0.5, 200);
+//blastFurnace.addRecipe("tin_blast", <item:indreb:tin_ingot>, <item:create:crushed_tin_ore>, 0.5, 100);
 
 //raw block blasting
 
@@ -485,7 +485,7 @@ for rawblock, block in rawblock_block_map {
 
 //Energium dust, tags added to recipe
 
-craftingTable.addShaped("indreb_energium_dust", <item:indreb:energium_dust> * 9, [[<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>], [<tag:items:forge:dusts/diamond>, <item:minecraft:redstone>, <tag:items:forge:dusts/diamond>], [<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>]]);
+//craftingTable.addShaped("indreb_energium_dust", <item:indreb:energium_dust> * 9, [[<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>], [<tag:items:forge:dusts/diamond>, <item:minecraft:redstone>, <tag:items:forge:dusts/diamond>], [<item:minecraft:redstone>, <tag:items:forge:dusts/diamond>, <item:minecraft:redstone>]]);
 
 //red alloy ingot recipe
 craftingTable.remove(<item:extendedcrafting:redstone_ingot>);
@@ -571,7 +571,7 @@ craftingTable.addShaped("prettypipes_high_crafting_module", <item:prettypipes:hi
 craftingTable.addShaped("cyclic_terra_preta", <item:cyclic:terra_preta> * 4, [[<item:cyclic:biomass>, <item:cyclic:soil>, <item:cyclic:biomass>], [<item:cyclic:soil>, <item:alexsmobs:bone_serpent_tooth>, <item:cyclic:soil>], [<item:cyclic:biomass>, <item:cyclic:soil>, <item:cyclic:biomass>]]);
 
 //adding tags to indreb machine frame recipe
-craftingTable.addShaped("basic_machine_casing", <item:indreb:basic_machine_casing>, [[<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]]);
+//craftingTable.addShaped("basic_machine_casing", <item:indreb:basic_machine_casing>, [[<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, IIngredientEmpty.getInstance(), <tag:items:forge:plates/iron>], [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]]);
 
 //storage drawers overhauled
 craftingTable.addShaped("storagedrawers_tier_one_storage_upgrade", <item:storagedrawers:obsidian_storage_upgrade>, [[<tag:items:forge:plates/iron>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/iron>], [<tag:items:forge:rods/wooden>, <item:storagedrawers:upgrade_template>, <tag:items:forge:rods/wooden>], [<tag:items:forge:plates/iron>, <tag:items:forge:rods/wooden>, <tag:items:forge:plates/iron>]]);

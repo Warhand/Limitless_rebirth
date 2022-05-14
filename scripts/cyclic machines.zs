@@ -219,7 +219,7 @@ craftingTable.remove(<item:cyclic:uncrafter>);
 craftingTable.addShaped("cyclic_uncrafter", <item:cyclic:uncrafter>, [[<tag:items:forge:storage_blocks/diamond>, <tag:items:forge:obsidian>, <tag:items:forge:storage_blocks/diamond>], [<item:minecraft:smooth_stone>, <tag:items:forge:nether_stars>, <item:minecraft:smooth_stone>], [<item:minecraft:smooth_stone>, <tag:items:forge:ingots/netherite>, <item:minecraft:smooth_stone>]]);
 
 //Cyclic soundproofing
-craftingTable.addShaped("cyclic_soundproofing", <item:cyclic:soundproofing> * 4, [[<tag:items:minecraft:occludes_vibration_signals>, <item:minecraft:white_terracotta>, <tag:items:minecraft:occludes_vibration_signals>], [<item:minecraft:white_terracotta>, <item:indreb:rubber>, <item:minecraft:white_terracotta>], [<tag:items:minecraft:occludes_vibration_signals>, <item:minecraft:white_terracotta>, <tag:items:minecraft:occludes_vibration_signals>]]);
+craftingTable.addShaped("cyclic_soundproofing", <item:cyclic:soundproofing> * 4, [[<tag:items:minecraft:occludes_vibration_signals>, <item:minecraft:white_terracotta>, <tag:items:minecraft:occludes_vibration_signals>], [<item:minecraft:white_terracotta>, <item:ftbic:rubber>, <item:minecraft:white_terracotta>], [<tag:items:minecraft:occludes_vibration_signals>, <item:minecraft:white_terracotta>, <tag:items:minecraft:occludes_vibration_signals>]]);
 
 //cyclic pharros beacon
 craftingTable.addShaped("cyclic_beacon", <item:cyclic:beacon>, [[<item:ae2:quartz_glass>, <item:ae2:quartz_glass>, <item:ae2:quartz_glass>], [<item:ae2:quartz_glass>, <item:extendedcrafting:ender_star>, <item:ae2:quartz_glass>], [<item:extendedcrafting:ultimate_catalyst>, <tag:items:forge:storage_blocks/emerald>, <item:extendedcrafting:ultimate_catalyst>]]);

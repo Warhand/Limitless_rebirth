@@ -9,163 +9,163 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 
 //alloy smelting recipes
 
-<recipetype:indreb:alloy_smelting>.removeByName("indreb:alloy_smelting/bronze_ingot");
-<recipetype:indreb:alloy_smelting>.removeByName("indreb:alloy_smelting/steel_ingot");
+//<recipetype:indreb:alloy_smelting>.removeByName("indreb:alloy_smelting/bronze_ingot");
+//<recipetype:indreb:alloy_smelting>.removeByName("indreb:alloy_smelting/steel_ingot");
+//
+//
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_bronze", 
+//	{"ingredients": [
+//    {
+//      "item": "minecraft:copper_ingot",
+//      "count": 3
+//    },
+//    {
+//      "item": "indreb:tin_ingot",
+//      "count": 1
+//    }
+//  ],
+//  "result": {
+//    "item": "alloyed:bronze_ingot",
+//    "count": 4
+//  },
+//  "experience": 0.5,
+//  "duration": 560,
+//  "power_cost": 16
+//});
+//
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_steel",
+//{"ingredients": [
+//    {
+//      "tag": "forge:ingots/iron",
+//      "count": 1
+//    },
+//    {
+//      "tag": "forge:dusts/coal",
+//      "count": 3
+//    }
+//  ],
+//  "result": {
+//    "item": "alloyed:steel_ingot"
+//  },
+//  "experience": 0.5,
+//  "duration": 500,
+//  "power_cost": 16
+//});
+//
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_advanced_alloy",
+//{"ingredients": [
+//    {
+//      "tag": "forge:ingots/iron",
+//      "count": 3
+//    },
+//    {
+//      "tag": "forge:ingots/bronze",
+//      "count": 3
+//    },
+//    {
+//      "tag": "forge:ingots/tin",
+//      "count": 3
+//    }
+//  ],
+//  "result": {
+//    "item": "indreb:mixed_metal_ingot",
+//    "count": 2
+//  },
+//  "experience": 0.5,
+//  "duration": 600,
+//  "power_cost": 16
+//});
+//
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_redstone_ingot",
+//{"ingredients": [
+//    {
+//      "tag": "forge:ingots/iron",
+//      "count": 1
+//    },
+//    {
+//      "tag": "forge:dusts/redstone",
+//      "count": 2
+//    }
+//  ],
+//  "result": {
+//    "item": "extendedcrafting:redstone_ingot",
+//    "count": 2
+//  },
+//  "experience": 0.5,
+//  "duration": 400,
+//  "power_cost": 16
+//});
+//
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_ender_ingot",
+//{"ingredients": [
+//    {
+//      "tag": "forge:ingots/steel"
+//    },
+//    {
+//      "tag": "forge:dusts/ender"
+//    }
+//  ],
+//  "result": {
+//    "item": "extendedcrafting:ender_ingot"
+//  },
+//  "experience": 0.5,
+//  "duration": 600,
+//  "power_cost": 16
+//});
 
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_andesite_alloy1",
+//{"ingredients": [
+//    {
+//      "item": "minecraft:andesite"
+//    },
+//    {
+//      "tag": "forge:nuggets/zinc"
+//    }
+//  ],
+//  "result": {
+//    "item": "create:andesite_alloy"
+//  },
+//  "experience": 0.5,
+//  "duration": 300,
+//  "power_cost": 16
+//});
 
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_bronze", 
-	{"ingredients": [
-    {
-      "item": "minecraft:copper_ingot",
-      "count": 3
-    },
-    {
-      "item": "indreb:tin_ingot",
-      "count": 1
-    }
-  ],
-  "result": {
-    "item": "alloyed:bronze_ingot",
-    "count": 4
-  },
-  "experience": 0.5,
-  "duration": 560,
-  "power_cost": 16
-});
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_andesite_alloy2",
+//{"ingredients": [
+//    {
+//      "item": "minecraft:andesite"
+//    },
+//    {
+//      "tag": "forge:nuggets/iron"
+//    }
+//  ],
+//  "result": {
+//    "item": "create:andesite_alloy"
+//  },
+//  "experience": 0.5,
+//  "duration": 300,
+//  "power_cost": 16
+//});
 
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_steel",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 1
-    },
-    {
-      "tag": "forge:dusts/coal",
-      "count": 3
-    }
-  ],
-  "result": {
-    "item": "alloyed:steel_ingot"
-  },
-  "experience": 0.5,
-  "duration": 500,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_advanced_alloy",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 3
-    },
-    {
-      "tag": "forge:ingots/bronze",
-      "count": 3
-    },
-    {
-      "tag": "forge:ingots/tin",
-      "count": 3
-    }
-  ],
-  "result": {
-    "item": "indreb:mixed_metal_ingot",
-    "count": 2
-  },
-  "experience": 0.5,
-  "duration": 600,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_redstone_ingot",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 1
-    },
-    {
-      "tag": "forge:dusts/redstone",
-      "count": 2
-    }
-  ],
-  "result": {
-    "item": "extendedcrafting:redstone_ingot",
-    "count": 2
-  },
-  "experience": 0.5,
-  "duration": 400,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_ender_ingot",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/steel"
-    },
-    {
-      "tag": "forge:dusts/ender"
-    }
-  ],
-  "result": {
-    "item": "extendedcrafting:ender_ingot"
-  },
-  "experience": 0.5,
-  "duration": 600,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_andesite_alloy1",
-{"ingredients": [
-    {
-      "item": "minecraft:andesite"
-    },
-    {
-      "tag": "forge:nuggets/zinc"
-    }
-  ],
-  "result": {
-    "item": "create:andesite_alloy"
-  },
-  "experience": 0.5,
-  "duration": 300,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_andesite_alloy2",
-{"ingredients": [
-    {
-      "item": "minecraft:andesite"
-    },
-    {
-      "tag": "forge:nuggets/iron"
-    }
-  ],
-  "result": {
-    "item": "create:andesite_alloy"
-  },
-  "experience": 0.5,
-  "duration": 300,
-  "power_cost": 16
-});
-
-<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_black_iron",
-{"ingredients": [
-    {
-      "tag": "forge:ingots/iron",
-      "count": 1
-    },
-    {
-      "tag": "forge:dyes/black",
-      "count": 1
-    }
-  ],
-  "result": {
-    "item": "extendedcrafting:black_iron_ingot",
-    "count": 1
-  },
-  "experience": 0.5,
-  "duration": 400,
-  "power_cost": 16
-});
+//<recipetype:indreb:alloy_smelting>.addJsonRecipe("custom_indreb_black_iron",
+//{"ingredients": [
+//    {
+//      "tag": "forge:ingots/iron",
+//      "count": 1
+//    },
+//    {
+//      "tag": "forge:dyes/black",
+//      "count": 1
+//    }
+//  ],
+//  "result": {
+//    "item": "extendedcrafting:black_iron_ingot",
+//    "count": 1
+//  },
+//  "experience": 0.5,
+//  "duration": 400,
+//  "power_cost": 16
+//});
 
 //Create alloy recipes
 <recipetype:create:mixing>.remove(<item:alloyed:bronze_ingot>);
