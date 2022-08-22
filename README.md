@@ -19,44 +19,33 @@ A list of the things I want to finish implementing or add before I consider the 
   - [ ] Apotheosis
   - [ ] Applied energistics 2
   - [ ] Aquaculture 2
-  - [ ] Armor set bonuses
   - [ ] Ars Nouveau
   - [ ] Artifacts
-  - [ ] Better bundles
-  - [ ] Beyond earth
   - [ ] Blue skies
   - [ ] Botania
   - [ ] Building gadgets
   - [ ] CC: Retweaked (When 1.18.2 version of the pack is done)
   - [ ] CGM furniture
   - [ ] Champions
-  - [ ] Construction wands
   - [ ] Crayfish gun mod
   - [ ] Create + Addons
-  - [ ] Croptopia
-  - [ ] Cyclic
-  - [ ] Cyclic: Curios
+  - [ ] Farmers delight + addons
   - [ ] Dimensional dungeons
   - [ ] Domestication innovation
   - [ ] Dungeon Crawl
-  - [ ] Effortless building
-  - [ ] Ender bundle
   - [ ] Endgame and creative recipes
   - [ ] Expanded storage
-  - [ ] Experience obelisk
+  - [ ] Channeling stone
   - [ ] FTB chunks
   - [ ] Framed blocks
   - [ ] Goblin traders
   - [ ] Golden hopper
-  - [ ] Industrial Reborn
+  - [ ] FTB industrial contraptions
   - [ ] Integrated dynamics
   - [ ] Iron jetpacks
-  - [ ] JAMD
-  - [ ] joy of painting
   - [ ] Limitless Rebirth tweaks to vanilla
   - [ ] Little logistics
   - [ ] Malum
-  - [ ] Music maker
   - [ ] Packing tape
   - [ ] Paraglider
   - [ ] Pipez
@@ -65,7 +54,6 @@ A list of the things I want to finish implementing or add before I consider the 
   - [ ] Pretty pipes
   - [ ] RFTools
   - [ ] Re-chiseled
-  - [ ] Relics
   - [ ] Schools of Magic
   - [ ] Simple Kiln
   - [ ] Simple magnets
@@ -80,15 +68,14 @@ A list of the things I want to finish implementing or add before I consider the 
   - [ ] Undergarden
   - [ ] Upgraded netherite
   - [ ] Waystones 
-- [ ] Customize mod configs and data
-  - [ ] Champions
-  - [ ] Treasure bags
-  - [ ] Chunk animator
+- [X] Customize mod configs and data
+  - [X] Champions
+  - [X] Treasure bags
 - [ ] Standardize Processing recipes
   - [X] Grinding
-  - [ ] Alloying (Almost complete)
-  - [ ] Pressing (Almost complete)
-- [ ] Update modpack to 1.18.2
+  - [X] Alloying
+  - [X] Pressing
+- [X] Update modpack to 1.18.2
 - [X] Launch official discord server
 - [ ] Launch official multiplayer server
 - [ ] Create multiplayer server setup pack
@@ -102,19 +89,3 @@ A list of the things I want to finish implementing or add before I consider the 
   - [X] Cyclic machine recipes adjusted
   - [X] Apotheosis tome recipes adjusted
 - [ ] Seperate Assorted recipes.zs into multiple sub-files, sorted by what mods recipes they change
-
-## Mods I'm waiting to get a 1.18.2 release before I can update the pack to that version
-- Alternate current
-- Ars: Creo 
-- Better bundles
-- Ender Bundle
-- Fog tweaker (Testing possible replacement)
-- Grimoire of Tetra (Might be removed)
-- Tetrapak (Might be removed)
-- Tetra (Might be removed)
-- Immersive posts (Might be removed)
-- Industrial Reborn (Testing possible replacement)
-- Loot beams
-- Mutil
-- No null processors
-- Relics
